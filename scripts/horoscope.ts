@@ -94,7 +94,8 @@ async function fetchConstellationData(type: string, retryCount = 0): Promise<any
     try {
         console.log(`🔮 正在獲取 ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} (${type}) 的運勢...`);
 
-        const response = await axios.get(API_BASE_URL, {
+        // 先嘗試獲取今天的運勢
+        let response = await axios.get(API_BASE_URL, {
             params: {
                 type: type,
                 time: 'today',
@@ -110,9 +111,61 @@ async function fetchConstellationData(type: string, retryCount = 0): Promise<any
 
         // 實際API返回格式檢查：code="200" 且 msg="获取成功"
         if (response.data && response.data.code === '200' && response.data.msg === '获取成功') {
-            console.log(`✅ ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 運勢獲取成功`);
+            // 檢查返回的日期是否為今天
+            if (response.data.data) {
+                const returnedDate = response.data.data.date;
+                // 使用台灣時區的日期（Asia/Taipei）
+                const today = new Date().toLocaleDateString('sv-SE', {
+                    timeZone: 'Asia/Taipei',
+                }); // 格式: YYYY-MM-DD
 
-            // 轉換簡體字為繁體字
+                console.log(`📅 API回傳日期: ${returnedDate}, 今日日期(台灣時區): ${today}`);
+
+                if (returnedDate !== today) {
+                    console.log(`🔄 日期不匹配 (${returnedDate} !== ${today})，重新請求明天的運勢 (time: nextday)...`);
+
+                    // 重新請求明天的運勢，完全覆蓋原有response
+                    const nextdayResponse = await axios.get(API_BASE_URL, {
+                        params: {
+                            type: type,
+                            time: 'nextday',
+                        },
+                        timeout: REQUEST_TIMEOUT,
+                        headers: {
+                            'User-Agent':
+                                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                            Accept: 'application/json',
+                            'Accept-Language': 'zh-TW,zh;q=0.9,en;q=0.8',
+                        },
+                    });
+
+                    // 檢查nextday請求是否成功
+                    if (
+                        nextdayResponse.data &&
+                        nextdayResponse.data.code === '200' &&
+                        nextdayResponse.data.msg === '获取成功'
+                    ) {
+                        const nextdayDate = nextdayResponse.data.data?.date || '未知';
+                        console.log(
+                            `✅ ${
+                                CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]
+                            } nextday運勢獲取成功，新日期: ${nextdayDate}`
+                        );
+
+                        // 用nextday的資料完全覆蓋原有response
+                        response = nextdayResponse;
+                        console.log(`🔄 已使用nextday資料覆蓋原有資料`);
+                    } else {
+                        throw new Error(`API nextday請求失敗: ${JSON.stringify(nextdayResponse.data)}`);
+                    }
+                } else {
+                    console.log(`✅ ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 今天運勢獲取成功，日期匹配`);
+                }
+            } else {
+                console.log(`⚠️  ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 回應中沒有日期資訊`);
+            }
+
+            // 轉換簡體字為繁體字 (使用最終的response，可能是today或nextday的資料)
             console.log(`🔄 正在轉換 ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 的簡體字為繁體字...`);
             const convertedData = await convertObjectToTraditional(response.data.data);
 
