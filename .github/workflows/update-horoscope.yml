@@ -2,7 +2,7 @@ name: Update Horoscope
 
 on:
     schedule:
-        - cron: '1 * * * *' # 每日00:01執行
+        - cron: '1 * * * *' # 每小時01分執行
     workflow_dispatch:
 
 jobs:
