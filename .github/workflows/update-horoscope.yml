@@ -48,5 +48,5 @@ jobs:
 
                   # 提交並推送
                   git add data/horoscope.json
-                  git commit -m "update ptt trends [CI] $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M:%S')" || echo "Nothing to commit"
+                  git commit -m "update horoscope [CI] $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M:%S')" || echo "Nothing to commit"
                   git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
