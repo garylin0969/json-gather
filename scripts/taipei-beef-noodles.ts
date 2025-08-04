@@ -205,7 +205,6 @@ async function getTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
 
     console.log(`🎉 搜尋完成，總共找到 ${allResults.size} 間台北市牛肉麵店`);
 
-    // 排序：評論數再依評分
     return Array.from(allResults.values()).filter((place) => place.district !== undefined);
 }
 
