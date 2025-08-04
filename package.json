@@ -5,7 +5,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "scrape:horoscope": "tsx scripts/horoscope.ts",
-        "scrape:copywriting": "tsx scripts/copywriting.ts"
+        "scrape:copywriting": "tsx scripts/copywriting.ts",
+        "scrape:taipei-beef-noodles": "tsx scripts/taipei-beef-noodles.ts"
     },
     "keywords": [],
     "author": "",
