@@ -121,29 +121,17 @@ function extractDistrictFromFormattedAddress(place: PlaceResult): string | undef
     // 台北市的區域名稱列表（包含不同可能的格式）
     const taipeiDistricts = [
         '中正區',
-        '中正',
         '大同區',
-        '大同',
         '中山區',
-        '中山',
         '松山區',
-        '松山',
         '大安區',
-        '大安',
         '萬華區',
-        '萬華',
         '信義區',
-        '信義',
         '士林區',
-        '士林',
         '北投區',
-        '北投',
         '內湖區',
-        '內湖',
         '南港區',
-        '南港',
         '文山區',
-        '文山',
     ];
 
     const address = place.formattedAddress;
@@ -157,16 +145,15 @@ function extractDistrictFromFormattedAddress(place: PlaceResult): string | undef
     // 檢查 formattedAddress 是否包含區域名稱
     for (const district of taipeiDistricts) {
         if (address.includes(district)) {
-            // 如果找到的是簡稱（沒有「區」字），需要加上「區」字
-            if (!district.endsWith('區')) {
-                return district + '區';
-            }
             return district;
         }
     }
 
     // 如果還是找不到，嘗試用座標來判斷區域
-    return getDistrictFromCoordinates(place.location.latitude, place.location.longitude);
+    // return getDistrictFromCoordinates(place.location.latitude, place.location.longitude);
+
+    // 如果還是找不到，則回傳 undefined
+    return undefined;
 }
 
 /** 根據座標判斷區域 */
@@ -219,14 +206,7 @@ async function getTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
     console.log(`🎉 搜尋完成，總共找到 ${allResults.size} 間台北市牛肉麵店`);
 
     // 排序：評論數再依評分
-    return Array.from(allResults.values()).sort((a, b) => {
-        const aRatings = a.userRatingCount ?? 0;
-        const bRatings = b.userRatingCount ?? 0;
-        const aRating = a.rating ?? 0;
-        const bRating = b.rating ?? 0;
-        if (bRatings !== aRatings) return bRatings - aRatings;
-        return bRating - aRating;
-    });
+    return Array.from(allResults.values()).filter((place) => place.district !== undefined);
 }
 
 // 主函數
