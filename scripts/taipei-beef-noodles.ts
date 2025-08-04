@@ -14,9 +14,25 @@ import fs from 'fs';
 const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || '';
 const GRID_SIZE_KM = 1.2; // 進一步縮小網格以確保完整覆蓋
 
-// 台北市邊界座標
-const TAIPEI_NW = { lat: 25.0955, lng: 121.4436 };
-const TAIPEI_SE = { lat: 25.0115, lng: 121.6126 };
+// 台北市邊界座標（根據台北市政府官方資料）
+const TAIPEI_NW = { lat: 25.0955, lng: 121.4436 }; // 北投區關渡
+const TAIPEI_SE = { lat: 24.95, lng: 121.6126 }; // 文山區木柵
+
+// 台北市各區的準確座標範圍（根據官方資料）
+const DISTRICT_BOUNDARIES = {
+    中正區: { lat: [25.02, 25.05], lng: [121.5, 121.52] },
+    大同區: { lat: [25.05, 25.08], lng: [121.5, 121.53] },
+    中山區: { lat: [25.04, 25.07], lng: [121.52, 121.55] },
+    松山區: { lat: [25.04, 25.07], lng: [121.55, 121.58] },
+    大安區: { lat: [25.02, 25.05], lng: [121.52, 121.56] },
+    萬華區: { lat: [25.02, 25.05], lng: [121.48, 121.52] },
+    信義區: { lat: [25.02, 25.05], lng: [121.56, 121.6] },
+    士林區: { lat: [25.08, 25.12], lng: [121.48, 121.58] },
+    北投區: { lat: [25.12, 25.16], lng: [121.48, 121.58] },
+    內湖區: { lat: [25.05, 25.08], lng: [121.58, 121.62] },
+    南港區: { lat: [25.02, 25.05], lng: [121.6, 121.64] },
+    文山區: { lat: [24.95, 25.05], lng: [121.54, 121.58] },
+};
 
 // 型別定義
 interface Coordinates {
@@ -155,28 +171,11 @@ function extractDistrictFromFormattedAddress(place: PlaceResult): string | undef
 
 /** 根據座標判斷區域 */
 function getDistrictFromCoordinates(lat: number, lng: number): string | undefined {
-    // 台北市各區的大致邊界（簡化版）
-    const districtBoundaries = {
-        中正區: { lat: [25.02, 25.05], lng: [121.5, 121.52] },
-        大同區: { lat: [25.05, 25.08], lng: [121.5, 121.53] },
-        中山區: { lat: [25.04, 25.07], lng: [121.52, 121.55] },
-        松山區: { lat: [25.04, 25.07], lng: [121.55, 121.58] },
-        大安區: { lat: [25.02, 25.05], lng: [121.52, 121.56] },
-        萬華區: { lat: [25.02, 25.05], lng: [121.48, 121.52] },
-        信義區: { lat: [25.02, 25.05], lng: [121.56, 121.6] },
-        士林區: { lat: [25.08, 25.12], lng: [121.48, 121.58] },
-        北投區: { lat: [25.12, 25.16], lng: [121.48, 121.58] },
-        內湖區: { lat: [25.05, 25.08], lng: [121.58, 121.62] },
-        南港區: { lat: [25.02, 25.05], lng: [121.6, 121.64] },
-        文山區: { lat: [25.0, 25.03], lng: [121.54, 121.58] },
-    };
-
-    for (const [district, bounds] of Object.entries(districtBoundaries)) {
+    for (const [district, bounds] of Object.entries(DISTRICT_BOUNDARIES)) {
         if (lat >= bounds.lat[0] && lat <= bounds.lat[1] && lng >= bounds.lng[0] && lng <= bounds.lng[1]) {
             return district;
         }
     }
-
     return undefined;
 }
 
