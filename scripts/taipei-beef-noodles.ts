@@ -102,25 +102,77 @@ async function searchText(keyword: string, lat: number, lng: number, radius: num
 
 /** 從 formattedAddress 提取區域資訊 */
 function extractDistrictFromFormattedAddress(place: PlaceResult): string | undefined {
-    // 台北市的區域名稱列表
+    // 台北市的區域名稱列表（包含不同可能的格式）
     const taipeiDistricts = [
         '中正區',
+        '中正',
         '大同區',
+        '大同',
         '中山區',
+        '中山',
         '松山區',
+        '松山',
         '大安區',
+        '大安',
         '萬華區',
+        '萬華',
         '信義區',
+        '信義',
         '士林區',
+        '士林',
         '北投區',
+        '北投',
         '內湖區',
+        '內湖',
         '南港區',
+        '南港',
         '文山區',
+        '文山',
     ];
+
+    const address = place.formattedAddress;
+
+    // 調試：記錄一些地址格式
+    if (Math.random() < 0.1) {
+        // 只記錄10%的地址以避免過多輸出
+        console.log(`🔍 調試地址格式: ${address}`);
+    }
 
     // 檢查 formattedAddress 是否包含區域名稱
     for (const district of taipeiDistricts) {
-        if (place.formattedAddress.includes(district)) {
+        if (address.includes(district)) {
+            // 如果找到的是簡稱（沒有「區」字），需要加上「區」字
+            if (!district.endsWith('區')) {
+                return district + '區';
+            }
+            return district;
+        }
+    }
+
+    // 如果還是找不到，嘗試用座標來判斷區域
+    return getDistrictFromCoordinates(place.location.latitude, place.location.longitude);
+}
+
+/** 根據座標判斷區域 */
+function getDistrictFromCoordinates(lat: number, lng: number): string | undefined {
+    // 台北市各區的大致邊界（簡化版）
+    const districtBoundaries = {
+        中正區: { lat: [25.02, 25.05], lng: [121.5, 121.52] },
+        大同區: { lat: [25.05, 25.08], lng: [121.5, 121.53] },
+        中山區: { lat: [25.04, 25.07], lng: [121.52, 121.55] },
+        松山區: { lat: [25.04, 25.07], lng: [121.55, 121.58] },
+        大安區: { lat: [25.02, 25.05], lng: [121.52, 121.56] },
+        萬華區: { lat: [25.02, 25.05], lng: [121.48, 121.52] },
+        信義區: { lat: [25.02, 25.05], lng: [121.56, 121.6] },
+        士林區: { lat: [25.08, 25.12], lng: [121.48, 121.58] },
+        北投區: { lat: [25.12, 25.16], lng: [121.48, 121.58] },
+        內湖區: { lat: [25.05, 25.08], lng: [121.58, 121.62] },
+        南港區: { lat: [25.02, 25.05], lng: [121.6, 121.64] },
+        文山區: { lat: [25.0, 25.03], lng: [121.54, 121.58] },
+    };
+
+    for (const [district, bounds] of Object.entries(districtBoundaries)) {
+        if (lat >= bounds.lat[0] && lat <= bounds.lat[1] && lng >= bounds.lng[0] && lng <= bounds.lng[1]) {
             return district;
         }
     }
