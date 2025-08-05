@@ -15,8 +15,8 @@ const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || '';
 const GRID_SIZE_KM = 1.2; // 進一步縮小網格以確保完整覆蓋
 
 // 台北市邊界座標（根據 Google Maps 查詢結果調整）
-const TAIPEI_NW = { lat: 25.15, lng: 121.435 }; // 北投區最北端
-const TAIPEI_SE = { lat: 24.95, lng: 121.65 }; // 南港區最東南端
+const TAIPEI_NW = { lat: 25.15, lng: 121.435 }; // 最北端
+const TAIPEI_SE = { lat: 24.95, lng: 121.65 }; // 最東南端
 
 // 台北市各區的準確座標範圍（根據 Google Maps 查詢結果調整）
 const DISTRICT_BOUNDARIES = {
