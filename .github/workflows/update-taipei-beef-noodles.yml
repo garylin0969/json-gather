@@ -2,7 +2,7 @@ name: Update Taipei Beef Noodles
 
 on:
     schedule:
-        - cron: '0 */12 * * *' # 每12小時執行一次（00:00 和 12:00）
+        - cron: '0 */24 * * *' # 每24小時執行一次（00:00）
     workflow_dispatch:
 
 jobs:

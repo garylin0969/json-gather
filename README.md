@@ -14,7 +14,7 @@
 | `romantic-copywriting.json` | 騷話文案                   | 50 筆    | 每 6 小時  |
 | `love-copywriting.json`     | 愛情文案                   | 50 筆    | 每 6 小時  |
 | `horoscope.json`            | 當日星座運勢               | 12 星座  | 每 1 小時  |
-| `taipei-beef-noodles.json`  | Google Maps 台北市牛肉麵店 | 不一定   | 每 12 小時 |
+| `taipei-beef-noodles.json`  | Google Maps 台北市牛肉麵店 | 不一定   | 每 24 小時 |
 
 ## 📋 資料結構
 
