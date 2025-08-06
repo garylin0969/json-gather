@@ -2,6 +2,18 @@
 
 一個收集各種資料的 JSON API 專案。所有資料都已轉換為繁體中文，透過 GitHub Pages 提供免費的 RESTful API 服務。
 
+## 📑 目錄
+
+-   [🚀 快速開始](#快速開始)
+    -   [可用端點](#可用端點)
+-   [📋 資料結構](#資料結構)
+    -   [文案類資料](#文案類資料-搞笑文案騷話文案)
+    -   [星座運勢資料](#星座運勢資料)
+    -   [Google Maps 台北市牛肉麵店](#google-maps-台北市牛肉麵店)
+    -   [圖片資源](#圖片資源)
+-   [🔧 環境設定](#環境設定)
+    -   [Google Maps API Key 設定](#google-maps-api-key-設定)
+
 ## 🚀 快速開始
 
 基礎 URL：`https://garylin0969.github.io/json-gather/data/`
@@ -15,6 +27,7 @@
 | `love-copywriting.json`     | 愛情文案                   | 50 筆    | 每 6 小時 |
 | `horoscope.json`            | 當日星座運勢               | 12 星座  | 每 1 小時 |
 | `taipei-beef-noodles.json`  | Google Maps 台北市牛肉麵店 | 不一定   | 每 5 天   |
+| `images/gay/`               | 同志相關圖片               | 20 張    | 靜態檔案  |
 
 ## 📋 資料結構
 
@@ -157,6 +170,46 @@
     ]
 }
 ```
+
+### 圖片資源
+
+#### 同志相關圖片
+
+本專案提供同志相關的圖片資源，可透過以下方式存取：
+
+-   **目錄瀏覽**：`https://garylin0969.github.io/json-gather/data/images/gay/`
+-   **直接存取**：`https://garylin0969.github.io/json-gather/data/images/gay/gay1.jpg` 到 `gay20.jpg`
+
+> 📸 **使用方式**：您可以直接在網頁或應用程式中使用這些圖片 URL，無需額外授權。
+
+## 🔧 環境設定
+
+### Google Maps API Key 設定
+
+本專案使用 Google Places API 來抓取台北市牛肉麵店家資料。要讓此功能正常運作，您需要設定 `GOOGLE_MAPS_API_KEY` 環境變數。
+
+#### 設定步驟：
+
+1. **取得 Google Maps API Key**
+
+    - 前往 [Google Cloud Console](https://console.cloud.google.com/)
+    - 建立新專案或選擇現有專案
+    - 啟用 Places API 服務
+    - 在「憑證」頁面建立 API Key
+
+2. **在 GitHub 中設定 Secrets**
+
+    - 前往您的 GitHub 專案頁面
+    - 點擊 `Settings` 標籤
+    - 在左側選單中選擇 `Secrets and variables` → `Actions`
+    - 點擊 `New repository secret`
+    - 名稱輸入：`GOOGLE_MAPS_API_KEY`
+    - 值輸入：您的 Google Maps API Key
+    - 點擊 `Add secret` 儲存
+
+3. **驗證設定**
+    - 設定完成後，GitHub Actions 會自動使用此 API Key
+    - 您可以在 Actions 頁面查看執行日誌確認是否正常運作
 
 ---
 
