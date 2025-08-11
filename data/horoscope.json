@@ -1,10 +1,10 @@
 {
-  "updated": "2025-08-11T07:13:18.249Z",
-  "updateTime": "2025/8/11 下午3:13:18",
+  "updated": "2025-08-11T08:13:29.353Z",
+  "updateTime": "2025/8/11 下午4:13:29",
   "totalConstellations": 12,
   "successCount": 12,
   "failureCount": 0,
-  "processingTimeMs": 21312,
+  "processingTimeMs": 25687,
   "convertedToTraditional": true,
   "errors": [],
   "horoscopes": {
