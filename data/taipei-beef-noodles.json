@@ -1,8 +1,8 @@
 {
-  "updated": "2025-08-16T00:23:16.275Z",
-  "updateTime": "2025/8/16 上午8:23:16",
-  "totalShops": 514,
-  "processingTimeMs": 85729,
+  "updated": "2025-08-21T00:22:25.742Z",
+  "updateTime": "2025/8/21 上午8:22:25",
+  "totalShops": 525,
+  "processingTimeMs": 87926,
   "searchArea": {
     "northwest": {
       "lat": 25.15,
@@ -15,17 +15,17 @@
     "gridSizeKm": 1.2
   },
   "districtStats": {
-    "北投區": 46,
-    "士林區": 53,
-    "內湖區": 64,
-    "信義區": 39,
+    "北投區": 50,
+    "士林區": 54,
+    "信義區": 40,
+    "內湖區": 66,
+    "大同區": 22,
+    "中山區": 56,
     "大安區": 52,
-    "大同區": 23,
-    "中山區": 55,
-    "萬華區": 32,
-    "中正區": 43,
-    "松山區": 33,
+    "萬華區": 33,
+    "中正區": 44,
     "南港區": 34,
+    "松山區": 34,
     "文山區": 40
   },
   "errors": [],
@@ -34,23 +34,11 @@
       "id": "ChIJ-wpgilGuQjQR7Mrh0eSNPPk",
       "name": "吳家牛肉麵店",
       "rating": 4,
-      "userRatingCount": 6723,
+      "userRatingCount": 6729,
       "formattedAddress": "112028台灣台北市北投區中央北路一段224號",
       "location": {
         "latitude": 25.136264099999998,
         "longitude": 121.49706659999998
-      },
-      "district": "北投區"
-    },
-    {
-      "id": "ChIJ-wpgilGuQjQRSXGg9sH8RtY",
-      "name": "粟家牛肉麵 總店",
-      "rating": 4.2,
-      "userRatingCount": 3327,
-      "formattedAddress": "112台灣台北市北投區永興路一段2號",
-      "location": {
-        "latitude": 25.1386111,
-        "longitude": 121.4994444
       },
       "district": "北投區"
     },
@@ -63,6 +51,30 @@
       "location": {
         "latitude": 25.121254,
         "longitude": 121.467417
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJ-wpgilGuQjQRSXGg9sH8RtY",
+      "name": "粟家牛肉麵 總店 8/17開始重新裝潢中",
+      "rating": 4.2,
+      "userRatingCount": 3329,
+      "formattedAddress": "112台灣台北市北投區永興路一段2號",
+      "location": {
+        "latitude": 25.1386111,
+        "longitude": 121.4994444
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJO4RArFKuQjQRAEGO6vFi61U",
+      "name": "粟家牛肉麵 稻香店",
+      "rating": 3.9,
+      "userRatingCount": 1227,
+      "formattedAddress": "112台灣台北市北投區中央北路二段132號",
+      "location": {
+        "latitude": 25.1385467,
+        "longitude": 121.49156140000001
       },
       "district": "北投區"
     },
@@ -94,7 +106,7 @@
       "id": "ChIJj7sRkVKuQjQR0YJ0r6nJnE4",
       "name": "台北北投金春發牛肉店",
       "rating": 3.8,
-      "userRatingCount": 2469,
+      "userRatingCount": 2470,
       "formattedAddress": "112台灣台北市北投區中央北路二段169號",
       "location": {
         "latitude": 25.1376583,
@@ -106,7 +118,7 @@
       "id": "ChIJXT-0ilGuQjQRFyorcebpXXE",
       "name": "志明牛肉拉麵 北投總店",
       "rating": 4,
-      "userRatingCount": 4007,
+      "userRatingCount": 4013,
       "formattedAddress": "112台灣台北市北投區中央北路一段228巷3號",
       "location": {
         "latitude": 25.136365899999998,
@@ -130,7 +142,7 @@
       "id": "ChIJR_uEPVGuQjQRe_Y5C2BoFFI",
       "name": "一心餃子牛肉麵專賣店",
       "rating": 4.1,
-      "userRatingCount": 628,
+      "userRatingCount": 631,
       "formattedAddress": "11249台灣台北市北投區大同街43號",
       "location": {
         "latitude": 25.1332362,
@@ -139,34 +151,10 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJCZXP75quQjQRQDNxhOfkaPM",
-      "name": "忠誠牛肉麵",
-      "rating": 4.4,
-      "userRatingCount": 3895,
-      "formattedAddress": "111台灣台北市士林區德行東路80號",
-      "location": {
-        "latitude": 25.107327599999998,
-        "longitude": 121.5275642
-      },
-      "district": "士林區"
-    },
-    {
-      "id": "ChIJO4RArFKuQjQRAEGO6vFi61U",
-      "name": "粟家牛肉麵 稻香店",
-      "rating": 3.9,
-      "userRatingCount": 1226,
-      "formattedAddress": "112台灣台北市北投區中央北路二段132號",
-      "location": {
-        "latitude": 25.1385467,
-        "longitude": 121.49156140000001
-      },
-      "district": "北投區"
-    },
-    {
       "id": "ChIJB4toeVCuQjQRbaps880gcgo",
       "name": "山西刀削番茄牛肉麵",
       "rating": 4,
-      "userRatingCount": 1172,
+      "userRatingCount": 1174,
       "formattedAddress": "112台灣台北市北投區光明路142-1號",
       "location": {
         "latitude": 25.134249099999998,
@@ -178,7 +166,7 @@
       "id": "ChIJpQJme1GvQjQRlyu7FAvg1aU",
       "name": "肥滋滋牛肉麵專門店Fat Beef Noodles",
       "rating": 4.4,
-      "userRatingCount": 181,
+      "userRatingCount": 183,
       "formattedAddress": "No. 6號, 振華街北投區台北市台灣 112",
       "location": {
         "latitude": 25.1156981,
@@ -199,18 +187,6 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJfXbxu0-uQjQRX2zumepE6ZU",
-      "name": "北投36私房麵",
-      "rating": 4.5,
-      "userRatingCount": 420,
-      "formattedAddress": "112台灣台北市北投區雙全街36號",
-      "location": {
-        "latitude": 25.138506,
-        "longitude": 121.50092300000001
-      },
-      "district": "北投區"
-    },
-    {
       "id": "ChIJuQDGxlCuQjQRHPJfs9RNxu0",
       "name": "北投老又新牛肉麵",
       "rating": 4,
@@ -221,6 +197,42 @@
         "longitude": 121.50106699999999
       },
       "district": "北投區"
+    },
+    {
+      "id": "ChIJY72JsTmvQjQRV2clLitxzTc",
+      "name": "道品牛肉麵-士林牛肉麵推薦|人氣牛肉麵|必吃麵食|必吃牛肉麵|台灣美食|在地推薦餐廳|推薦乾拌麵|水餃推薦",
+      "rating": 4.8,
+      "userRatingCount": 643,
+      "formattedAddress": "111台灣台北市士林區後港街204號",
+      "location": {
+        "latitude": 25.088336599999998,
+        "longitude": 121.5206499
+      },
+      "district": "士林區"
+    },
+    {
+      "id": "ChIJfXbxu0-uQjQRX2zumepE6ZU",
+      "name": "北投36私房麵",
+      "rating": 4.5,
+      "userRatingCount": 421,
+      "formattedAddress": "112台灣台北市北投區雙全街36號",
+      "location": {
+        "latitude": 25.138506,
+        "longitude": 121.50092300000001
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJCZXP75quQjQRQDNxhOfkaPM",
+      "name": "忠誠牛肉麵",
+      "rating": 4.4,
+      "userRatingCount": 3907,
+      "formattedAddress": "111台灣台北市士林區德行東路80號",
+      "location": {
+        "latitude": 25.107327599999998,
+        "longitude": 121.5275642
+      },
+      "district": "士林區"
     },
     {
       "id": "ChIJ2cF6VFeuQjQRuFaFuJn6Z4E",
@@ -271,22 +283,10 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJY72JsTmvQjQRV2clLitxzTc",
-      "name": "道品牛肉麵-士林牛肉麵推薦|人氣牛肉麵|必吃麵食|必吃牛肉麵|台灣美食|在地推薦餐廳|推薦乾拌麵|水餃推薦",
-      "rating": 4.8,
-      "userRatingCount": 643,
-      "formattedAddress": "111台灣台北市士林區後港街204號",
-      "location": {
-        "latitude": 25.088336599999998,
-        "longitude": 121.5206499
-      },
-      "district": "士林區"
-    },
-    {
       "id": "ChIJ52d9G96tQjQR4K8KaFQLONM",
       "name": "牛肉拌麵 (8月12日至8月19日店休，暑假期間只營業到下午2: 30左右)",
       "rating": 4.4,
-      "userRatingCount": 1741,
+      "userRatingCount": 1742,
       "formattedAddress": "111台灣台北市士林區光華路26巷16之2號",
       "location": {
         "latitude": 25.137300399999997,
@@ -298,35 +298,11 @@
       "id": "ChIJrbHUdICuQjQRd4qMFMBG3dM",
       "name": "天東86牛肉麵-天母店",
       "rating": 4.5,
-      "userRatingCount": 964,
+      "userRatingCount": 966,
       "formattedAddress": "11153台灣台北市士林區天母東路86號",
       "location": {
         "latitude": 25.118066499999998,
         "longitude": 121.53563059999998
-      },
-      "district": "士林區"
-    },
-    {
-      "id": "ChIJPznQ4JquQjQR_ON-hNgO2kM",
-      "name": "江家牛肉麵永和豆漿(天母店)",
-      "rating": 3.9,
-      "userRatingCount": 1350,
-      "formattedAddress": "111台灣台北市士林區天母西路41巷2號",
-      "location": {
-        "latitude": 25.1187723,
-        "longitude": 121.5274795
-      },
-      "district": "士林區"
-    },
-    {
-      "id": "ChIJ577YAt6tQjQRprO8ctwMQ2g",
-      "name": "感恩麵店",
-      "rating": 4.2,
-      "userRatingCount": 1009,
-      "formattedAddress": "111台灣台北市士林區光華路26巷2弄4號",
-      "location": {
-        "latitude": 25.1375466,
-        "longitude": 121.54204879999999
       },
       "district": "士林區"
     },
@@ -343,28 +319,52 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJQ5LiMACtQjQRFys8mlYsisQ",
-      "name": "真極品 牛肉麵專賣店",
-      "rating": 5,
-      "userRatingCount": 1,
-      "formattedAddress": "114台灣台北市內湖區成功路五段69號1 樓",
+      "id": "ChIJ577YAt6tQjQRprO8ctwMQ2g",
+      "name": "感恩麵店",
+      "rating": 4.2,
+      "userRatingCount": 1009,
+      "formattedAddress": "111台灣台北市士林區光華路26巷2弄4號",
       "location": {
-        "latitude": 25.0740756,
-        "longitude": 121.60584850000001
+        "latitude": 25.1375466,
+        "longitude": 121.54204879999999
       },
-      "district": "內湖區"
+      "district": "士林區"
     },
     {
-      "id": "ChIJTdjw3q-uQjQRm307B9-JYpg",
-      "name": "文林原汁牛肉麵",
-      "rating": 4.1,
-      "userRatingCount": 565,
-      "formattedAddress": "112台灣台北市北投區文林北路70號",
+      "id": "ChIJqa1AGt6tQjQRrVloWmjQ9sI",
+      "name": "大紅袍麵店",
+      "rating": 4.4,
+      "userRatingCount": 282,
+      "formattedAddress": "111台灣台北市士林區光華路26巷3-3號號右半",
       "location": {
-        "latitude": 25.1051384,
-        "longitude": 121.51832060000001
+        "latitude": 25.1371878,
+        "longitude": 121.54179
       },
-      "district": "北投區"
+      "district": "士林區"
+    },
+    {
+      "id": "ChIJPznQ4JquQjQR_ON-hNgO2kM",
+      "name": "江家牛肉麵永和豆漿(天母店)",
+      "rating": 3.9,
+      "userRatingCount": 1351,
+      "formattedAddress": "111台灣台北市士林區天母西路41巷2號",
+      "location": {
+        "latitude": 25.1187723,
+        "longitude": 121.5274795
+      },
+      "district": "士林區"
+    },
+    {
+      "id": "ChIJ-8Luv4ivQjQRgTrJc2rruv8",
+      "name": "福利舍牛肉麵",
+      "rating": 4.4,
+      "userRatingCount": 90,
+      "formattedAddress": "111台灣台北市士林區天母東路50巷27號",
+      "location": {
+        "latitude": 25.1168184,
+        "longitude": 121.53317720000001
+      },
+      "district": "士林區"
     },
     {
       "id": "ChIJF5lyR4uuQjQRmKG4rqfANWI",
@@ -375,6 +375,30 @@
       "location": {
         "latitude": 25.122952599999998,
         "longitude": 121.52458709999999
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJT5Lgu7yrQjQR-4z6kZ30ZOc",
+      "name": "半島牛肉麵",
+      "rating": 4.8,
+      "userRatingCount": 14398,
+      "formattedAddress": "110台灣台北市信義區忠孝東路五段215巷23號",
+      "location": {
+        "latitude": 25.0419245,
+        "longitude": 121.57029109999999
+      },
+      "district": "信義區"
+    },
+    {
+      "id": "ChIJTdjw3q-uQjQRm307B9-JYpg",
+      "name": "文林原汁牛肉麵",
+      "rating": 4.1,
+      "userRatingCount": 566,
+      "formattedAddress": "112台灣台北市北投區文林北路70號",
+      "location": {
+        "latitude": 25.1051384,
+        "longitude": 121.51832060000001
       },
       "district": "北投區"
     },
@@ -403,34 +427,34 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJT5Lgu7yrQjQR-4z6kZ30ZOc",
-      "name": "半島牛肉麵",
-      "rating": 4.8,
-      "userRatingCount": 14295,
-      "formattedAddress": "110台灣台北市信義區忠孝東路五段215巷23號",
+      "id": "ChIJBXv1yICuQjQRpuS9q1GIe4c",
+      "name": "老地方牛肉麵-天母店",
+      "rating": 4.1,
+      "userRatingCount": 478,
+      "formattedAddress": "111台灣台北市士林區天母東路8巷21號",
       "location": {
-        "latitude": 25.0419245,
-        "longitude": 121.57029109999999
-      },
-      "district": "信義區"
-    },
-    {
-      "id": "ChIJ-8Luv4ivQjQRgTrJc2rruv8",
-      "name": "福利舍牛肉麵",
-      "rating": 4.4,
-      "userRatingCount": 90,
-      "formattedAddress": "111台灣台北市士林區天母東路50巷27號",
-      "location": {
-        "latitude": 25.1168184,
-        "longitude": 121.53317720000001
+        "latitude": 25.117383,
+        "longitude": 121.53190659999999
       },
       "district": "士林區"
+    },
+    {
+      "id": "ChIJQ5LiMACtQjQRFys8mlYsisQ",
+      "name": "真極品 牛肉麵專賣店",
+      "rating": 5,
+      "userRatingCount": 1,
+      "formattedAddress": "114台灣台北市內湖區成功路五段69號1 樓",
+      "location": {
+        "latitude": 25.0740756,
+        "longitude": 121.60584850000001
+      },
+      "district": "內湖區"
     },
     {
       "id": "ChIJq8V2Gu2sQjQR50VM57vCp7c",
       "name": "大得民牛肉麵館",
       "rating": 4.3,
-      "userRatingCount": 846,
+      "userRatingCount": 847,
       "formattedAddress": "111台灣台北市士林區至誠路二段19號",
       "location": {
         "latitude": 25.1020802,
@@ -442,7 +466,7 @@
       "id": "ChIJMxYcL8-vQjQR37t2S1gHJqg",
       "name": "天東86牛肉麵-士林店",
       "rating": 4.5,
-      "userRatingCount": 666,
+      "userRatingCount": 667,
       "formattedAddress": "111台灣台北市士林區文林路310號",
       "location": {
         "latitude": 25.0921149,
@@ -451,22 +475,10 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJL5QjRNurQjQRajrNGFKdLyM",
-      "name": "牛肉麵．雞湯",
-      "rating": 4.2,
-      "userRatingCount": 4069,
-      "formattedAddress": "106台灣台北市大安區敦化南路1段164號",
-      "location": {
-        "latitude": 25.043407199999997,
-        "longitude": 121.54857729999999
-      },
-      "district": "大安區"
-    },
-    {
       "id": "ChIJtTvGMgCtQjQRpW-yF51M_8M",
       "name": "小巷子清燉牛肉麵內湖店",
       "rating": 4.8,
-      "userRatingCount": 422,
+      "userRatingCount": 427,
       "formattedAddress": "114台灣台北市內湖區康樂街149號",
       "location": {
         "latitude": 25.07183,
@@ -475,14 +487,14 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJB0UNIACvQjQRdXZr0EqeB0E",
-      "name": "紅燈籠牛肉麵食館",
-      "rating": 4.1,
-      "userRatingCount": 87,
-      "formattedAddress": "111台灣台北市士林區忠義街78巷3號",
+      "id": "ChIJmfAO5siuQjQRU6j6WgP6x1c",
+      "name": "林江牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 656,
+      "formattedAddress": "111台灣台北市士林區社中街130號",
       "location": {
-        "latitude": 25.1062585,
-        "longitude": 121.53161649999998
+        "latitude": 25.0901234,
+        "longitude": 121.51024899999999
       },
       "district": "士林區"
     },
@@ -499,18 +511,6 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJRZgFyISpQjQRRZbdVCIDgNQ",
-      "name": "林記牛肉麵",
-      "rating": 4.7,
-      "userRatingCount": 961,
-      "formattedAddress": "103台灣台北市大同區延平北路三段26號",
-      "location": {
-        "latitude": 25.064199,
-        "longitude": 121.51104500000001
-      },
-      "district": "大同區"
-    },
-    {
       "id": "ChIJ6_hmkKetQjQR85Cig3xHHHM",
       "name": "北雙寶牛肉麵",
       "rating": 4.5,
@@ -523,10 +523,22 @@
       "district": "士林區"
     },
     {
+      "id": "ChIJRZgFyISpQjQRRZbdVCIDgNQ",
+      "name": "林記牛肉麵",
+      "rating": 4.7,
+      "userRatingCount": 977,
+      "formattedAddress": "103台灣台北市大同區延平北路三段26號",
+      "location": {
+        "latitude": 25.064199,
+        "longitude": 121.51104500000001
+      },
+      "district": "大同區"
+    },
+    {
       "id": "ChIJyxH_ZwCtQjQRnJxdRb2W5Gw",
       "name": "金湖375 牛肉麵店",
       "rating": 4.2,
-      "userRatingCount": 109,
+      "userRatingCount": 110,
       "formattedAddress": "114台灣台北市內湖區金湖路375號",
       "location": {
         "latitude": 25.07336,
@@ -537,8 +549,8 @@
     {
       "id": "ChIJRz3JQ9mrQjQR3gS-aReMoWU",
       "name": "林東芳牛肉麵",
-      "rating": 3.9,
-      "userRatingCount": 12021,
+      "rating": 3.8,
+      "userRatingCount": 12031,
       "formattedAddress": "104台灣台北市中山區八德路二段322號",
       "location": {
         "latitude": 25.047252399999998,
@@ -547,34 +559,34 @@
       "district": "中山區"
     },
     {
-      "id": "ChIJBXv1yICuQjQRpuS9q1GIe4c",
-      "name": "老地方牛肉麵-天母店",
-      "rating": 4.1,
-      "userRatingCount": 477,
-      "formattedAddress": "111台灣台北市士林區天母東路8巷21號",
+      "id": "ChIJN_o0NgCtQjQRifsaP2mlQgg",
+      "name": "銀月牛肉麵",
+      "rating": 4.9,
+      "userRatingCount": 13,
+      "formattedAddress": "114台灣台北市內湖區內湖路一段285號2樓",
       "location": {
-        "latitude": 25.117383,
-        "longitude": 121.53190659999999
+        "latitude": 25.0824173,
+        "longitude": 121.56649449999999
       },
-      "district": "士林區"
+      "district": "內湖區"
     },
     {
-      "id": "ChIJs8O4umWpQjQR7Ff1VT7As7Y",
-      "name": "郁誠牛肉麵",
-      "rating": 4.4,
-      "userRatingCount": 825,
-      "formattedAddress": "104台灣台北市中山區中山北路二段116巷2-7號",
+      "id": "ChIJN6JwEI-pQjQRaPg1dV1Y2pk",
+      "name": "湯神—頂級和牛牛肉麵",
+      "rating": 4.6,
+      "userRatingCount": 1734,
+      "formattedAddress": "106台灣台北市大安區八德路二段11號",
       "location": {
-        "latitude": 25.060791,
-        "longitude": 121.52198599999998
+        "latitude": 25.044603,
+        "longitude": 121.533443
       },
-      "district": "中山區"
+      "district": "大安區"
     },
     {
       "id": "ChIJB7Vv6M6uQjQRJdr4VDzkXSQ",
       "name": "延平牛肉麵",
       "rating": 4,
-      "userRatingCount": 827,
+      "userRatingCount": 829,
       "formattedAddress": "111台灣台北市士林區延平北路六段150巷1號",
       "location": {
         "latitude": 25.0896641,
@@ -595,34 +607,34 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJmfAO5siuQjQRU6j6WgP6x1c",
-      "name": "林江牛肉麵",
-      "rating": 4.3,
-      "userRatingCount": 656,
-      "formattedAddress": "111台灣台北市士林區社中街130號",
+      "id": "ChIJ13TOiMarQjQRGCtxcxV5rUo",
+      "name": "清真中國牛肉麵食館 (大安)",
+      "rating": 4.2,
+      "userRatingCount": 3431,
+      "formattedAddress": "106台灣台北市大安區延吉街137巷7弄1號",
       "location": {
-        "latitude": 25.0901234,
-        "longitude": 121.51024899999999
-      },
-      "district": "士林區"
-    },
-    {
-      "id": "ChIJN6JwEI-pQjQRaPg1dV1Y2pk",
-      "name": "湯神—頂級和牛牛肉麵",
-      "rating": 4.6,
-      "userRatingCount": 1732,
-      "formattedAddress": "106台灣台北市大安區八德路二段11號",
-      "location": {
-        "latitude": 25.044603,
-        "longitude": 121.533443
+        "latitude": 25.0420706,
+        "longitude": 121.55495659999998
       },
       "district": "大安區"
+    },
+    {
+      "id": "ChIJyyPBxLSrQjQRxOYJuEShsKg",
+      "name": "穆記牛肉麵",
+      "rating": 4,
+      "userRatingCount": 3434,
+      "formattedAddress": "110台灣台北市信義區吳興街239號",
+      "location": {
+        "latitude": 25.0274987,
+        "longitude": 121.56347199999999
+      },
+      "district": "信義區"
     },
     {
       "id": "ChIJVQ6MEe2sQjQRajsR5ajz0uo",
       "name": "牛肉麵舖子",
       "rating": 3.7,
-      "userRatingCount": 1137,
+      "userRatingCount": 1138,
       "formattedAddress": "114台灣台北市內湖區成功路四段212號",
       "location": {
         "latitude": 25.084510899999998,
@@ -634,7 +646,7 @@
       "id": "ChIJoQnu0W6sQjQRpK9sKZ2-S7c",
       "name": "牛耳精緻麵館",
       "rating": 4.2,
-      "userRatingCount": 2082,
+      "userRatingCount": 2081,
       "formattedAddress": "114台灣台北市內湖區內湖路一段323巷16弄2號",
       "location": {
         "latitude": 25.083550799999998,
@@ -646,7 +658,7 @@
       "id": "ChIJux-SCFqpQjQR9xDFoWfvI-w",
       "name": "老外一品牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 1106,
+      "userRatingCount": 1107,
       "formattedAddress": "10491台灣台北市中山區吉林路403號",
       "location": {
         "latitude": 25.065956699999997,
@@ -657,8 +669,8 @@
     {
       "id": "ChIJ7XZhmV2pQjQRgP1HOd75EvM",
       "name": "廖家牛肉麵",
-      "rating": 3.9,
-      "userRatingCount": 2068,
+      "rating": 4,
+      "userRatingCount": 2069,
       "formattedAddress": "104台灣台北市中山區中原街41號",
       "location": {
         "latitude": 25.056995699999998,
@@ -667,10 +679,22 @@
       "district": "中山區"
     },
     {
+      "id": "ChIJsSC8HAmpQjQR7uCNzzunDRw",
+      "name": "老山東牛肉麵",
+      "rating": 4,
+      "userRatingCount": 4626,
+      "formattedAddress": "108台灣台北市萬華區西寧南路70號B1之15室",
+      "location": {
+        "latitude": 25.0435797,
+        "longitude": 121.5060857
+      },
+      "district": "萬華區"
+    },
+    {
       "id": "ChIJL2O5Z1KuQjQR53UIuXnHYB8",
       "name": "河南手工扯麵",
       "rating": 4.3,
-      "userRatingCount": 676,
+      "userRatingCount": 677,
       "formattedAddress": "112台灣台北市北投區中央北路四段392號",
       "location": {
         "latitude": 25.129794099999998,
@@ -703,26 +727,38 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJqa1AGt6tQjQRrVloWmjQ9sI",
-      "name": "大紅袍麵店",
-      "rating": 4.4,
-      "userRatingCount": 282,
-      "formattedAddress": "111台灣台北市士林區光華路26巷3-3號號右半",
+      "id": "ChIJxT54hmKvQjQRyEf7KYJIkS8",
+      "name": "酒米食堂chumi_canteen－北投店beitou",
+      "rating": 4.9,
+      "userRatingCount": 3524,
+      "formattedAddress": "112台灣台北市北投區永興路一段47號",
       "location": {
-        "latitude": 25.1371878,
-        "longitude": 121.54179
+        "latitude": 25.139529399999997,
+        "longitude": 121.50047959999999
       },
-      "district": "士林區"
+      "district": "北投區"
     },
     {
-      "id": "ChIJPznQ4JquQjQRpsvLIYwc8ig",
-      "name": "黃家牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 569,
-      "formattedAddress": "111台灣台北市士林區德行東路103號",
+      "id": "ChIJBwrtfGevQjQR-SokjjCpYzw",
+      "name": "川窄巷食堂",
+      "rating": 4.2,
+      "userRatingCount": 140,
+      "formattedAddress": "112台灣台北市北投區大同街9號",
       "location": {
-        "latitude": 25.107747999999997,
-        "longitude": 121.52813959999997
+        "latitude": 25.1326952,
+        "longitude": 121.4992764
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJBY62DjetQjQRBsi9_MF_nbM",
+      "name": "蕭家牛肉-德東店",
+      "rating": 4.4,
+      "userRatingCount": 350,
+      "formattedAddress": "111台灣台北市士林區德行東路331巷50弄9號",
+      "location": {
+        "latitude": 25.112233,
+        "longitude": 121.53845299999999
       },
       "district": "士林區"
     },
@@ -739,14 +775,14 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJBY62DjetQjQRBsi9_MF_nbM",
-      "name": "蕭家牛肉-德東店",
-      "rating": 4.4,
-      "userRatingCount": 350,
-      "formattedAddress": "111台灣台北市士林區德行東路331巷50弄9號",
+      "id": "ChIJPznQ4JquQjQRpsvLIYwc8ig",
+      "name": "黃家牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 569,
+      "formattedAddress": "111台灣台北市士林區德行東路103號",
       "location": {
-        "latitude": 25.112233,
-        "longitude": 121.53845299999999
+        "latitude": 25.107747999999997,
+        "longitude": 121.52813959999997
       },
       "district": "士林區"
     },
@@ -766,7 +802,7 @@
       "id": "ChIJC9bmhw6pQjQRMzLaT4VIVCo",
       "name": "富宏牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 20237,
+      "userRatingCount": 20269,
       "formattedAddress": "108台灣台北市萬華區洛陽街67號",
       "location": {
         "latitude": 25.0476197,
@@ -778,7 +814,7 @@
       "id": "ChIJubVE0QypQjQR_SbZicsVSxA",
       "name": "劉山東小吃店",
       "rating": 4,
-      "userRatingCount": 10557,
+      "userRatingCount": 10568,
       "formattedAddress": "100台灣台北市中正區開封街一段14巷2號",
       "location": {
         "latitude": 25.0457149,
@@ -787,22 +823,22 @@
       "district": "中正區"
     },
     {
-      "id": "ChIJ97I3hw6pQjQRi8Xn6RLhbms",
-      "name": "小吳牛肉麵",
+      "id": "ChIJL5QjRNurQjQRajrNGFKdLyM",
+      "name": "牛肉麵．雞湯",
       "rating": 4.2,
-      "userRatingCount": 5191,
-      "formattedAddress": "108台灣台北市萬華區洛陽街45-11號",
+      "userRatingCount": 4076,
+      "formattedAddress": "106台灣台北市大安區敦化南路1段164號",
       "location": {
-        "latitude": 25.047628399999997,
-        "longitude": 121.508326
+        "latitude": 25.043407199999997,
+        "longitude": 121.54857729999999
       },
-      "district": "萬華區"
+      "district": "大安區"
     },
     {
       "id": "ChIJt_-mmfOpQjQRxCF22lb5vsU",
       "name": "小巷子清燉牛肉麵四平店",
       "rating": 4.7,
-      "userRatingCount": 882,
+      "userRatingCount": 893,
       "formattedAddress": "104472台灣台北市中山區四平街40號",
       "location": {
         "latitude": 25.0535994,
@@ -811,10 +847,22 @@
       "district": "中山區"
     },
     {
+      "id": "ChIJ97I3hw6pQjQRi8Xn6RLhbms",
+      "name": "小吳牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 5204,
+      "formattedAddress": "108台灣台北市萬華區洛陽街45-11號",
+      "location": {
+        "latitude": 25.047628399999997,
+        "longitude": 121.508326
+      },
+      "district": "萬華區"
+    },
+    {
       "id": "ChIJaT1LSQyrQjQRuwSWPuHkyvw",
       "name": "政武牛肉麵 ZhengWu Beef Noodles",
       "rating": 4.7,
-      "userRatingCount": 881,
+      "userRatingCount": 883,
       "formattedAddress": "106台灣台北市大安區大安路一段75巷21號",
       "location": {
         "latitude": 25.0422413,
@@ -826,7 +874,7 @@
       "id": "ChIJmwLREXypQjQRzR_a1t8dy6c",
       "name": "濟南牛肉麵",
       "rating": 4.4,
-      "userRatingCount": 2507,
+      "userRatingCount": 2514,
       "formattedAddress": "100台灣台北市中正區濟南路二段60之3號",
       "location": {
         "latitude": 25.0401419,
@@ -838,7 +886,7 @@
       "id": "ChIJHwhqZQ6pQjQRotxy6EI5PHE",
       "name": "采宏牛肉麵-原建宏牛肉麵",
       "rating": 3.7,
-      "userRatingCount": 8965,
+      "userRatingCount": 8967,
       "formattedAddress": "108台灣台北市萬華區西寧南路27號",
       "location": {
         "latitude": 25.0478727,
@@ -850,7 +898,7 @@
       "id": "ChIJz5YKzDCqQjQR_4KXeLpvQz8",
       "name": "老宋記真善美牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 4070,
+      "userRatingCount": 4072,
       "formattedAddress": "106台灣台北市大安區安居街47號",
       "location": {
         "latitude": 25.0199052,
@@ -859,70 +907,10 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJrbAQt12pQjQR4qwLC-rCh_8",
-      "name": "史記正宗牛肉麵",
-      "rating": 3.9,
-      "userRatingCount": 2013,
-      "formattedAddress": "10491台灣台北市中山區四平街19號",
-      "location": {
-        "latitude": 25.0537444,
-        "longitude": 121.53113689999999
-      },
-      "district": "中山區"
-    },
-    {
-      "id": "ChIJSzyDUAipQjQRPLcYN7ta84k",
-      "name": "牛店精燉牛肉麵",
-      "rating": 4.3,
-      "userRatingCount": 3839,
-      "formattedAddress": "108台灣台北市萬華區昆明街91號",
-      "location": {
-        "latitude": 25.0425424,
-        "longitude": 121.50485049999997
-      },
-      "district": "萬華區"
-    },
-    {
-      "id": "ChIJS67Q4E6rQjQRnRLhmhlrRiY",
-      "name": "牛莊園牛肉麵",
-      "rating": 4.5,
-      "userRatingCount": 1452,
-      "formattedAddress": "106台灣台北市大安區四維路170巷27號",
-      "location": {
-        "latitude": 25.0283199,
-        "longitude": 121.54684780000001
-      },
-      "district": "大安區"
-    },
-    {
-      "id": "ChIJTf4YkI2sQjQRIjDBJz27v_4",
-      "name": "通化老師傅牛雜湯/牛肉麵",
-      "rating": 4.1,
-      "userRatingCount": 896,
-      "formattedAddress": "114台灣台北市內湖區康寧路一段93號",
-      "location": {
-        "latitude": 25.0797222,
-        "longitude": 121.59333330000001
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJY1C9vxitQjQR2vYKLi9DZV4",
-      "name": "桃花源記牛肉麵專門店",
-      "rating": 4.7,
-      "userRatingCount": 681,
-      "formattedAddress": "11483台灣台北市內湖區民權東路六段217號",
-      "location": {
-        "latitude": 25.067049299999997,
-        "longitude": 121.5998574
-      },
-      "district": "內湖區"
-    },
-    {
       "id": "ChIJv0owQG2vQjQRnXRKTsCh580",
       "name": "小廚川味牛肉麵",
       "rating": 3.8,
-      "userRatingCount": 255,
+      "userRatingCount": 256,
       "formattedAddress": "112台灣台北市北投區知行路317號",
       "location": {
         "latitude": 25.122424300000002,
@@ -946,23 +934,11 @@
       "id": "ChIJQTWoOG2vQjQRIHKmnm-80_E",
       "name": "林董山西蕃茄牛肉刀削麵",
       "rating": 4.1,
-      "userRatingCount": 797,
+      "userRatingCount": 798,
       "formattedAddress": "112台灣台北市北投區知行路304號",
       "location": {
         "latitude": 25.122242699999997,
         "longitude": 121.46737689999999
-      },
-      "district": "北投區"
-    },
-    {
-      "id": "ChIJOyhkPG2vQjQR2KcGlecP-HA",
-      "name": "佳佳小吃店",
-      "rating": 4,
-      "userRatingCount": 351,
-      "formattedAddress": "112台灣台北市北投區知行路289號",
-      "location": {
-        "latitude": 25.1217089,
-        "longitude": 121.46725339999999
       },
       "district": "北投區"
     },
@@ -982,11 +958,23 @@
       "id": "ChIJ13tPQ22vQjQRUKn75KESXAU",
       "name": "厚恩創意拉麵",
       "rating": 4.5,
-      "userRatingCount": 368,
+      "userRatingCount": 369,
       "formattedAddress": "112台灣台北市北投區大度路三段221號",
       "location": {
         "latitude": 25.1226482,
         "longitude": 121.46755950000001
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJ1UsMam2vQjQR015J_8pqr6A",
+      "name": "關渡禚(ㄓㄨㄛˊ)家餃子館",
+      "rating": 3.9,
+      "userRatingCount": 1044,
+      "formattedAddress": "112台灣台北市北投區知行路321號",
+      "location": {
+        "latitude": 25.1225022,
+        "longitude": 121.46702409999999
       },
       "district": "北投區"
     },
@@ -1006,7 +994,7 @@
       "id": "ChIJedK2R_KuQjQRtUtqfGEK28Y",
       "name": "美華閣湯包麵食館",
       "rating": 4.2,
-      "userRatingCount": 196,
+      "userRatingCount": 197,
       "formattedAddress": "112台灣台北市北投區大興街58號",
       "location": {
         "latitude": 25.1304604,
@@ -1015,26 +1003,26 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJBwrtfGevQjQR-SokjjCpYzw",
-      "name": "川窄巷食堂",
-      "rating": 4.2,
-      "userRatingCount": 139,
-      "formattedAddress": "112台灣台北市北投區大同街9號",
-      "location": {
-        "latitude": 25.1326952,
-        "longitude": 121.4992764
-      },
-      "district": "北投區"
-    },
-    {
       "id": "ChIJsXJrioyuQjQRuSE620eonkw",
       "name": "麗華古早味麵攤",
       "rating": 4.1,
-      "userRatingCount": 588,
+      "userRatingCount": 589,
       "formattedAddress": "112台灣台北市北投區裕民三路",
       "location": {
         "latitude": 25.115967200000004,
         "longitude": 121.51688399999999
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJocvInfGuQjQRLzqNUZtBIcU",
+      "name": "福記(張)刀削麵",
+      "rating": 4.2,
+      "userRatingCount": 716,
+      "formattedAddress": "112台灣台北市北投區尊賢街254號",
+      "location": {
+        "latitude": 25.117163599999998,
+        "longitude": 121.5072783
       },
       "district": "北投區"
     },
@@ -1078,7 +1066,7 @@
       "id": "ChIJ2VpInIeuQjQRQfGwrU7Aj7U",
       "name": "一品山西刀削麵之家",
       "rating": 4.1,
-      "userRatingCount": 1269,
+      "userRatingCount": 1270,
       "formattedAddress": "111台灣台北市士林區天玉街3號",
       "location": {
         "latitude": 25.120035899999998,
@@ -1123,34 +1111,10 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJN_o0NgCtQjQRifsaP2mlQgg",
-      "name": "銀月牛肉麵",
-      "rating": 4.6,
-      "userRatingCount": 14,
-      "formattedAddress": "114台灣台北市內湖區內湖路一段285號2樓",
-      "location": {
-        "latitude": 25.0824173,
-        "longitude": 121.56649449999999
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJrdw2UU-pQjQRQvW1fN-D5dk",
-      "name": "難得一面 Beef noodles- 青花椒/大紅袍、超濃蕃茄、麻辣牛肉麵/乾拌麵，重磅蛤蜊麵",
-      "rating": 4.7,
-      "userRatingCount": 343,
-      "formattedAddress": "10446台灣台北市中山區中山北路二段59巷41弄3號",
-      "location": {
-        "latitude": 25.056006600000003,
-        "longitude": 121.5245006
-      },
-      "district": "中山區"
-    },
-    {
       "id": "ChIJW_WuWQCtQjQRYCfdTkVMzcM",
       "name": "湖光原汁牛肉麵",
       "rating": 3.5,
-      "userRatingCount": 184,
+      "userRatingCount": 185,
       "formattedAddress": "114台灣台北市內湖區康寧路一段53號",
       "location": {
         "latitude": 25.080390599999998,
@@ -1159,50 +1123,14 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJiUiGkY2sQjQR4Ju99FE_lmI",
-      "name": "大佳牛雜湯",
-      "rating": 4.5,
-      "userRatingCount": 964,
-      "formattedAddress": "114台灣台北市內湖區康寧路一段108號",
+      "id": "ChIJP8ONAO2uQjQRtTlFZuj1km8",
+      "name": "阿亮小吃",
+      "rating": 4.7,
+      "userRatingCount": 2581,
+      "formattedAddress": "112台灣台北市北投區承德路七段98號",
       "location": {
-        "latitude": 25.0795654,
-        "longitude": 121.59323609999998
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJ1UsMam2vQjQR015J_8pqr6A",
-      "name": "關渡禚(ㄓㄨㄛˊ)家餃子館",
-      "rating": 3.9,
-      "userRatingCount": 1042,
-      "formattedAddress": "112台灣台北市北投區知行路321號",
-      "location": {
-        "latitude": 25.1225022,
-        "longitude": 121.46702409999999
-      },
-      "district": "北投區"
-    },
-    {
-      "id": "ChIJocvInfGuQjQRLzqNUZtBIcU",
-      "name": "福記(張)刀削麵",
-      "rating": 4.2,
-      "userRatingCount": 716,
-      "formattedAddress": "112台灣台北市北投區尊賢街254號",
-      "location": {
-        "latitude": 25.117163599999998,
-        "longitude": 121.5072783
-      },
-      "district": "北投區"
-    },
-    {
-      "id": "ChIJZd6vPnWvQjQRdpnEqnFnUgE",
-      "name": "廖家牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 166,
-      "formattedAddress": "112台灣台北市北投區自強街158號",
-      "location": {
-        "latitude": 25.111015199999997,
-        "longitude": 121.5166787
+        "latitude": 25.11195,
+        "longitude": 121.51030300000001
       },
       "district": "北投區"
     },
@@ -1219,6 +1147,18 @@
       "district": "北投區"
     },
     {
+      "id": "ChIJr4MewIyuQjQRG5x_ZY8NIhk",
+      "name": "麵面俱到麵館 石牌店",
+      "rating": 3.8,
+      "userRatingCount": 966,
+      "formattedAddress": "112台灣台北市北投區石牌路二段33號",
+      "location": {
+        "latitude": 25.116032999999998,
+        "longitude": 121.51557599999998
+      },
+      "district": "北投區"
+    },
+    {
       "id": "ChIJT0pFY_KuQjQRr3Y6cp9lKK4",
       "name": "山東姥姥麵食",
       "rating": 3.9,
@@ -1231,14 +1171,14 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJr4MewIyuQjQRG5x_ZY8NIhk",
-      "name": "麵面俱到麵館 石牌店",
-      "rating": 3.8,
-      "userRatingCount": 967,
-      "formattedAddress": "112台灣台北市北投區石牌路二段33號",
+      "id": "ChIJZd6vPnWvQjQRdpnEqnFnUgE",
+      "name": "廖家牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 167,
+      "formattedAddress": "112台灣台北市北投區自強街158號",
       "location": {
-        "latitude": 25.116032999999998,
-        "longitude": 121.51557599999998
+        "latitude": 25.111015199999997,
+        "longitude": 121.5166787
       },
       "district": "北投區"
     },
@@ -1251,6 +1191,18 @@
       "location": {
         "latitude": 25.1145978,
         "longitude": 121.5149868
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJRxfsJvKuQjQRwp3fRnHpgGY",
+      "name": "存嘉的店",
+      "rating": 4.4,
+      "userRatingCount": 149,
+      "formattedAddress": "112台灣台北市北投區尊賢街206巷11號",
+      "location": {
+        "latitude": 25.1155692,
+        "longitude": 121.50876299999999
       },
       "district": "北投區"
     },
@@ -1279,28 +1231,88 @@
       "district": "北投區"
     },
     {
-      "id": "ChIJo-upHYOuQjQRWvvr6pNH88I",
-      "name": "好食在",
-      "rating": 4.3,
-      "userRatingCount": 233,
-      "formattedAddress": "111台灣台北市士林區德行東路214號",
+      "id": "ChIJe3dUdJCuQjQRQHEUM5kDAWk",
+      "name": "彈芽麵",
+      "rating": 4.1,
+      "userRatingCount": 3264,
+      "formattedAddress": "112台灣台北市北投區裕民一路40巷15號",
       "location": {
-        "latitude": 25.108952,
-        "longitude": 121.5323202
+        "latitude": 25.116014999999997,
+        "longitude": 121.51789769999999
+      },
+      "district": "北投區"
+    },
+    {
+      "id": "ChIJB0UNIACvQjQRdXZr0EqeB0E",
+      "name": "紅燈籠牛肉麵食館",
+      "rating": 4.1,
+      "userRatingCount": 88,
+      "formattedAddress": "111台灣台北市士林區忠義街78巷3號",
+      "location": {
+        "latitude": 25.1062585,
+        "longitude": 121.53161649999998
       },
       "district": "士林區"
     },
     {
-      "id": "ChIJ7RYZytOrQjQRMn0J-DXtnUk",
-      "name": "老楊在二樓 私廚牛肉麵",
-      "rating": 4.5,
-      "userRatingCount": 220,
-      "formattedAddress": "105台灣台北市松山區新中街9號二樓",
+      "id": "ChIJyelJTCavQjQRVS1lpjxGqPM",
+      "name": "璦廚雞湯.牛肉麵",
+      "rating": 4.4,
+      "userRatingCount": 256,
+      "formattedAddress": "11447台灣台北市內湖區港墘路61號",
       "location": {
-        "latitude": 25.0576451,
-        "longitude": 121.5605063
+        "latitude": 25.0812518,
+        "longitude": 121.57830399999997
       },
-      "district": "松山區"
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJTf4YkI2sQjQRIjDBJz27v_4",
+      "name": "通化老師傅牛雜湯/牛肉麵",
+      "rating": 4.1,
+      "userRatingCount": 896,
+      "formattedAddress": "114台灣台北市內湖區康寧路一段93號",
+      "location": {
+        "latitude": 25.0797222,
+        "longitude": 121.59333330000001
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJiUiGkY2sQjQR4Ju99FE_lmI",
+      "name": "大佳牛雜湯",
+      "rating": 4.5,
+      "userRatingCount": 965,
+      "formattedAddress": "114台灣台北市內湖區康寧路一段108號",
+      "location": {
+        "latitude": 25.0795654,
+        "longitude": 121.59323609999998
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJwU6Nmc-uQjQR5-9O10nyVk4",
+      "name": "張牛肉麵水餃｜社子美食｜滷肉飯｜雞肉飯｜家常小吃",
+      "rating": 3.8,
+      "userRatingCount": 149,
+      "formattedAddress": "111台灣台北市士林區社中街328號",
+      "location": {
+        "latitude": 25.092352599999998,
+        "longitude": 121.5049716
+      },
+      "district": "士林區"
+    },
+    {
+      "id": "ChIJge7kve2uQjQR-ltaiHBYt4U",
+      "name": "滷三塊五花肉飯",
+      "rating": 4.1,
+      "userRatingCount": 4359,
+      "formattedAddress": "112台灣台北市北投區承德路七段100號",
+      "location": {
+        "latitude": 25.1119909,
+        "longitude": 121.51027900000001
+      },
+      "district": "北投區"
     },
     {
       "id": "ChIJUcoph5CuQjQRUFXkBGn5LAc",
@@ -1339,16 +1351,52 @@
       "district": "士林區"
     },
     {
+      "id": "ChIJo-upHYOuQjQRWvvr6pNH88I",
+      "name": "好食在",
+      "rating": 4.3,
+      "userRatingCount": 233,
+      "formattedAddress": "111台灣台北市士林區德行東路214號",
+      "location": {
+        "latitude": 25.108952,
+        "longitude": 121.5323202
+      },
+      "district": "士林區"
+    },
+    {
       "id": "ChIJYRbuUqOuQjQRx27doPZn6qg",
       "name": "牛有廖Beefull士林店",
       "rating": 3.9,
-      "userRatingCount": 1086,
+      "userRatingCount": 1088,
       "formattedAddress": "111台灣台北市士林區美德街16巷8號",
       "location": {
         "latitude": 25.094370400000003,
         "longitude": 121.5257114
       },
       "district": "士林區"
+    },
+    {
+      "id": "ChIJMeDWVLyuQjQRGjURsnRUIgI",
+      "name": "四川台師傅牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 241,
+      "formattedAddress": "111台灣台北市士林區美崙街50號",
+      "location": {
+        "latitude": 25.097183599999997,
+        "longitude": 121.5225052
+      },
+      "district": "士林區"
+    },
+    {
+      "id": "ChIJs8O4umWpQjQR7Ff1VT7As7Y",
+      "name": "郁誠牛肉麵",
+      "rating": 4.4,
+      "userRatingCount": 826,
+      "formattedAddress": "104台灣台北市中山區中山北路二段116巷2-7號",
+      "location": {
+        "latitude": 25.060791,
+        "longitude": 121.52198599999998
+      },
+      "district": "中山區"
     },
     {
       "id": "ChIJVbXrKgCtQjQRSyVIG61AjnY",
@@ -1387,10 +1435,22 @@
       "district": "內湖區"
     },
     {
+      "id": "ChIJW14pbe2sQjQR19UcH88g7nk",
+      "name": "老又新牛肉麵（內湖店）",
+      "rating": 3.9,
+      "userRatingCount": 586,
+      "formattedAddress": "114台灣台北市內湖區成功路四段204號",
+      "location": {
+        "latitude": 25.084438,
+        "longitude": 121.59555220000001
+      },
+      "district": "內湖區"
+    },
+    {
       "id": "ChIJRcR3MWOsQjQRLLKNe8c9Fqw",
       "name": "牛閣精緻麵館-內科店",
       "rating": 4.5,
-      "userRatingCount": 775,
+      "userRatingCount": 776,
       "formattedAddress": "114台灣台北市內湖區江南街71巷16弄74號",
       "location": {
         "latitude": 25.076218500000003,
@@ -1411,14 +1471,14 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJW14pbe2sQjQR19UcH88g7nk",
-      "name": "老又新牛肉麵（內湖店）",
-      "rating": 3.9,
-      "userRatingCount": 586,
-      "formattedAddress": "114台灣台北市內湖區成功路四段204號",
+      "id": "ChIJY1C9vxitQjQR2vYKLi9DZV4",
+      "name": "桃花源記牛肉麵專門店",
+      "rating": 4.7,
+      "userRatingCount": 684,
+      "formattedAddress": "11483台灣台北市內湖區民權東路六段217號",
       "location": {
-        "latitude": 25.084438,
-        "longitude": 121.59555220000001
+        "latitude": 25.067049299999997,
+        "longitude": 121.5998574
       },
       "district": "內湖區"
     },
@@ -1435,6 +1495,30 @@
       "district": "內湖區"
     },
     {
+      "id": "ChIJP5As_MWrQjQRsk1gm6PGb6w",
+      "name": "牛爸爸牛肉麵",
+      "rating": 4.1,
+      "userRatingCount": 772,
+      "formattedAddress": "114台灣台北市內湖區民權東路六段149號一樓",
+      "location": {
+        "latitude": 25.0690383,
+        "longitude": 121.594506
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJKa-J5CytQjQRCYb_Kjef9AQ",
+      "name": "江南牛肉麵",
+      "rating": 4.6,
+      "userRatingCount": 98,
+      "formattedAddress": "114台灣台北市內湖區內湖路一段437巷4弄4號",
+      "location": {
+        "latitude": 25.0817052,
+        "longitude": 121.5718999
+      },
+      "district": "內湖區"
+    },
+    {
       "id": "ChIJHyhAlIitQjQRU-qnxn0DUy4",
       "name": "鄧家牛肉麵內湖店",
       "rating": 4,
@@ -1447,22 +1531,10 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJP5As_MWrQjQRsk1gm6PGb6w",
-      "name": "牛爸爸牛肉麵",
-      "rating": 4.1,
-      "userRatingCount": 771,
-      "formattedAddress": "114台灣台北市內湖區民權東路六段149號一樓",
-      "location": {
-        "latitude": 25.0690383,
-        "longitude": 121.594506
-      },
-      "district": "內湖區"
-    },
-    {
       "id": "ChIJ-Qzi_basQjQRMcLZ4jnpGgQ",
       "name": "大富牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 398,
+      "userRatingCount": 399,
       "formattedAddress": "114台灣台北市內湖區康樂街133號",
       "location": {
         "latitude": 25.073928799999997,
@@ -1479,18 +1551,6 @@
       "location": {
         "latitude": 25.0907181,
         "longitude": 121.5012532
-      },
-      "district": "士林區"
-    },
-    {
-      "id": "ChIJwU6Nmc-uQjQR5-9O10nyVk4",
-      "name": "張牛肉麵水餃｜社子美食｜滷肉飯｜雞肉飯｜家常小吃",
-      "rating": 3.8,
-      "userRatingCount": 149,
-      "formattedAddress": "111台灣台北市士林區社中街328號",
-      "location": {
-        "latitude": 25.092352599999998,
-        "longitude": 121.5049716
       },
       "district": "士林區"
     },
@@ -1555,18 +1615,6 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJMeDWVLyuQjQRGjURsnRUIgI",
-      "name": "四川台師傅牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 240,
-      "formattedAddress": "111台灣台北市士林區美崙街50號",
-      "location": {
-        "latitude": 25.097183599999997,
-        "longitude": 121.5225052
-      },
-      "district": "士林區"
-    },
-    {
       "id": "ChIJdagKqLquQjQRianLmPE5Nzo",
       "name": "大東路無名牛肉麵",
       "rating": 4.4,
@@ -1579,22 +1627,10 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJrWemUNCvQjQRiSdozz5Nrts",
-      "name": "柒2食室 • 牛肉麵",
-      "rating": 4.3,
-      "userRatingCount": 7,
-      "formattedAddress": "111台灣台北市士林區基河路101號14攤",
-      "location": {
-        "latitude": 25.0878373,
-        "longitude": 121.524157
-      },
-      "district": "士林區"
-    },
-    {
       "id": "ChIJuXr9R7yuQjQR2sLYBvENgTU",
       "name": "林家麵神館",
       "rating": 4,
-      "userRatingCount": 726,
+      "userRatingCount": 728,
       "formattedAddress": "111台灣台北市士林區大光街2號",
       "location": {
         "latitude": 25.096787199999998,
@@ -1613,14 +1649,14 @@
       "district": "士林區"
     },
     {
-      "id": "ChIJn5eZqbauQjQRU0wDQFVAd4M",
-      "name": "牛小妹牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 494,
-      "formattedAddress": "111台灣台北市士林區華齡街88-1號",
+      "id": "ChIJrWemUNCvQjQRiSdozz5Nrts",
+      "name": "柒2食室 • 牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 7,
+      "formattedAddress": "111台灣台北市士林區基河路101號14攤",
       "location": {
-        "latitude": 25.084815,
-        "longitude": 121.51946989999999
+        "latitude": 25.0878373,
+        "longitude": 121.524157
       },
       "district": "士林區"
     },
@@ -1628,7 +1664,7 @@
       "id": "ChIJ_3LZiLyvQjQR3SvEA0zV4Hk",
       "name": "大俠請留步",
       "rating": 4.8,
-      "userRatingCount": 3380,
+      "userRatingCount": 3383,
       "formattedAddress": "111台灣台北市士林區文林路188號",
       "location": {
         "latitude": 25.089734399999998,
@@ -1664,7 +1700,7 @@
       "id": "ChIJBURdpxOsQjQR5FAgzolISdU",
       "name": "金春發牛肉店 美麗華店",
       "rating": 4.1,
-      "userRatingCount": 2180,
+      "userRatingCount": 2182,
       "formattedAddress": "10491台灣台北市中山區北安路833號",
       "location": {
         "latitude": 25.0847011,
@@ -1685,38 +1721,14 @@
       "district": "中山區"
     },
     {
-      "id": "ChIJKa-J5CytQjQRCYb_Kjef9AQ",
-      "name": "江南牛肉麵",
-      "rating": 4.5,
-      "userRatingCount": 97,
-      "formattedAddress": "114台灣台北市內湖區內湖路一段437巷4弄4號",
-      "location": {
-        "latitude": 25.0817052,
-        "longitude": 121.5718999
-      },
-      "district": "內湖區"
-    },
-    {
       "id": "ChIJH0yo1m_QDRQRLdX5iHYlgaE",
       "name": "山西刀切蕃茄牛肉麵",
       "rating": 3.6,
-      "userRatingCount": 771,
+      "userRatingCount": 773,
       "formattedAddress": "114台灣台北市內湖區內湖路一段393號",
       "location": {
         "latitude": 25.081880599999998,
         "longitude": 121.5703062
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJ9aYPhgOtQjQRSLs9TAk6KlY",
-      "name": "台北牛津牛雜湯",
-      "rating": 3.8,
-      "userRatingCount": 173,
-      "formattedAddress": "114台灣台北市內湖區內湖路一段411巷9弄18號",
-      "location": {
-        "latitude": 25.0820363,
-        "longitude": 121.5716564
       },
       "district": "內湖區"
     },
@@ -1733,10 +1745,22 @@
       "district": "內湖區"
     },
     {
+      "id": "ChIJ9aYPhgOtQjQRSLs9TAk6KlY",
+      "name": "台北牛津牛雜湯",
+      "rating": 3.8,
+      "userRatingCount": 175,
+      "formattedAddress": "114台灣台北市內湖區內湖路一段411巷9弄18號",
+      "location": {
+        "latitude": 25.0820363,
+        "longitude": 121.5716564
+      },
+      "district": "內湖區"
+    },
+    {
       "id": "ChIJty6GmW6sQjQR5kLtaEZXYPw",
       "name": "明家精緻麵館",
       "rating": 4.1,
-      "userRatingCount": 609,
+      "userRatingCount": 610,
       "formattedAddress": "114台灣台北市內湖區內湖路一段285巷8弄1-1號號",
       "location": {
         "latitude": 25.0826437,
@@ -1748,11 +1772,35 @@
       "id": "ChIJ8ehj7GWsQjQRW776JasFz1U",
       "name": "兄弟麵館內湖店",
       "rating": 4.4,
-      "userRatingCount": 925,
+      "userRatingCount": 927,
       "formattedAddress": "114台灣台北市內湖區麗山街393巷12號",
       "location": {
         "latitude": 25.0816965,
         "longitude": 121.5722566
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJI2fxWmOsQjQReDU2-Jd7QgE",
+      "name": "牛上野番茄牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 465,
+      "formattedAddress": "11474台灣台北市內湖區江南街71巷6號",
+      "location": {
+        "latitude": 25.0770302,
+        "longitude": 121.5776091
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJvWywcvOsQjQRH0th2mSVfEA",
+      "name": "喬記麵館（金龍店）",
+      "rating": 4.2,
+      "userRatingCount": 706,
+      "formattedAddress": "114台灣台北市內湖區金龍路143號",
+      "location": {
+        "latitude": 25.0862075,
+        "longitude": 121.5897787
       },
       "district": "內湖區"
     },
@@ -1769,16 +1817,40 @@
       "district": "內湖區"
     },
     {
+      "id": "ChIJLa7ZI4OtQjQRxp5HDWWxqPQ",
+      "name": "親親牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 147,
+      "formattedAddress": "114台灣台北市內湖區康樂街136巷15弄6號",
+      "location": {
+        "latitude": 25.0722116,
+        "longitude": 121.6183725
+      },
+      "district": "內湖區"
+    },
+    {
       "id": "ChIJTxQ1kVyrQjQRofPsLn7WVN0",
       "name": "總裁牛肉麵-南港CITYLINK門市",
       "rating": 4.5,
-      "userRatingCount": 327,
+      "userRatingCount": 330,
       "formattedAddress": "115台灣台北市南港區忠孝東路七段369號C棟7樓",
       "location": {
         "latitude": 25.052354899999997,
         "longitude": 121.60362459999999
       },
       "district": "南港區"
+    },
+    {
+      "id": "ChIJleenfbusQjQRmLY5gam6JhY",
+      "name": "明湖上品牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 508,
+      "formattedAddress": "114台灣台北市內湖區康寧路三段153號",
+      "location": {
+        "latitude": 25.0705836,
+        "longitude": 121.61147679999999
+      },
+      "district": "內湖區"
     },
     {
       "id": "ChIJS4vJ0jSpQjQRKNiskZ1_B80",
@@ -1808,7 +1880,7 @@
       "id": "ChIJ2zJ1CbOuQjQRLneY1_9SWJs",
       "name": "劍潭牛肉麵店",
       "rating": 4.1,
-      "userRatingCount": 240,
+      "userRatingCount": 243,
       "formattedAddress": "111台灣台北市士林區通河街141巷1號",
       "location": {
         "latitude": 25.081052099999997,
@@ -1820,11 +1892,23 @@
       "id": "ChIJM7DPebGuQjQRnXcb9s_p55I",
       "name": "王艇長酢醬麵",
       "rating": 4.4,
-      "userRatingCount": 1866,
+      "userRatingCount": 1876,
       "formattedAddress": "111台灣台北市士林區前港街18號",
       "location": {
         "latitude": 25.084573799999998,
         "longitude": 121.5225126
+      },
+      "district": "士林區"
+    },
+    {
+      "id": "ChIJn5eZqbauQjQRU0wDQFVAd4M",
+      "name": "牛小妹牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 495,
+      "formattedAddress": "111台灣台北市士林區華齡街88-1號",
+      "location": {
+        "latitude": 25.084815,
+        "longitude": 121.51946989999999
       },
       "district": "士林區"
     },
@@ -1856,7 +1940,7 @@
       "id": "ChIJp8zlTjCvQjQR0qLSVzfynTQ",
       "name": "士林夜市圓圈圈牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 23,
+      "userRatingCount": 24,
       "formattedAddress": "111台灣台北市士林區文林路101巷口號",
       "location": {
         "latitude": 25.0878844,
@@ -1880,13 +1964,25 @@
       "id": "ChIJs7yuGACrQjQR6AWxlryCpj0",
       "name": "龍江牛肉麵館",
       "rating": 3.5,
-      "userRatingCount": 103,
+      "userRatingCount": 105,
       "formattedAddress": "10491台灣台北市中山區龍江路356巷19號",
       "location": {
         "latitude": 25.0661427,
         "longitude": 121.54004549999999
       },
       "district": "中山區"
+    },
+    {
+      "id": "ChIJHUlgoyKvQjQR4OF2-3ea6ok",
+      "name": "長生塩人 劍潭",
+      "rating": 4.8,
+      "userRatingCount": 3922,
+      "formattedAddress": "111台灣台北市士林區劍潭路6號",
+      "location": {
+        "latitude": 25.083928099999998,
+        "longitude": 121.52433049999999
+      },
+      "district": "士林區"
     },
     {
       "id": "ChIJoaJyi_OtQjQRij_vbDuoCZc",
@@ -1904,7 +2000,7 @@
       "id": "ChIJJ3RI4gSsQjQRb9dC8Xm1YuY",
       "name": "兄弟麵館",
       "rating": 4,
-      "userRatingCount": 1853,
+      "userRatingCount": 1856,
       "formattedAddress": "104台灣台北市中山區大直街46巷36號",
       "location": {
         "latitude": 25.082045500000003,
@@ -1916,7 +2012,7 @@
       "id": "ChIJyZbq2WWtQjQRyfvDoL6CN6Q",
       "name": "麵屋技庵",
       "rating": 4.7,
-      "userRatingCount": 634,
+      "userRatingCount": 638,
       "formattedAddress": "10491台灣台北市中山區大直街18號",
       "location": {
         "latitude": 25.081288999999998,
@@ -1937,6 +2033,18 @@
       "district": "中山區"
     },
     {
+      "id": "ChIJMXSeCAWsQjQRRMNQ6q7_0Yo",
+      "name": "焦家水餃",
+      "rating": 4.1,
+      "userRatingCount": 253,
+      "formattedAddress": "10462台灣台北市中山區大直街14號",
+      "location": {
+        "latitude": 25.081239999999998,
+        "longitude": 121.54628400000001
+      },
+      "district": "中山區"
+    },
+    {
       "id": "ChIJnWd578WpQjQRJeL8Rr3QHQc",
       "name": "將町牛肉麵館",
       "rating": 4.8,
@@ -1952,7 +2060,7 @@
       "id": "ChIJIbSm2ESpQjQRnaQJ1X-7B6w",
       "name": "玖五牛肉麵",
       "rating": 4.1,
-      "userRatingCount": 1300,
+      "userRatingCount": 1302,
       "formattedAddress": "10491台灣台北市中山區農安街16-1號",
       "location": {
         "latitude": 25.064853199999998,
@@ -1997,22 +2105,10 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJI2fxWmOsQjQReDU2-Jd7QgE",
-      "name": "牛上野番茄牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 464,
-      "formattedAddress": "11474台灣台北市內湖區江南街71巷6號",
-      "location": {
-        "latitude": 25.0770302,
-        "longitude": 121.5776091
-      },
-      "district": "內湖區"
-    },
-    {
       "id": "ChIJkdCwYG-sQjQRvQBH3Ej3wRA",
       "name": "內湖山東餃子館",
       "rating": 4.1,
-      "userRatingCount": 1366,
+      "userRatingCount": 1367,
       "formattedAddress": "114台灣台北市內湖區內湖路一段411巷2號",
       "location": {
         "latitude": 25.0819138,
@@ -2021,14 +2117,26 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJ66Kx7WWsQjQRXmSyVdc-VWs",
-      "name": "北方水餃(麵)",
-      "rating": 3.8,
-      "userRatingCount": 297,
-      "formattedAddress": "114台灣台北市內湖區內湖路一段437巷4弄2號號",
+      "id": "ChIJAdjgF2-sQjQRDxoxizq4Xu8",
+      "name": "萬兩食堂",
+      "rating": 4.1,
+      "userRatingCount": 420,
+      "formattedAddress": "114台灣台北市內湖區內湖路一段355-1號",
       "location": {
-        "latitude": 25.081764200000002,
-        "longitude": 121.57212330000002
+        "latitude": 25.082221999999998,
+        "longitude": 121.569188
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJjeMzumOsQjQRJyhOYqpXwUA",
+      "name": "七三七老山東牛肉麵",
+      "rating": 3.6,
+      "userRatingCount": 201,
+      "formattedAddress": "114台灣台北市內湖區內湖路一段737巷33弄3號",
+      "location": {
+        "latitude": 25.079548499999998,
+        "longitude": 121.5789401
       },
       "district": "內湖區"
     },
@@ -2041,18 +2149,6 @@
       "location": {
         "latitude": 25.0793929,
         "longitude": 121.5780189
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJjeMzumOsQjQRJyhOYqpXwUA",
-      "name": "七三七老山東牛肉麵",
-      "rating": 3.6,
-      "userRatingCount": 198,
-      "formattedAddress": "114台灣台北市內湖區內湖路一段737巷33弄3號",
-      "location": {
-        "latitude": 25.079548499999998,
-        "longitude": 121.5789401
       },
       "district": "內湖區"
     },
@@ -2093,14 +2189,14 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJleenfbusQjQRmLY5gam6JhY",
-      "name": "明湖上品牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 506,
-      "formattedAddress": "114台灣台北市內湖區康寧路三段153號",
+      "id": "ChIJP5aDU4WsQjQRzeT0HjK4O_8",
+      "name": "老董牛肉麵",
+      "rating": 3.9,
+      "userRatingCount": 203,
+      "formattedAddress": "114台灣台北市內湖區成功路二段325號B1",
       "location": {
-        "latitude": 25.0705836,
-        "longitude": 121.61147679999999
+        "latitude": 25.0720264,
+        "longitude": 121.594036
       },
       "district": "內湖區"
     },
@@ -2117,42 +2213,6 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJP5aDU4WsQjQRzeT0HjK4O_8",
-      "name": "老董牛肉麵",
-      "rating": 3.9,
-      "userRatingCount": 203,
-      "formattedAddress": "114台灣台北市內湖區成功路二段325號B1",
-      "location": {
-        "latitude": 25.0720264,
-        "longitude": 121.594036
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJLa7ZI4OtQjQRxp5HDWWxqPQ",
-      "name": "親親牛肉麵",
-      "rating": 4.3,
-      "userRatingCount": 147,
-      "formattedAddress": "114台灣台北市內湖區康樂街136巷15弄6號",
-      "location": {
-        "latitude": 25.0722116,
-        "longitude": 121.6183725
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJU6y_gLesQjQRq3OcW4B0Wkk",
-      "name": "青島餃子館",
-      "rating": 4.4,
-      "userRatingCount": 724,
-      "formattedAddress": "114台灣台北市內湖區安泰街65巷4號1樓",
-      "location": {
-        "latitude": 25.0751287,
-        "longitude": 121.6170009
-      },
-      "district": "內湖區"
-    },
-    {
       "id": "ChIJRRehd86tQjQRBoofCoNdyEw",
       "name": "阿通師私房牛肉麵",
       "rating": 4.4,
@@ -2165,6 +2225,18 @@
       "district": "內湖區"
     },
     {
+      "id": "ChIJU6y_gLesQjQRq3OcW4B0Wkk",
+      "name": "青島餃子館",
+      "rating": 4.4,
+      "userRatingCount": 725,
+      "formattedAddress": "114台灣台北市內湖區安泰街65巷4號1樓",
+      "location": {
+        "latitude": 25.0751287,
+        "longitude": 121.6170009
+      },
+      "district": "內湖區"
+    },
+    {
       "id": "ChIJ8w0SPbesQjQRnjpLRLQn7X0",
       "name": "食裡亭牛肉麵",
       "rating": 3.9,
@@ -2173,6 +2245,18 @@
       "location": {
         "latitude": 25.0730216,
         "longitude": 121.6189742
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJ36NLwbqsQjQRUQRT0RhFKV4",
+      "name": "阿助牛肉麵",
+      "rating": 4,
+      "userRatingCount": 590,
+      "formattedAddress": "114台灣台北市內湖區東湖路119巷50弄7號",
+      "location": {
+        "latitude": 25.069599699999998,
+        "longitude": 121.61739340000001
       },
       "district": "內湖區"
     },
@@ -2192,7 +2276,7 @@
       "id": "ChIJKevibp6pQjQR9ymEeO-vrFU",
       "name": "許肥牛肉麵",
       "rating": 4.5,
-      "userRatingCount": 264,
+      "userRatingCount": 265,
       "formattedAddress": "103台灣台北市大同區民族西路223-4號",
       "location": {
         "latitude": 25.0687575,
@@ -2204,7 +2288,7 @@
       "id": "ChIJ4dluKTipQjQR3oOU_9XUGOQ",
       "name": "老麵店",
       "rating": 4.3,
-      "userRatingCount": 4019,
+      "userRatingCount": 4028,
       "formattedAddress": "103台灣台北市大同區迪化街二段215-8號",
       "location": {
         "latitude": 25.070364299999998,
@@ -2252,7 +2336,7 @@
       "id": "ChIJnQIC1D6pQjQRm446ijKe3MI",
       "name": "汕頭牛肉麵",
       "rating": 4,
-      "userRatingCount": 380,
+      "userRatingCount": 381,
       "formattedAddress": "103台灣台北市大同區延平北路三段60號",
       "location": {
         "latitude": 25.065157799999998,
@@ -2264,7 +2348,7 @@
       "id": "ChIJsfgT_pGpQjQRKj8tdSHQ9KM",
       "name": "金順牛肉麵水餃大王",
       "rating": 4.7,
-      "userRatingCount": 944,
+      "userRatingCount": 948,
       "formattedAddress": "104台灣台北市中山區民生西路205號",
       "location": {
         "latitude": 25.057263,
@@ -2273,10 +2357,22 @@
       "district": "中山區"
     },
     {
+      "id": "ChIJ2fnalTKpQjQR53UKq36AAbE",
+      "name": "府順番茄刀削牛肉麵",
+      "rating": 4.5,
+      "userRatingCount": 317,
+      "formattedAddress": "104台灣台北市中山區撫順街41巷1-7號",
+      "location": {
+        "latitude": 25.0639848,
+        "longitude": 121.5193807
+      },
+      "district": "中山區"
+    },
+    {
       "id": "ChIJXaAy2EGpQjQR7fFB9Z9buSo",
       "name": "老地方牛肉麵",
       "rating": 4,
-      "userRatingCount": 283,
+      "userRatingCount": 285,
       "formattedAddress": "10365台灣台北市大同區酒泉街10巷11號1樓",
       "location": {
         "latitude": 25.0703604,
@@ -2297,30 +2393,6 @@
       "district": "中山區"
     },
     {
-      "id": "ChIJV6dngdOpQjQR7WqwZFnhCvY",
-      "name": "貳月牛肉麵",
-      "rating": 4.6,
-      "userRatingCount": 113,
-      "formattedAddress": "10491台灣台北市中山區雙城街2之1號",
-      "location": {
-        "latitude": 25.0632076,
-        "longitude": 121.5242704
-      },
-      "district": "中山區"
-    },
-    {
-      "id": "ChIJ2fnalTKpQjQR53UKq36AAbE",
-      "name": "府順番茄刀削牛肉麵",
-      "rating": 4.5,
-      "userRatingCount": 317,
-      "formattedAddress": "104台灣台北市中山區撫順街41巷1-7號",
-      "location": {
-        "latitude": 25.0639848,
-        "longitude": 121.5193807
-      },
-      "district": "中山區"
-    },
-    {
       "id": "ChIJVatHTUapQjQRlp-WfRTLr_c",
       "name": "小林麵食店",
       "rating": 4.1,
@@ -2333,10 +2405,22 @@
       "district": "大同區"
     },
     {
+      "id": "ChIJV6dngdOpQjQR7WqwZFnhCvY",
+      "name": "貳月牛肉麵",
+      "rating": 4.6,
+      "userRatingCount": 113,
+      "formattedAddress": "10491台灣台北市中山區雙城街2之1號",
+      "location": {
+        "latitude": 25.0632076,
+        "longitude": 121.5242704
+      },
+      "district": "中山區"
+    },
+    {
       "id": "ChIJPzPUJEmpQjQRxpHRox5TvbY",
       "name": "金春發牛肉店",
       "rating": 3.6,
-      "userRatingCount": 1048,
+      "userRatingCount": 1049,
       "formattedAddress": "103台灣台北市大同區承德路三段173號",
       "location": {
         "latitude": 25.069036999999998,
@@ -2348,7 +2432,7 @@
       "id": "ChIJk7jHQUipQjQRAtVUlxmMjUA",
       "name": "吉利 牛肉麵.水餃",
       "rating": 3.7,
-      "userRatingCount": 548,
+      "userRatingCount": 549,
       "formattedAddress": "103台灣台北市大同區大龍街282號",
       "location": {
         "latitude": 25.0710028,
@@ -2372,7 +2456,7 @@
       "id": "ChIJa-Ea78GpQjQR7ZdU839ac8A",
       "name": "老李牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 109,
+      "userRatingCount": 110,
       "formattedAddress": "10491台灣台北市中山區吉林路383號",
       "location": {
         "latitude": 25.0653632,
@@ -2383,8 +2467,8 @@
     {
       "id": "ChIJKzC5bQCpQjQRgDDrqqIkx9Y",
       "name": "萬流芳正宗原汁牛肉麵",
-      "rating": 4.6,
-      "userRatingCount": 230,
+      "rating": 4.5,
+      "userRatingCount": 233,
       "formattedAddress": "10491台灣台北市中山區民生東路二段18號",
       "location": {
         "latitude": 25.0579073,
@@ -2396,7 +2480,7 @@
       "id": "ChIJucCQpFCpQjQRca2qSJmkgvw",
       "name": "李記牛肉麵",
       "rating": 3.8,
-      "userRatingCount": 244,
+      "userRatingCount": 245,
       "formattedAddress": "10491台灣台北市中山區吉林路450號",
       "location": {
         "latitude": 25.0667643,
@@ -2408,7 +2492,7 @@
       "id": "ChIJFRumtOGpQjQRYmlfsGV84w0",
       "name": "阿翰原汁牛肉麵",
       "rating": 3.8,
-      "userRatingCount": 356,
+      "userRatingCount": 358,
       "formattedAddress": "10491台灣台北市中山區雙城街16-1號",
       "location": {
         "latitude": 25.065160799999997,
@@ -2420,7 +2504,7 @@
       "id": "ChIJe7gaHP2rQjQRYcJ3KQcSGmI",
       "name": "老鄧牛肉麵",
       "rating": 4,
-      "userRatingCount": 252,
+      "userRatingCount": 253,
       "formattedAddress": "104台灣台北市中山區五常街53巷29號（對面號",
       "location": {
         "latitude": 25.0657014,
@@ -2432,7 +2516,7 @@
       "id": "ChIJy7QpmuOrQjQR6kcLa3q5duE",
       "name": "志明牛肉麵 錦州店",
       "rating": 4.2,
-      "userRatingCount": 1104,
+      "userRatingCount": 1107,
       "formattedAddress": "10491台灣台北市中山區錦州街413號",
       "location": {
         "latitude": 25.0603595,
@@ -2444,7 +2528,7 @@
       "id": "ChIJibj6MdWpQjQRi8g3PAknEeU",
       "name": "巧合珍牛肉麵（長春店）",
       "rating": 4.5,
-      "userRatingCount": 441,
+      "userRatingCount": 442,
       "formattedAddress": "104台灣台北市中山區長春路149-3號",
       "location": {
         "latitude": 25.0549628,
@@ -2465,10 +2549,22 @@
       "district": "中山區"
     },
     {
+      "id": "ChIJrbAQt12pQjQR4qwLC-rCh_8",
+      "name": "史記正宗牛肉麵",
+      "rating": 3.9,
+      "userRatingCount": 2017,
+      "formattedAddress": "10491台灣台北市中山區四平街19號",
+      "location": {
+        "latitude": 25.0537444,
+        "longitude": 121.53113689999999
+      },
+      "district": "中山區"
+    },
+    {
       "id": "ChIJGzcwKMmrQjQRUhM2yNA7ZWA",
       "name": "民生牛肉麵",
       "rating": 4.8,
-      "userRatingCount": 225,
+      "userRatingCount": 228,
       "formattedAddress": "105台灣台北市松山區三民路180巷49號",
       "location": {
         "latitude": 25.0626905,
@@ -2477,26 +2573,26 @@
       "district": "松山區"
     },
     {
-      "id": "ChIJqx65WnmrQjQRbtUBGHUMaW4",
-      "name": "擱呷牛肉麵Gejia Beef noodle soup— 紅燒｜清燉｜麻辣｜拌麵｜秘制滷味｜麵店｜松山美食",
-      "rating": 4.3,
-      "userRatingCount": 174,
-      "formattedAddress": "105台灣台北市松山區吉祥路45號",
+      "id": "ChIJ7RYZytOrQjQRMn0J-DXtnUk",
+      "name": "老楊在二樓 私廚牛肉麵",
+      "rating": 4.5,
+      "userRatingCount": 221,
+      "formattedAddress": "105台灣台北市松山區新中街9號二樓",
       "location": {
-        "latitude": 25.0501291,
-        "longitude": 121.5626318
+        "latitude": 25.0576451,
+        "longitude": 121.5605063
       },
       "district": "松山區"
     },
     {
-      "id": "ChIJZ9PLeZqrQjQR5A9V3xca_kw",
-      "name": "虎笑麵屋 無訂位服務",
-      "rating": 4.4,
-      "userRatingCount": 1406,
-      "formattedAddress": "105台灣台北市松山區三民路113巷18號1樓",
+      "id": "ChIJqx65WnmrQjQRbtUBGHUMaW4",
+      "name": "擱呷牛肉麵Gejia Beef noodle soup— 紅燒｜清燉｜麻辣｜拌麵｜秘制滷味｜麵店｜松山美食",
+      "rating": 4.3,
+      "userRatingCount": 176,
+      "formattedAddress": "105台灣台北市松山區吉祥路45號",
       "location": {
-        "latitude": 25.0580562,
-        "longitude": 121.5622329
+        "latitude": 25.0501291,
+        "longitude": 121.5626318
       },
       "district": "松山區"
     },
@@ -2513,14 +2609,14 @@
       "district": "松山區"
     },
     {
-      "id": "ChIJtTXqUPqrQjQRxXgQT5GB_WM",
-      "name": "蜀渝牛肉麵",
-      "rating": 4.7,
-      "userRatingCount": 290,
-      "formattedAddress": "105台灣台北市松山區南京東路五段23巷6弄1號",
+      "id": "ChIJZ9PLeZqrQjQR5A9V3xca_kw",
+      "name": "虎笑麵屋 無訂位服務",
+      "rating": 4.4,
+      "userRatingCount": 1406,
+      "formattedAddress": "105台灣台北市松山區三民路113巷18號1樓",
       "location": {
-        "latitude": 25.052237299999998,
-        "longitude": 121.5581324
+        "latitude": 25.0580562,
+        "longitude": 121.5622329
       },
       "district": "松山區"
     },
@@ -2537,10 +2633,22 @@
       "district": "松山區"
     },
     {
+      "id": "ChIJtTXqUPqrQjQRxXgQT5GB_WM",
+      "name": "蜀渝牛肉麵",
+      "rating": 4.7,
+      "userRatingCount": 292,
+      "formattedAddress": "105台灣台北市松山區南京東路五段23巷6弄1號",
+      "location": {
+        "latitude": 25.052237299999998,
+        "longitude": 121.5581324
+      },
+      "district": "松山區"
+    },
+    {
       "id": "ChIJgR8pyeurQjQRGVBiCuDIfow",
       "name": "正宗老陳牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 636,
+      "userRatingCount": 642,
       "formattedAddress": "105台灣台北市松山區南京東路四段133巷7弄2號",
       "location": {
         "latitude": 25.052876299999998,
@@ -2549,10 +2657,46 @@
       "district": "松山區"
     },
     {
+      "id": "ChIJk4c7LoyrQjQRzM6IRX--Fxw",
+      "name": "牛家村",
+      "rating": 4.4,
+      "userRatingCount": 443,
+      "formattedAddress": "105台灣台北市松山區富錦街523號",
+      "location": {
+        "latitude": 25.061157899999998,
+        "longitude": 121.5649903
+      },
+      "district": "松山區"
+    },
+    {
+      "id": "ChIJ1YzqYwCrQjQRkEb3y_zj7YE",
+      "name": "洛毅牛肉麵館",
+      "rating": 4.7,
+      "userRatingCount": 78,
+      "formattedAddress": "105台灣台北市松山區敦化北路222巷16-1號",
+      "location": {
+        "latitude": 25.059193999999998,
+        "longitude": 121.548069
+      },
+      "district": "松山區"
+    },
+    {
+      "id": "ChIJqYzDBO6tQjQRBRbCYRSLkU8",
+      "name": "高雄五福扁食 K.H.Wufu 內湖港墘店",
+      "rating": 4.5,
+      "userRatingCount": 623,
+      "formattedAddress": "114台灣台北市內湖區內湖路一段591巷11弄6號",
+      "location": {
+        "latitude": 25.0814034,
+        "longitude": 121.5736891
+      },
+      "district": "內湖區"
+    },
+    {
       "id": "ChIJ6V3DAwCtQjQRazE7EnXPX4k",
       "name": "東引小吃店-內湖店 （內湖瑞光店 牛肉麵 滷味 台北宵夜）",
       "rating": 4.7,
-      "userRatingCount": 297,
+      "userRatingCount": 319,
       "formattedAddress": "114036台灣台北市內湖區瑞光路293號",
       "location": {
         "latitude": 25.075638899999998,
@@ -2564,11 +2708,23 @@
       "id": "ChIJt_ZrmmKsQjQRWRQes2f1f1I",
       "name": "李家小館",
       "rating": 4.2,
-      "userRatingCount": 1051,
+      "userRatingCount": 1052,
       "formattedAddress": "114台灣台北市內湖區文德路66巷53弄3號",
       "location": {
         "latitude": 25.0769919,
         "longitude": 121.5820189
+      },
+      "district": "內湖區"
+    },
+    {
+      "id": "ChIJ05lzGIGsQjQR1qHopU-aOLA",
+      "name": "松哥餐飲店｜尾助牛肉麵｜涼麵",
+      "rating": 3.9,
+      "userRatingCount": 67,
+      "formattedAddress": "114台灣台北市內湖區民權東路六段90巷25弄2號",
+      "location": {
+        "latitude": 25.0676441,
+        "longitude": 121.586113
       },
       "district": "內湖區"
     },
@@ -2588,7 +2744,7 @@
       "id": "ChIJHdfWLYGsQjQR5os1tAWZz5g",
       "name": "小牛哥原汁牛肉麵",
       "rating": 3.9,
-      "userRatingCount": 312,
+      "userRatingCount": 313,
       "formattedAddress": "114台灣台北市內湖區民權東路六段90巷3號",
       "location": {
         "latitude": 25.068660299999998,
@@ -2624,7 +2780,7 @@
       "id": "ChIJGaoqsYStQjQRB3SdhP7oTSY",
       "name": "東引快刀手 內湖店 -(人氣排隊美食、必吃午 晚餐 宵夜 滷味、平價麵館)",
       "rating": 4,
-      "userRatingCount": 1421,
+      "userRatingCount": 1422,
       "formattedAddress": "114台灣台北市內湖區民權東路六段288號",
       "location": {
         "latitude": 25.072339099999997,
@@ -2645,18 +2801,6 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJ36NLwbqsQjQRUQRT0RhFKV4",
-      "name": "阿助牛肉麵",
-      "rating": 4,
-      "userRatingCount": 589,
-      "formattedAddress": "114台灣台北市內湖區東湖路119巷50弄7號",
-      "location": {
-        "latitude": 25.069599699999998,
-        "longitude": 121.61739340000001
-      },
-      "district": "內湖區"
-    },
-    {
       "id": "ChIJewMNDQCtQjQRywqKW19RPjg",
       "name": "心裡麵",
       "rating": 4.7,
@@ -2669,14 +2813,14 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJ_1XClrusQjQR645KxPInjCo",
-      "name": "陳家涼麵",
-      "rating": 4.2,
-      "userRatingCount": 160,
-      "formattedAddress": "114台灣台北市內湖區康寧路三段189巷21弄26號",
+      "id": "ChIJ5fdc1aSsQjQRPKK-53TvTXI",
+      "name": "連順牛肉麵",
+      "rating": 3.5,
+      "userRatingCount": 149,
+      "formattedAddress": "114台灣台北市內湖區東湖路106巷9弄",
       "location": {
-        "latitude": 25.07142,
-        "longitude": 121.61234599999999
+        "latitude": 25.0678692,
+        "longitude": 121.61487849999999
       },
       "district": "內湖區"
     },
@@ -2684,7 +2828,7 @@
       "id": "ChIJgS5DG7usQjQR7z7hJarCM3Y",
       "name": "川香園小館",
       "rating": 4.4,
-      "userRatingCount": 511,
+      "userRatingCount": 513,
       "formattedAddress": "114台灣台北市內湖區東湖路43巷19號",
       "location": {
         "latitude": 25.069638599999998,
@@ -2693,34 +2837,10 @@
       "district": "內湖區"
     },
     {
-      "id": "ChIJkVdTXBWpQjQR1hjvdEWz_sE",
-      "name": "五十年老店 真正牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 194,
-      "formattedAddress": "103台灣台北市大同區保安街25號",
-      "location": {
-        "latitude": 25.059251,
-        "longitude": 121.5127241
-      },
-      "district": "大同區"
-    },
-    {
-      "id": "ChIJrw2KgA6pQjQRW_wAf66dTf8",
-      "name": "建宏牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 3137,
-      "formattedAddress": "108台灣台北市萬華區洛陽街45之6號",
-      "location": {
-        "latitude": 25.047455,
-        "longitude": 121.50826699999999
-      },
-      "district": "萬華區"
-    },
-    {
       "id": "ChIJ6ex44w6pQjQRKDy7gdCfAdQ",
       "name": "美濃現做刀切牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 1462,
+      "userRatingCount": 1465,
       "formattedAddress": "103台灣台北市大同區西寧北路19-2號",
       "location": {
         "latitude": 25.052761999999998,
@@ -2732,11 +2852,35 @@
       "id": "ChIJl83CT2upQjQREwdle7JX2vA",
       "name": "飄香牛肉麵館",
       "rating": 4.2,
-      "userRatingCount": 1120,
+      "userRatingCount": 1122,
       "formattedAddress": "103台灣台北市大同區寧夏路12號1樓",
       "location": {
         "latitude": 25.0546535,
         "longitude": 121.51474850000001
+      },
+      "district": "大同區"
+    },
+    {
+      "id": "ChIJrw2KgA6pQjQRW_wAf66dTf8",
+      "name": "建宏牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 3144,
+      "formattedAddress": "108台灣台北市萬華區洛陽街45之6號",
+      "location": {
+        "latitude": 25.047455,
+        "longitude": 121.50826699999999
+      },
+      "district": "萬華區"
+    },
+    {
+      "id": "ChIJ7wT6RrOpQjQRXjc-2zNhyQM",
+      "name": "延三溫體牛-牛記",
+      "rating": 4.3,
+      "userRatingCount": 500,
+      "formattedAddress": "103台灣台北市大同區西寧北路120號",
+      "location": {
+        "latitude": 25.0563485,
+        "longitude": 121.50888330000001
       },
       "district": "大同區"
     },
@@ -2753,6 +2897,18 @@
       "district": "大同區"
     },
     {
+      "id": "ChIJBQG_UampQjQRue_DffDf2KY",
+      "name": "就是麵",
+      "rating": 4.6,
+      "userRatingCount": 519,
+      "formattedAddress": "103台灣台北市大同區雙連街11巷25號",
+      "location": {
+        "latitude": 25.058375899999998,
+        "longitude": 121.52009059999999
+      },
+      "district": "大同區"
+    },
+    {
       "id": "ChIJFbulFLipQjQRBbYWpcwS1mU",
       "name": "無名牛肉麵",
       "rating": 4.7,
@@ -2765,38 +2921,14 @@
       "district": "大同區"
     },
     {
-      "id": "ChIJCw0ECkKpQjQRcRey1Rjj4Tk",
-      "name": "老董牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 3679,
-      "formattedAddress": "10491台灣台北市中山區民生西路35號",
+      "id": "ChIJrdw2UU-pQjQRQvW1fN-D5dk",
+      "name": "難得一面 Beef noodles- 青花椒/大紅袍、超濃蕃茄、麻辣牛肉麵/乾拌麵，重磅蛤蜊麵",
+      "rating": 4.7,
+      "userRatingCount": 345,
+      "formattedAddress": "10446台灣台北市中山區中山北路二段59巷41弄3號",
       "location": {
-        "latitude": 25.057843199999997,
-        "longitude": 121.5210064
-      },
-      "district": "中山區"
-    },
-    {
-      "id": "ChIJBQG_UampQjQRue_DffDf2KY",
-      "name": "就是麵",
-      "rating": 4.6,
-      "userRatingCount": 518,
-      "formattedAddress": "103台灣台北市大同區雙連街11巷25號",
-      "location": {
-        "latitude": 25.058375899999998,
-        "longitude": 121.52009059999999
-      },
-      "district": "大同區"
-    },
-    {
-      "id": "ChIJCfcePgipQjQRWy2lwTDTmYY",
-      "name": "詠昌牛腱心麵",
-      "rating": 4.5,
-      "userRatingCount": 354,
-      "formattedAddress": "10491台灣台北市中山區中原街54號",
-      "location": {
-        "latitude": 25.0586432,
-        "longitude": 121.52875449999999
+        "latitude": 25.056006600000003,
+        "longitude": 121.5245006
       },
       "district": "中山區"
     },
@@ -2813,6 +2945,18 @@
       "district": "中山區"
     },
     {
+      "id": "ChIJCfcePgipQjQRWy2lwTDTmYY",
+      "name": "詠昌牛腱心麵",
+      "rating": 4.5,
+      "userRatingCount": 355,
+      "formattedAddress": "10491台灣台北市中山區中原街54號",
+      "location": {
+        "latitude": 25.0586432,
+        "longitude": 121.52875449999999
+      },
+      "district": "中山區"
+    },
+    {
       "id": "ChIJfxh0FQCrQjQRNyD6BBBaY6g",
       "name": "湘園牛肉麵",
       "rating": 5,
@@ -2825,22 +2969,10 @@
       "district": "中山區"
     },
     {
-      "id": "ChIJ1YzqYwCrQjQRkEb3y_zj7YE",
-      "name": "洛毅牛肉麵館",
-      "rating": 4.7,
-      "userRatingCount": 77,
-      "formattedAddress": "105台灣台北市松山區敦化北路222巷16-1號",
-      "location": {
-        "latitude": 25.059193999999998,
-        "longitude": 121.548069
-      },
-      "district": "松山區"
-    },
-    {
       "id": "ChIJo--aBuurQjQRyN89ig3p_vM",
       "name": "大膽牛腩麵",
       "rating": 4.3,
-      "userRatingCount": 739,
+      "userRatingCount": 745,
       "formattedAddress": "10478台灣台北市中山區遼寧街222號",
       "location": {
         "latitude": 25.056355,
@@ -2852,7 +2984,7 @@
       "id": "ChIJ04wSQKCrQjQR_D9BoQs5RPA",
       "name": "膳牛堂",
       "rating": 4.9,
-      "userRatingCount": 520,
+      "userRatingCount": 523,
       "formattedAddress": "104083台灣台北市中山區合江街102巷15號1樓",
       "location": {
         "latitude": 25.0588423,
@@ -2864,7 +2996,7 @@
       "id": "ChIJ8Yt1aOerQjQRpe55aiAW8Xo",
       "name": "禾牧麵食料理/錦州店",
       "rating": 4.4,
-      "userRatingCount": 480,
+      "userRatingCount": 481,
       "formattedAddress": "10478台灣台北市中山區錦州街398號",
       "location": {
         "latitude": 25.059971899999997,
@@ -2876,7 +3008,7 @@
       "id": "ChIJ8W2ixcyrQjQRGjuprLelE00",
       "name": "金春發牛肉店 發火鍋-復北店（溫體牛肉火鍋開賣）延長營業時間 最後點餐22:30",
       "rating": 4.6,
-      "userRatingCount": 1556,
+      "userRatingCount": 1558,
       "formattedAddress": "104台灣台北市中山區復興北路202號",
       "location": {
         "latitude": 25.055636399999997,
@@ -2888,7 +3020,7 @@
       "id": "ChIJD-6a5F-pQjQRJlbYSInTPlQ",
       "name": "洪師父冠軍牛肉麵-建北店",
       "rating": 4.1,
-      "userRatingCount": 1930,
+      "userRatingCount": 1931,
       "formattedAddress": "104台灣台北市中山區建國北路二段72號",
       "location": {
         "latitude": 25.0549739,
@@ -2909,34 +3041,22 @@
       "district": "中山區"
     },
     {
-      "id": "ChIJE2970YWrQjQRDbib6RUUrK4",
-      "name": "東館牛麵食館",
-      "rating": 4.5,
-      "userRatingCount": 1055,
-      "formattedAddress": "104台灣台北市中山區南京東路三段109巷15號",
+      "id": "ChIJ_UeKL-KrQjQRodIqwarGOyY",
+      "name": "老徐黃牛肉",
+      "rating": 4.3,
+      "userRatingCount": 295,
+      "formattedAddress": "10491台灣台北市中山區合江街126號",
       "location": {
-        "latitude": 25.0530217,
-        "longitude": 121.5400296
+        "latitude": 25.059403099999997,
+        "longitude": 121.53913349999999
       },
       "district": "中山區"
-    },
-    {
-      "id": "ChIJT0NYhZ6rQjQRASPvSHE4ERo",
-      "name": "就是這間-功夫牛肉麵",
-      "rating": 4.8,
-      "userRatingCount": 540,
-      "formattedAddress": "105台灣台北市松山區八德路二段366巷29號1樓",
-      "location": {
-        "latitude": 25.0468666,
-        "longitude": 121.54610019999998
-      },
-      "district": "松山區"
     },
     {
       "id": "ChIJVdo3fD6rQjQRH-452PTMn04",
       "name": "張媽媽牛肉麵 民生店",
       "rating": 4.1,
-      "userRatingCount": 437,
+      "userRatingCount": 439,
       "formattedAddress": "105台灣台北市松山區民生東路五段138巷13號",
       "location": {
         "latitude": 25.0579699,
@@ -2945,10 +3065,22 @@
       "district": "松山區"
     },
     {
+      "id": "ChIJfQ5DcQCrQjQRr17if4VPygg",
+      "name": "92番茄牛肉麵",
+      "rating": 3.7,
+      "userRatingCount": 51,
+      "formattedAddress": "105台灣台北市松山區三民路113巷9號",
+      "location": {
+        "latitude": 25.057855399999998,
+        "longitude": 121.56299930000002
+      },
+      "district": "松山區"
+    },
+    {
       "id": "ChIJm0gdc-2rQjQRC8Q82PbBr5g",
       "name": "天曉得牛肉麵",
       "rating": 3.8,
-      "userRatingCount": 576,
+      "userRatingCount": 579,
       "formattedAddress": "105台灣台北市松山區民生東路五段49號",
       "location": {
         "latitude": 25.0585813,
@@ -2969,50 +3101,14 @@
       "district": "松山區"
     },
     {
-      "id": "ChIJY_8aNpWrQjQRgZPJklhEozs",
-      "name": "南岭精緻麵館",
-      "rating": 4.6,
-      "userRatingCount": 913,
-      "formattedAddress": "105台灣台北市松山區光復北路11巷62號",
-      "location": {
-        "latitude": 25.049908199999997,
-        "longitude": 121.5603026
-      },
-      "district": "松山區"
-    },
-    {
-      "id": "ChIJfQ5DcQCrQjQRr17if4VPygg",
-      "name": "92番茄牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 50,
-      "formattedAddress": "105台灣台北市松山區三民路113巷9號",
-      "location": {
-        "latitude": 25.057855399999998,
-        "longitude": 121.56299930000002
-      },
-      "district": "松山區"
-    },
-    {
-      "id": "ChIJk4c7LoyrQjQRzM6IRX--Fxw",
-      "name": "牛家村",
+      "id": "ChIJucinxeurQjQR1LoHMd6XF40",
+      "name": "禾園527美食店",
       "rating": 4.4,
-      "userRatingCount": 443,
-      "formattedAddress": "105台灣台北市松山區富錦街523號",
+      "userRatingCount": 368,
+      "formattedAddress": "105台灣台北市松山區南京東路四段133巷8弄2號",
       "location": {
-        "latitude": 25.061157899999998,
-        "longitude": 121.5649903
-      },
-      "district": "松山區"
-    },
-    {
-      "id": "ChIJUahmDo6rQjQRf2NTI5JdeZ4",
-      "name": "蕭家牛雜湯",
-      "rating": 4.3,
-      "userRatingCount": 2413,
-      "formattedAddress": "105台灣台北市松山區新東街26巷1號",
-      "location": {
-        "latitude": 25.058723399999998,
-        "longitude": 121.5660612
+        "latitude": 25.053197899999997,
+        "longitude": 121.55500430000001
       },
       "district": "松山區"
     },
@@ -3025,6 +3121,30 @@
       "location": {
         "latitude": 25.0520331,
         "longitude": 121.56561970000001
+      },
+      "district": "松山區"
+    },
+    {
+      "id": "ChIJUahmDo6rQjQRf2NTI5JdeZ4",
+      "name": "蕭家牛雜湯",
+      "rating": 4.3,
+      "userRatingCount": 2417,
+      "formattedAddress": "105台灣台北市松山區新東街26巷1號",
+      "location": {
+        "latitude": 25.058723399999998,
+        "longitude": 121.5660612
+      },
+      "district": "松山區"
+    },
+    {
+      "id": "ChIJoeG-BpSrQjQRxAW5R4IQT6g",
+      "name": "東引小吃店（推薦深夜美食 牛肉麵 滷味 台北宵夜 捷運南京三民站）",
+      "rating": 4.2,
+      "userRatingCount": 6734,
+      "formattedAddress": "105台灣台北市松山區南京東路五段291巷20弄3-2號",
+      "location": {
+        "latitude": 25.0525099,
+        "longitude": 121.5658905
       },
       "district": "松山區"
     },
@@ -3065,6 +3185,18 @@
       "district": "內湖區"
     },
     {
+      "id": "ChIJtbg6XZKrQjQRIeVUt3Mo-Wc",
+      "name": "You&me牛肉麵Bar",
+      "rating": 4.2,
+      "userRatingCount": 595,
+      "formattedAddress": "105台灣台北市松山區延壽街145號",
+      "location": {
+        "latitude": 25.056980700000004,
+        "longitude": 121.56327170000002
+      },
+      "district": "松山區"
+    },
+    {
       "id": "ChIJjSAM9FarQjQRP4dxuMCY2zo",
       "name": "黎記牛肉麵",
       "rating": 4.4,
@@ -3077,34 +3209,10 @@
       "district": "松山區"
     },
     {
-      "id": "ChIJtbg6XZKrQjQRIeVUt3Mo-Wc",
-      "name": "You&me牛肉麵Bar",
-      "rating": 4.2,
-      "userRatingCount": 593,
-      "formattedAddress": "105台灣台北市松山區延壽街145號",
-      "location": {
-        "latitude": 25.056980700000004,
-        "longitude": 121.56327170000002
-      },
-      "district": "松山區"
-    },
-    {
-      "id": "ChIJoeG-BpSrQjQRxAW5R4IQT6g",
-      "name": "東引小吃店",
-      "rating": 4.2,
-      "userRatingCount": 6725,
-      "formattedAddress": "105台灣台北市松山區南京東路五段291巷20弄3-2號",
-      "location": {
-        "latitude": 25.0525099,
-        "longitude": 121.5658905
-      },
-      "district": "松山區"
-    },
-    {
       "id": "ChIJiQ8VxoarQjQREoY58aZxkoQ",
       "name": "品川蘭 內湖店",
       "rating": 3.8,
-      "userRatingCount": 1047,
+      "userRatingCount": 1049,
       "formattedAddress": "11494台灣台北市內湖區舊宗路一段188號大全聯 內湖店",
       "location": {
         "latitude": 25.0623838,
@@ -3140,49 +3248,13 @@
       "id": "ChIJp5hhv8SrQjQRFuS5z6SuApw",
       "name": "貝金文牛肉麵",
       "rating": 4.4,
-      "userRatingCount": 136,
+      "userRatingCount": 140,
       "formattedAddress": "110台灣台北市信義區松山路182號1樓",
       "location": {
         "latitude": 25.046021000000003,
         "longitude": 121.57760399999998
       },
       "district": "信義區"
-    },
-    {
-      "id": "ChIJa6WxMHgDaDQR78KQjmjZw_U",
-      "name": "富美麵飯館",
-      "rating": 4.2,
-      "userRatingCount": 166,
-      "formattedAddress": "114台灣台北市內湖區成功路二段115巷",
-      "location": {
-        "latitude": 25.065314299999997,
-        "longitude": 121.59263240000001
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJadNdVierQjQRoe0aiwZDMIQ",
-      "name": "FB Kitchen餐廳｜台塑牛小排牛肉麵，台北內湖餐廳推薦",
-      "rating": 4.9,
-      "userRatingCount": 401,
-      "formattedAddress": "1樓, 122之2號, 新明路內湖區台北市台灣 114",
-      "location": {
-        "latitude": 25.0590811,
-        "longitude": 121.5885279
-      },
-      "district": "內湖區"
-    },
-    {
-      "id": "ChIJ05lzGIGsQjQR1qHopU-aOLA",
-      "name": "松哥餐飲店｜尾助牛肉麵｜涼麵",
-      "rating": 3.9,
-      "userRatingCount": 67,
-      "formattedAddress": "114台灣台北市內湖區民權東路六段90巷25弄2號",
-      "location": {
-        "latitude": 25.0676441,
-        "longitude": 121.586113
-      },
-      "district": "內湖區"
     },
     {
       "id": "ChIJgRFJIQCrQjQRxn6Bg1L5xPw",
@@ -3200,7 +3272,7 @@
       "id": "ChIJReqjJV6rQjQRYKnp5xeNEBQ",
       "name": "後壁牛牛肉麵館",
       "rating": 4,
-      "userRatingCount": 1071,
+      "userRatingCount": 1072,
       "formattedAddress": "115台灣台北市南港區興華路83號",
       "location": {
         "latitude": 25.055537599999997,
@@ -3233,6 +3305,18 @@
       "district": "南港區"
     },
     {
+      "id": "ChIJpQWI816rQjQRKtdvTeHmpcA",
+      "name": "Neverland Noodle Bar",
+      "rating": 4.4,
+      "userRatingCount": 1000,
+      "formattedAddress": "115台灣台北市南港區南港路一段271號",
+      "location": {
+        "latitude": 25.054565,
+        "longitude": 121.608701
+      },
+      "district": "南港區"
+    },
+    {
       "id": "ChIJq8eV6qasQjQRr121JGM6RH8",
       "name": "原鄭州路牛肉麵",
       "rating": 4.2,
@@ -3248,23 +3332,11 @@
       "id": "ChIJ49O2SaasQjQRjxzIIq30Ub8",
       "name": "Olddon Beef Noodles",
       "rating": 4.4,
-      "userRatingCount": 654,
+      "userRatingCount": 651,
       "formattedAddress": "115台灣台北市南港區經貿二路188號",
       "location": {
         "latitude": 25.059144,
         "longitude": 121.61512909999999
-      },
-      "district": "南港區"
-    },
-    {
-      "id": "ChIJvc-nRlirQjQRQBOsvIiVNOo",
-      "name": "牛肉麵 手工水餃",
-      "rating": 3.6,
-      "userRatingCount": 415,
-      "formattedAddress": "115台灣台北市南港區南港路一段85號",
-      "location": {
-        "latitude": 25.0551334,
-        "longitude": 121.6151964
       },
       "district": "南港區"
     },
@@ -3281,10 +3353,22 @@
       "district": "南港區"
     },
     {
+      "id": "ChIJvc-nRlirQjQRQBOsvIiVNOo",
+      "name": "牛肉麵 手工水餃",
+      "rating": 3.6,
+      "userRatingCount": 415,
+      "formattedAddress": "115台灣台北市南港區南港路一段85號",
+      "location": {
+        "latitude": 25.0551334,
+        "longitude": 121.6151964
+      },
+      "district": "南港區"
+    },
+    {
       "id": "ChIJwRvPpaWrQjQRRGTxlXFpB1k",
       "name": "傳承牛肉麵館",
       "rating": 3.5,
-      "userRatingCount": 739,
+      "userRatingCount": 741,
       "formattedAddress": "115台灣台北市南港區南港路一段105號",
       "location": {
         "latitude": 25.0550489,
@@ -3296,7 +3380,7 @@
       "id": "ChIJYw4BKwCpQjQRfcUVXDvP62M",
       "name": "門前隱味牛肉麵 西門漢口",
       "rating": 4.7,
-      "userRatingCount": 1263,
+      "userRatingCount": 1270,
       "formattedAddress": "108台灣台北市萬華區漢口街二段20巷7號",
       "location": {
         "latitude": 25.0450444,
@@ -3317,6 +3401,18 @@
       "district": "萬華區"
     },
     {
+      "id": "ChIJSzyDUAipQjQRPLcYN7ta84k",
+      "name": "牛店精燉牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 3844,
+      "formattedAddress": "108台灣台北市萬華區昆明街91號",
+      "location": {
+        "latitude": 25.0425424,
+        "longitude": 121.50485049999997
+      },
+      "district": "萬華區"
+    },
+    {
       "id": "ChIJ5dZQGwCpQjQRLc85zu2UUX4",
       "name": "塔城街牛肉麵",
       "rating": 5,
@@ -3329,28 +3425,28 @@
       "district": "中正區"
     },
     {
-      "id": "ChIJsSC8HAmpQjQR7uCNzzunDRw",
-      "name": "老山東牛肉麵",
-      "rating": 4,
-      "userRatingCount": 4613,
-      "formattedAddress": "108台灣台北市萬華區西寧南路70號B1之15室",
-      "location": {
-        "latitude": 25.0435797,
-        "longitude": 121.5060857
-      },
-      "district": "萬華區"
-    },
-    {
       "id": "ChIJc0gIXQypQjQRxvme2Jm_ABE",
       "name": "清真黃牛肉麵館",
       "rating": 4.1,
-      "userRatingCount": 3981,
+      "userRatingCount": 3991,
       "formattedAddress": "100台灣台北市中正區延平南路23號",
       "location": {
         "latitude": 25.0456123,
         "longitude": 121.51078509999999
       },
       "district": "中正區"
+    },
+    {
+      "id": "ChIJK-aSKgypQjQRkeWsErc5ORk",
+      "name": "老劉刀切牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 1523,
+      "formattedAddress": "108台灣台北市萬華區洛陽街45之8號",
+      "location": {
+        "latitude": 25.047527799999997,
+        "longitude": 121.5082868
+      },
+      "district": "萬華區"
     },
     {
       "id": "ChIJzxNdESWpQjQR3fTbZzBvgF4",
@@ -3365,22 +3461,10 @@
       "district": "大同區"
     },
     {
-      "id": "ChIJK-aSKgypQjQRkeWsErc5ORk",
-      "name": "老劉刀切牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 1516,
-      "formattedAddress": "108台灣台北市萬華區洛陽街45之8號",
-      "location": {
-        "latitude": 25.047527799999997,
-        "longitude": 121.5082868
-      },
-      "district": "萬華區"
-    },
-    {
       "id": "ChIJA1oouGypQjQR5F1dsP0UY9Y",
       "name": "夯仔口牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 387,
+      "userRatingCount": 389,
       "formattedAddress": "103台灣台北市大同區重慶北路一段83巷20號",
       "location": {
         "latitude": 25.05273,
@@ -3392,7 +3476,7 @@
       "id": "ChIJHZfOpW2pQjQRcPHEZ49ozfw",
       "name": "職人見麵—雅璇蕃茄牛肉麵",
       "rating": 4.4,
-      "userRatingCount": 292,
+      "userRatingCount": 293,
       "formattedAddress": "103台灣台北市大同區延平北路一段139號1 樓",
       "location": {
         "latitude": 25.053299799999998,
@@ -3401,22 +3485,22 @@
       "district": "大同區"
     },
     {
-      "id": "ChIJ7wT6RrOpQjQRXjc-2zNhyQM",
-      "name": "延三溫體牛-牛記",
-      "rating": 4.3,
-      "userRatingCount": 497,
-      "formattedAddress": "103台灣台北市大同區西寧北路120號",
+      "id": "ChIJ_eESvxepQjQR0ZXUXcYOC1o",
+      "name": "賓 果 牛肉麵 海鮮麵 滷肉飯",
+      "rating": 4.6,
+      "userRatingCount": 366,
+      "formattedAddress": "108台灣台北市萬華區漢口街二段32號",
       "location": {
-        "latitude": 25.0563485,
-        "longitude": 121.50888330000001
+        "latitude": 25.045448099999998,
+        "longitude": 121.5074273
       },
-      "district": "大同區"
+      "district": "萬華區"
     },
     {
       "id": "ChIJM5xe5kOpQjQRrjNJ17iMhBk",
       "name": "中山牛肉麵(中山市場)",
       "rating": 4.3,
-      "userRatingCount": 301,
+      "userRatingCount": 302,
       "formattedAddress": "10491台灣台北市中山區長安西路3號",
       "location": {
         "latitude": 25.0500826,
@@ -3425,22 +3509,10 @@
       "district": "中山區"
     },
     {
-      "id": "ChIJtex1HG-pQjQRyngJ2YNbAso",
-      "name": "玖伍牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 1330,
-      "formattedAddress": "10491台灣台北市中山區天津街51號",
-      "location": {
-        "latitude": 25.050449999999998,
-        "longitude": 121.5232167
-      },
-      "district": "中山區"
-    },
-    {
       "id": "ChIJw1_5EW2pQjQR3DTD-VbUvbU",
       "name": "潘家老牌牛肉麵",
       "rating": 3.8,
-      "userRatingCount": 871,
+      "userRatingCount": 872,
       "formattedAddress": "103台灣台北市大同區華陰街123號",
       "location": {
         "latitude": 25.050237799999998,
@@ -3449,26 +3521,26 @@
       "district": "大同區"
     },
     {
-      "id": "ChIJq6qqqgasQjQRoj3bGAmbKmQ",
-      "name": "和妹麵店",
-      "rating": 4,
-      "userRatingCount": 2567,
-      "formattedAddress": "104台灣台北市中山區吉林路121號",
+      "id": "ChIJtex1HG-pQjQRyngJ2YNbAso",
+      "name": "玖伍牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 1333,
+      "formattedAddress": "10491台灣台北市中山區天津街51號",
       "location": {
-        "latitude": 25.057091000000003,
-        "longitude": 121.53033800000001
+        "latitude": 25.050449999999998,
+        "longitude": 121.5232167
       },
       "district": "中山區"
     },
     {
-      "id": "ChIJdbNKqt6pQjQRXAWAoy6md-c",
-      "name": "麵大廚 四平店",
-      "rating": 4.4,
-      "userRatingCount": 1456,
-      "formattedAddress": "104台灣台北市中山區南京東路二段115巷18-1號",
+      "id": "ChIJCw0ECkKpQjQRcRey1Rjj4Tk",
+      "name": "老董牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 3681,
+      "formattedAddress": "10491台灣台北市中山區民生西路35號",
       "location": {
-        "latitude": 25.0531963,
-        "longitude": 121.5335529
+        "latitude": 25.057843199999997,
+        "longitude": 121.5210064
       },
       "district": "中山區"
     },
@@ -3476,11 +3548,23 @@
       "id": "ChIJZzvvbWCpQjQR9M4RShcKW5U",
       "name": "四平街番茄牛肉麵",
       "rating": 4.1,
-      "userRatingCount": 2209,
+      "userRatingCount": 2212,
       "formattedAddress": "10491台灣台北市中山區四平街93號",
       "location": {
         "latitude": 25.053740299999998,
         "longitude": 121.5352037
+      },
+      "district": "中山區"
+    },
+    {
+      "id": "ChIJx5Nt-0irQjQRpvgRY85Wcjs",
+      "name": "禾食麵鋪",
+      "rating": 4.7,
+      "userRatingCount": 295,
+      "formattedAddress": "104台灣台北市中山區長春路76號",
+      "location": {
+        "latitude": 25.054816000000002,
+        "longitude": 121.5265071
       },
       "district": "中山區"
     },
@@ -3497,38 +3581,50 @@
       "district": "中山區"
     },
     {
-      "id": "ChIJ3fDTj2apQjQRD3zahU_abBQ",
-      "name": "湘帝牛肉麵",
-      "rating": 4.1,
-      "userRatingCount": 78,
-      "formattedAddress": "10491台灣台北市中山區吉林路26巷32號",
+      "id": "ChIJdbNKqt6pQjQRXAWAoy6md-c",
+      "name": "麵大廚 四平店",
+      "rating": 4.4,
+      "userRatingCount": 1464,
+      "formattedAddress": "104台灣台北市中山區南京東路二段115巷18-1號",
       "location": {
-        "latitude": 25.0513853,
-        "longitude": 121.52912529999999
+        "latitude": 25.0531963,
+        "longitude": 121.5335529
       },
       "district": "中山區"
     },
     {
-      "id": "ChIJx5Nt-0irQjQRpvgRY85Wcjs",
-      "name": "禾食麵鋪",
-      "rating": 4.7,
-      "userRatingCount": 294,
-      "formattedAddress": "104台灣台北市中山區長春路76號",
-      "location": {
-        "latitude": 25.054816000000002,
-        "longitude": 121.5265071
-      },
-      "district": "中山區"
-    },
-    {
-      "id": "ChIJ325vxmCpQjQRAIjqJixLXZk",
-      "name": "甘記蕃茄刀削麺",
+      "id": "ChIJHWdDm2WpQjQRkado_UJWqV0",
+      "name": "豐盛刀削麵/蕃茄牛肉麵/水餃/華山必吃美食/加熱滷味/平價小吃/紅燒牛肉麵/條通美食（不固定休假）/中山區美食/附近美食",
       "rating": 4.2,
-      "userRatingCount": 1262,
-      "formattedAddress": "10491台灣台北市中山區四平街42號",
+      "userRatingCount": 499,
+      "formattedAddress": "10491台灣台北市中山區長安東路一段53巷2-1號",
       "location": {
-        "latitude": 25.053601300000004,
-        "longitude": 121.53217540000001
+        "latitude": 25.048949999999998,
+        "longitude": 121.526364
+      },
+      "district": "中山區"
+    },
+    {
+      "id": "ChIJ5UQalMepQjQRRkHDpahEB2Q",
+      "name": "牛肉麵",
+      "rating": 3.9,
+      "userRatingCount": 17,
+      "formattedAddress": "10491台灣台北市中山區新生北路二段58巷50號",
+      "location": {
+        "latitude": 25.055326299999997,
+        "longitude": 121.52583849999999
+      },
+      "district": "中山區"
+    },
+    {
+      "id": "ChIJE2970YWrQjQRDbib6RUUrK4",
+      "name": "東館牛麵食館",
+      "rating": 4.5,
+      "userRatingCount": 1058,
+      "formattedAddress": "104台灣台北市中山區南京東路三段109巷15號",
+      "location": {
+        "latitude": 25.0530217,
+        "longitude": 121.5400296
       },
       "district": "中山區"
     },
@@ -3536,7 +3632,7 @@
       "id": "ChIJHz98_turQjQRVSsWAemRkKs",
       "name": "阿三汕頭牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 596,
+      "userRatingCount": 600,
       "formattedAddress": "104台灣台北市中山區八德路二段312巷7號",
       "location": {
         "latitude": 25.0468672,
@@ -3548,7 +3644,7 @@
       "id": "ChIJZ5N19WCrQjQRkmH4HkD4oe8",
       "name": "牛易館牛肉麵（全台唯一葷素牛肉麵館）",
       "rating": 4.3,
-      "userRatingCount": 620,
+      "userRatingCount": 622,
       "formattedAddress": "10491台灣台北市中山區八德路二段284號",
       "location": {
         "latitude": 25.046919199999998,
@@ -3557,10 +3653,22 @@
       "district": "中山區"
     },
     {
+      "id": "ChIJT0NYhZ6rQjQRASPvSHE4ERo",
+      "name": "就是這間-功夫牛肉麵",
+      "rating": 4.8,
+      "userRatingCount": 539,
+      "formattedAddress": "105台灣台北市松山區八德路二段366巷29號1樓",
+      "location": {
+        "latitude": 25.0468666,
+        "longitude": 121.54610019999998
+      },
+      "district": "松山區"
+    },
+    {
       "id": "ChIJQ94BhwCrQjQRPV_GLNgtu8c",
       "name": "便宜吃牛肉麵",
       "rating": 4.6,
-      "userRatingCount": 117,
+      "userRatingCount": 118,
       "formattedAddress": "105台灣台北市松山區八德路三段76號2樓",
       "location": {
         "latitude": 25.0479549,
@@ -3572,7 +3680,7 @@
       "id": "ChIJM8wgSimrQjQRVppcriMyJ-U",
       "name": "延吉2-6牛肉麵",
       "rating": 4,
-      "userRatingCount": 32,
+      "userRatingCount": 31,
       "formattedAddress": "105台灣台北市松山區延吉街2-6號",
       "location": {
         "latitude": 25.0477453,
@@ -3581,10 +3689,22 @@
       "district": "松山區"
     },
     {
+      "id": "ChIJY_8aNpWrQjQRgZPJklhEozs",
+      "name": "南岭精緻麵館",
+      "rating": 4.6,
+      "userRatingCount": 915,
+      "formattedAddress": "105台灣台北市松山區光復北路11巷62號",
+      "location": {
+        "latitude": 25.049908199999997,
+        "longitude": 121.5603026
+      },
+      "district": "松山區"
+    },
+    {
       "id": "ChIJy-PoScKrQjQRT1mDz7DUDoc",
       "name": "老楊山東牛肉麵（沒賣牛肉麵）",
       "rating": 4.4,
-      "userRatingCount": 159,
+      "userRatingCount": 160,
       "formattedAddress": "105台灣台北市松山區八德路三段76號2樓",
       "location": {
         "latitude": 25.047922099999997,
@@ -3596,23 +3716,11 @@
       "id": "ChIJAQewOMKrQjQRNOauPdZN5Wg",
       "name": "老詹黃牛肉麵",
       "rating": 4,
-      "userRatingCount": 393,
+      "userRatingCount": 394,
       "formattedAddress": "105台灣台北市松山區北寧路10號",
       "location": {
         "latitude": 25.048625299999998,
         "longitude": 121.55278200000001
-      },
-      "district": "松山區"
-    },
-    {
-      "id": "ChIJMfd9B8OrQjQR9ltUU3YU8zU",
-      "name": "老爹牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 282,
-      "formattedAddress": "105台灣台北市松山區八德路三段12巷5弄22號",
-      "location": {
-        "latitude": 25.0475866,
-        "longitude": 121.5513261
       },
       "district": "松山區"
     },
@@ -3629,14 +3737,26 @@
       "district": "松山區"
     },
     {
-      "id": "ChIJ13TOiMarQjQRGCtxcxV5rUo",
-      "name": "清真中國牛肉麵食館 (大安)",
+      "id": "ChIJMfd9B8OrQjQR9ltUU3YU8zU",
+      "name": "老爹牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 3425,
-      "formattedAddress": "106台灣台北市大安區延吉街137巷7弄1號",
+      "userRatingCount": 282,
+      "formattedAddress": "105台灣台北市松山區八德路三段12巷5弄22號",
       "location": {
-        "latitude": 25.0420706,
-        "longitude": 121.55495659999998
+        "latitude": 25.0475866,
+        "longitude": 121.5513261
+      },
+      "district": "松山區"
+    },
+    {
+      "id": "ChIJceSuri2rQjQRRoE7bNp7GhQ",
+      "name": "牛殿下秘傳金湯牛肉麵 大安店",
+      "rating": 4.6,
+      "userRatingCount": 64,
+      "formattedAddress": "10690台灣台北市大安區忠孝東路四段97號地下之20",
+      "location": {
+        "latitude": 25.0417877,
+        "longitude": 121.5478902
       },
       "district": "大安區"
     },
@@ -3644,7 +3764,7 @@
       "id": "ChIJ26V63JWrQjQR0EJZDmEeJkI",
       "name": "王家麵食館(手工家常麵)",
       "rating": 4.1,
-      "userRatingCount": 830,
+      "userRatingCount": 829,
       "formattedAddress": "105台灣台北市松山區八德路四段253號",
       "location": {
         "latitude": 25.049032300000004,
@@ -3665,28 +3785,28 @@
       "district": "松山區"
     },
     {
-      "id": "ChIJa8iqhL2rQjQRwazuvMUg4zE",
-      "name": "總裁牛肉麵-遠百A13門市",
-      "rating": 4.8,
-      "userRatingCount": 130,
-      "formattedAddress": "110台灣台北市信義區松仁路58號4 樓",
-      "location": {
-        "latitude": 25.036784899999997,
-        "longitude": 121.56795659999999
-      },
-      "district": "信義區"
-    },
-    {
       "id": "ChIJB18U1F-rQjQRejgTIOMTF4Q",
       "name": "太官私房牛肉麵",
       "rating": 4.4,
-      "userRatingCount": 811,
+      "userRatingCount": 814,
       "formattedAddress": "1f No. 16號, No. 16號中坡北路南港區台北市台灣 115",
       "location": {
         "latitude": 25.044811,
         "longitude": 121.58152100000001
       },
       "district": "南港區"
+    },
+    {
+      "id": "ChIJ5zXOIKCrQjQRZwPyLgwqLdQ",
+      "name": "珍珍牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 639,
+      "formattedAddress": "110台灣台北市信義區忠孝東路五段743巷11號",
+      "location": {
+        "latitude": 25.04356,
+        "longitude": 121.580913
+      },
+      "district": "信義區"
     },
     {
       "id": "ChIJR_yEfpmrQjQR9cG0QJN2bDs",
@@ -3701,22 +3821,10 @@
       "district": "松山區"
     },
     {
-      "id": "ChIJ5zXOIKCrQjQRZwPyLgwqLdQ",
-      "name": "珍珍牛肉麵",
-      "rating": 4.3,
-      "userRatingCount": 638,
-      "formattedAddress": "110台灣台北市信義區忠孝東路五段743巷11號",
-      "location": {
-        "latitude": 25.04356,
-        "longitude": 121.580913
-      },
-      "district": "信義區"
-    },
-    {
       "id": "ChIJMWXBop-rQjQRLt2vJ-lSzRI",
       "name": "大慶麵店(信義店)-信義麵食料理|人氣小吃|熱門醡醬麵|滷肉飯推薦|必吃炒手|必吃麵食",
       "rating": 3.8,
-      "userRatingCount": 1564,
+      "userRatingCount": 1567,
       "formattedAddress": "110台灣台北市信義區永吉路524號",
       "location": {
         "latitude": 25.045216,
@@ -3735,18 +3843,6 @@
         "longitude": 121.5767129
       },
       "district": "松山區"
-    },
-    {
-      "id": "ChIJpS2wtKmrQjQRBGzM1Ll9JFU",
-      "name": "豪麥牛肉麵",
-      "rating": 4.7,
-      "userRatingCount": 101,
-      "formattedAddress": "115台灣台北市南港區成福路172號",
-      "location": {
-        "latitude": 25.041522699999998,
-        "longitude": 121.58763839999999
-      },
-      "district": "南港區"
     },
     {
       "id": "ChIJs6op2Q6rQjQRKKXCNLBGccw",
@@ -3776,7 +3872,7 @@
       "id": "ChIJY34qdy2rQjQRgj97sK3sxoA",
       "name": "天東86牛肉麵-永吉店",
       "rating": 4.5,
-      "userRatingCount": 329,
+      "userRatingCount": 332,
       "formattedAddress": "11065台灣台北市信義區永吉路120巷83號",
       "location": {
         "latitude": 25.0424831,
@@ -3788,7 +3884,7 @@
       "id": "ChIJM3iTicCrQjQROJWoFGfYz08",
       "name": "老王原汁牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 683,
+      "userRatingCount": 687,
       "formattedAddress": "110台灣台北市信義區松山路462號",
       "location": {
         "latitude": 25.040457999999997,
@@ -3800,7 +3896,7 @@
       "id": "ChIJMXooIHCrQjQRi3Z-SNhPMu8",
       "name": "昆陽牛肉麵",
       "rating": 4.1,
-      "userRatingCount": 2037,
+      "userRatingCount": 2038,
       "formattedAddress": "115台灣台北市南港區昆陽街140巷5號",
       "location": {
         "latitude": 25.049889,
@@ -3809,10 +3905,22 @@
       "district": "南港區"
     },
     {
+      "id": "ChIJg5_-IHCrQjQRWX8PjgI3LUU",
+      "name": "昆陽街 奇味番茄牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 839,
+      "formattedAddress": "115台灣台北市南港區昆陽街140巷12號",
+      "location": {
+        "latitude": 25.0496838,
+        "longitude": 121.5939226
+      },
+      "district": "南港區"
+    },
+    {
       "id": "ChIJW9rwb6GrQjQRtGsUNGR2qNw",
       "name": "金春發牛肉店",
       "rating": 4.2,
-      "userRatingCount": 2754,
+      "userRatingCount": 2760,
       "formattedAddress": "115台灣台北市南港區忠孝東路六段372號",
       "location": {
         "latitude": 25.0496914,
@@ -3821,14 +3929,14 @@
       "district": "南港區"
     },
     {
-      "id": "ChIJg5_-IHCrQjQRWX8PjgI3LUU",
-      "name": "昆陽街 奇味番茄牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 835,
-      "formattedAddress": "115台灣台北市南港區昆陽街140巷12號",
+      "id": "ChIJpS2wtKmrQjQRBGzM1Ll9JFU",
+      "name": "豪麥牛肉麵",
+      "rating": 4.7,
+      "userRatingCount": 102,
+      "formattedAddress": "115台灣台北市南港區成福路172號",
       "location": {
-        "latitude": 25.0496838,
-        "longitude": 121.5939226
+        "latitude": 25.041522699999998,
+        "longitude": 121.58763839999999
       },
       "district": "南港區"
     },
@@ -3857,16 +3965,52 @@
       "district": "南港區"
     },
     {
+      "id": "ChIJadNdVierQjQRoe0aiwZDMIQ",
+      "name": "FB Kitchen餐廳｜台塑牛小排牛肉麵，台北內湖餐廳推薦",
+      "rating": 4.9,
+      "userRatingCount": 402,
+      "formattedAddress": "1樓, 122之2號, 新明路內湖區台北市台灣 114",
+      "location": {
+        "latitude": 25.0590811,
+        "longitude": 121.5885279
+      },
+      "district": "內湖區"
+    },
+    {
       "id": "ChIJaVJvGACrQjQRRauwRVr6ksU",
       "name": "大業牛肉麵",
       "rating": 3.6,
-      "userRatingCount": 131,
+      "userRatingCount": 132,
       "formattedAddress": "115台灣台北市南港區玉成街162號",
       "location": {
         "latitude": 25.0448149,
         "longitude": 121.58394039999999
       },
       "district": "南港區"
+    },
+    {
+      "id": "ChIJpYa65qCrQjQRZY_V83Gifns",
+      "name": "大家好牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 298,
+      "formattedAddress": "110台灣台北市信義區林口街105號",
+      "location": {
+        "latitude": 25.0401351,
+        "longitude": 121.58015830000001
+      },
+      "district": "信義區"
+    },
+    {
+      "id": "ChIJzyqO_qOrQjQR2lwRY8GcyUc",
+      "name": "小陳牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 2159,
+      "formattedAddress": "110台灣台北市信義區虎林街135號",
+      "location": {
+        "latitude": 25.039869000000003,
+        "longitude": 121.576847
+      },
+      "district": "信義區"
     },
     {
       "id": "ChIJ4WwJJEWrQjQRwsAiX-k8Xd4",
@@ -3881,22 +4025,10 @@
       "district": "南港區"
     },
     {
-      "id": "ChIJzyqO_qOrQjQR2lwRY8GcyUc",
-      "name": "小陳牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 2154,
-      "formattedAddress": "110台灣台北市信義區虎林街135號",
-      "location": {
-        "latitude": 25.039869000000003,
-        "longitude": 121.576847
-      },
-      "district": "信義區"
-    },
-    {
       "id": "ChIJk8tFPCWrQjQRr18WKifxnqQ",
       "name": "樂初 Le Chu Beef Noodles",
       "rating": 5,
-      "userRatingCount": 87,
+      "userRatingCount": 93,
       "formattedAddress": "115台灣台北市南港區昆陽街140巷20號",
       "location": {
         "latitude": 25.0497391,
@@ -3917,22 +4049,10 @@
       "district": "南港區"
     },
     {
-      "id": "ChIJpQWI816rQjQRKtdvTeHmpcA",
-      "name": "Neverland Noodle Bar",
-      "rating": 4.4,
-      "userRatingCount": 996,
-      "formattedAddress": "115台灣台北市南港區南港路一段271號",
-      "location": {
-        "latitude": 25.054565,
-        "longitude": 121.608701
-      },
-      "district": "南港區"
-    },
-    {
       "id": "ChIJYf093burQjQRlOB7fgqnze0",
       "name": "老董牛肉麵 環球購物中心南港店",
       "rating": 3.7,
-      "userRatingCount": 306,
+      "userRatingCount": 307,
       "formattedAddress": "115台灣台北市南港區忠孝東路七段371號B1",
       "location": {
         "latitude": 25.052974199999998,
@@ -3977,18 +4097,6 @@
       "district": "南港區"
     },
     {
-      "id": "ChIJQSgQMEWrQjQRiHhg_BZlVSI",
-      "name": "松園牛肉麵",
-      "rating": 3.7,
-      "userRatingCount": 184,
-      "formattedAddress": "115台灣台北市南港區研究院路二段70巷8號",
-      "location": {
-        "latitude": 25.0455948,
-        "longitude": 121.61484410000001
-      },
-      "district": "南港區"
-    },
-    {
       "id": "ChIJ5QrlpoGrQjQRRlDUbrzHtPI",
       "name": "二姐麵店",
       "rating": 4,
@@ -3997,6 +4105,18 @@
       "location": {
         "latitude": 25.0527448,
         "longitude": 121.6160201
+      },
+      "district": "南港區"
+    },
+    {
+      "id": "ChIJQSgQMEWrQjQRiHhg_BZlVSI",
+      "name": "松園牛肉麵",
+      "rating": 3.7,
+      "userRatingCount": 184,
+      "formattedAddress": "115台灣台北市南港區研究院路二段70巷8號",
+      "location": {
+        "latitude": 25.0455948,
+        "longitude": 121.61484410000001
       },
       "district": "南港區"
     },
@@ -4013,22 +4133,10 @@
       "district": "萬華區"
     },
     {
-      "id": "ChIJNQVzGXapQjQRRpuxPcjPoAA",
-      "name": "牛の廊牛肉麵",
-      "rating": 4.7,
-      "userRatingCount": 117,
-      "formattedAddress": "108台灣台北市萬華區東園街6號",
-      "location": {
-        "latitude": 25.027801399999998,
-        "longitude": 121.49550430000001
-      },
-      "district": "萬華區"
-    },
-    {
       "id": "ChIJeVR5KY6pQjQREwN2iYFlJn4",
       "name": "潮麵堂 花椒牛肉麵/萬華必吃美食小吃餐廳",
       "rating": 4.7,
-      "userRatingCount": 220,
+      "userRatingCount": 226,
       "formattedAddress": "108台灣台北市萬華區梧州街6號1樓",
       "location": {
         "latitude": 25.0381073,
@@ -4040,7 +4148,7 @@
       "id": "ChIJ1SHbtAmpQjQRwfQuYb31kN8",
       "name": "西門麵店",
       "rating": 4.3,
-      "userRatingCount": 12048,
+      "userRatingCount": 12101,
       "formattedAddress": "108台灣台北市萬華區內江街41號",
       "location": {
         "latitude": 25.041694,
@@ -4049,10 +4157,22 @@
       "district": "萬華區"
     },
     {
+      "id": "ChIJiU6wRqSpQjQRhJsLidJpPxQ",
+      "name": "廣州街無名牛肉湯 排骨湯",
+      "rating": 4.4,
+      "userRatingCount": 185,
+      "formattedAddress": "108台灣台北市萬華區廣州街245-1號",
+      "location": {
+        "latitude": 25.0368082,
+        "longitude": 121.49766930000001
+      },
+      "district": "萬華區"
+    },
+    {
       "id": "ChIJU5UNjgipQjQRZDaCOD8I7XE",
       "name": "犢立牛肉麵 (西門町Ximending）DU LI BEFF NOODLE",
       "rating": 4.5,
-      "userRatingCount": 760,
+      "userRatingCount": 765,
       "formattedAddress": "108台灣台北市萬華區貴陽街二段31號",
       "location": {
         "latitude": 25.039627799999998,
@@ -4064,7 +4184,7 @@
       "id": "ChIJEaMTjPSpQjQRg74JDKlRIAs",
       "name": "御真牛（西門町牛肉麵）伴手禮牛肉乾",
       "rating": 4.8,
-      "userRatingCount": 811,
+      "userRatingCount": 814,
       "formattedAddress": "108台灣台北市萬華區成都路27巷3號",
       "location": {
         "latitude": 25.042834,
@@ -4076,23 +4196,11 @@
       "id": "ChIJKdpLqXKpQjQR8d6Dyoc8YLo",
       "name": "郭家炒牛肉",
       "rating": 4.4,
-      "userRatingCount": 1116,
+      "userRatingCount": 1125,
       "formattedAddress": "108台灣台北市萬華區華西街攤位146號",
       "location": {
         "latitude": 25.0390435,
         "longitude": 121.4983447
-      },
-      "district": "萬華區"
-    },
-    {
-      "id": "ChIJM2BnaQCpQjQRdqiDfKPMLVM",
-      "name": "三加牛肉麵",
-      "rating": 4.5,
-      "userRatingCount": 185,
-      "formattedAddress": "108台灣台北市萬華區西寧南路203號",
-      "location": {
-        "latitude": 25.041065,
-        "longitude": 121.506153
       },
       "district": "萬華區"
     },
@@ -4105,6 +4213,18 @@
       "location": {
         "latitude": 25.038721300000002,
         "longitude": 121.49993099999998
+      },
+      "district": "萬華區"
+    },
+    {
+      "id": "ChIJM2BnaQCpQjQRdqiDfKPMLVM",
+      "name": "三加牛肉麵",
+      "rating": 4.5,
+      "userRatingCount": 186,
+      "formattedAddress": "108台灣台北市萬華區西寧南路203號",
+      "location": {
+        "latitude": 25.041065,
+        "longitude": 121.506153
       },
       "district": "萬華區"
     },
@@ -4133,34 +4253,10 @@
       "district": "萬華區"
     },
     {
-      "id": "ChIJnyOLwCGpQjQRs64f7YRqc_s",
-      "name": "龍山商場 美味牛肉麵",
-      "rating": 4.4,
-      "userRatingCount": 67,
-      "formattedAddress": "108台灣台北市萬華區和平西路三段120號1樓龍山商場7號攤",
-      "location": {
-        "latitude": 25.0349881,
-        "longitude": 121.4998885
-      },
-      "district": "萬華區"
-    },
-    {
-      "id": "ChIJ_eESvxepQjQR0ZXUXcYOC1o",
-      "name": "賓 果 牛肉麵 海鮮麵 滷肉飯",
-      "rating": 4.6,
-      "userRatingCount": 366,
-      "formattedAddress": "108台灣台北市萬華區漢口街二段32號",
-      "location": {
-        "latitude": 25.045448099999998,
-        "longitude": 121.5074273
-      },
-      "district": "萬華區"
-    },
-    {
       "id": "ChIJWfxypgupQjQRAQtE_GjLejI",
       "name": "張記鍋貼牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 842,
+      "userRatingCount": 844,
       "formattedAddress": "100台灣台北市中正區衡陽路79-1號",
       "location": {
         "latitude": 25.042545699999998,
@@ -4172,7 +4268,7 @@
       "id": "ChIJlyJUTQqpQjQRHdnIg4z9CUc",
       "name": "桃源街老王記牛肉麵店",
       "rating": 3.9,
-      "userRatingCount": 3991,
+      "userRatingCount": 3995,
       "formattedAddress": "100台灣台北市中正區桃源街15號",
       "location": {
         "latitude": 25.041666700000004,
@@ -4182,9 +4278,9 @@
     },
     {
       "id": "ChIJHZ4Jtg6pQjQRqQDW32dbhWc",
-      "name": "萍姊酸菜麵(原萬國酸菜麵)",
+      "name": "萍姊酸菜麵",
       "rating": 4.2,
-      "userRatingCount": 1126,
+      "userRatingCount": 1127,
       "formattedAddress": "108台灣台北市萬華區漢口街二段80號",
       "location": {
         "latitude": 25.0460386,
@@ -4196,7 +4292,7 @@
       "id": "ChIJ6xj3C3GpQjQRaSOEnbUzB94",
       "name": "93蕃茄牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 1892,
+      "userRatingCount": 1893,
       "formattedAddress": "100台灣台北市中正區青島東路3-2號",
       "location": {
         "latitude": 25.0440762,
@@ -4208,23 +4304,11 @@
       "id": "ChIJDe201QypQjQRKrLbgksaElA",
       "name": "良品牛肉麵",
       "rating": 4,
-      "userRatingCount": 2936,
+      "userRatingCount": 2939,
       "formattedAddress": "100台灣台北市中正區開封街一段10號",
       "location": {
         "latitude": 25.0459368,
         "longitude": 121.51387960000001
-      },
-      "district": "中正區"
-    },
-    {
-      "id": "ChIJvSbgmQypQjQRPX7acLGaOj4",
-      "name": "城中老牌牛肉拉麵大王",
-      "rating": 4.1,
-      "userRatingCount": 5013,
-      "formattedAddress": "100台灣台北市中正區重慶南路一段46巷7號",
-      "location": {
-        "latitude": 25.044524,
-        "longitude": 121.51261849999999
       },
       "district": "中正區"
     },
@@ -4241,6 +4325,18 @@
       "district": "中正區"
     },
     {
+      "id": "ChIJvSbgmQypQjQRPX7acLGaOj4",
+      "name": "城中老牌牛肉拉麵大王",
+      "rating": 4.1,
+      "userRatingCount": 5015,
+      "formattedAddress": "100台灣台北市中正區重慶南路一段46巷7號",
+      "location": {
+        "latitude": 25.044524,
+        "longitude": 121.51261849999999
+      },
+      "district": "中正區"
+    },
+    {
       "id": "ChIJScQQfXepQjQRqbx1st1RAic",
       "name": "德忞牛肉麵",
       "rating": 4,
@@ -4253,18 +4349,6 @@
       "district": "中正區"
     },
     {
-      "id": "ChIJUcDW-HmpQjQRSVuxBdltXJc",
-      "name": "東方霸黃牛肉麵",
-      "rating": 4.4,
-      "userRatingCount": 401,
-      "formattedAddress": "100台灣台北市中正區杭州南路一段57號",
-      "location": {
-        "latitude": 25.040555299999998,
-        "longitude": 121.5259755
-      },
-      "district": "中正區"
-    },
-    {
       "id": "ChIJUd8bZ3ypQjQRb_lRn1UkUvk",
       "name": "皇家黃牛肉麵",
       "rating": 3.8,
@@ -4273,6 +4357,18 @@
       "location": {
         "latitude": 25.043786299999997,
         "longitude": 121.52268350000001
+      },
+      "district": "中正區"
+    },
+    {
+      "id": "ChIJUcDW-HmpQjQRSVuxBdltXJc",
+      "name": "東方霸黃牛肉麵",
+      "rating": 4.4,
+      "userRatingCount": 402,
+      "formattedAddress": "100台灣台北市中正區杭州南路一段57號",
+      "location": {
+        "latitude": 25.040555299999998,
+        "longitude": 121.5259755
       },
       "district": "中正區"
     },
@@ -4292,7 +4388,7 @@
       "id": "ChIJjWBJI3GpQjQRC5a6CQgCB-0",
       "name": "順口牛肉麵",
       "rating": 3.9,
-      "userRatingCount": 696,
+      "userRatingCount": 697,
       "formattedAddress": "100台灣台北市中正區濟南路一段9號",
       "location": {
         "latitude": 25.0426742,
@@ -4328,7 +4424,7 @@
       "id": "ChIJs9HOcHypQjQRlMPKm2JfIjw",
       "name": "玖伍牛肉麵忠孝店",
       "rating": 4.2,
-      "userRatingCount": 2995,
+      "userRatingCount": 3002,
       "formattedAddress": "100台灣台北市中正區新生南路一段54巷22號",
       "location": {
         "latitude": 25.0411277,
@@ -4352,37 +4448,13 @@
       "id": "ChIJq0T3oHypQjQRyaW2caD6c4Y",
       "name": "銀記手擀刀切牛肉麵",
       "rating": 4.1,
-      "userRatingCount": 3209,
+      "userRatingCount": 3223,
       "formattedAddress": "100台灣台北市中正區八德路一段82巷9弄17號",
       "location": {
         "latitude": 25.0436002,
         "longitude": 121.5313792
       },
       "district": "中正區"
-    },
-    {
-      "id": "ChIJ9xvVpHypQjQRw7IklYPK8oo",
-      "name": "玖伍牛肉麵",
-      "rating": 4,
-      "userRatingCount": 2854,
-      "formattedAddress": "100台灣台北市中正區八德路一段82巷8號1樓",
-      "location": {
-        "latitude": 25.0437619,
-        "longitude": 121.5319688
-      },
-      "district": "中正區"
-    },
-    {
-      "id": "ChIJgRdW94KpQjQRODiapkz_DB0",
-      "name": "永康牛肉麵",
-      "rating": 3.7,
-      "userRatingCount": 11049,
-      "formattedAddress": "106台灣台北市大安區金山南路二段31巷17號",
-      "location": {
-        "latitude": 25.0329382,
-        "longitude": 121.52811109999998
-      },
-      "district": "大安區"
     },
     {
       "id": "ChIJLzN12tmpQjQR-WUw4otosHc",
@@ -4393,6 +4465,18 @@
       "location": {
         "latitude": 25.0313108,
         "longitude": 121.5273124
+      },
+      "district": "大安區"
+    },
+    {
+      "id": "ChIJgRdW94KpQjQRODiapkz_DB0",
+      "name": "永康牛肉麵",
+      "rating": 3.7,
+      "userRatingCount": 11063,
+      "formattedAddress": "106台灣台北市大安區金山南路二段31巷17號",
+      "location": {
+        "latitude": 25.0329382,
+        "longitude": 121.52811109999998
       },
       "district": "大安區"
     },
@@ -4412,11 +4496,23 @@
       "id": "ChIJT1usYnepQjQR5K5g-ZBlzmU",
       "name": "老張牛肉麵",
       "rating": 3.8,
-      "userRatingCount": 898,
+      "userRatingCount": 899,
       "formattedAddress": "100台灣台北市中正區杭州南路一段93號",
       "location": {
         "latitude": 25.0388603,
         "longitude": 121.52553559999998
+      },
+      "district": "中正區"
+    },
+    {
+      "id": "ChIJAQAAAHupQjQRS-JJWvfFmAU",
+      "name": "伍柒玖牛肉麵飯館",
+      "rating": 4.1,
+      "userRatingCount": 1072,
+      "formattedAddress": "100台灣台北市中正區八德路一段82巷9弄6號",
+      "location": {
+        "latitude": 25.0435095,
+        "longitude": 121.5318909
       },
       "district": "中正區"
     },
@@ -4433,22 +4529,10 @@
       "district": "中正區"
     },
     {
-      "id": "ChIJceSuri2rQjQRRoE7bNp7GhQ",
-      "name": "牛殿下秘傳金湯牛肉麵 大安店",
-      "rating": 4.6,
-      "userRatingCount": 57,
-      "formattedAddress": "10690台灣台北市大安區忠孝東路四段97號地下之20",
-      "location": {
-        "latitude": 25.0417877,
-        "longitude": 121.5478902
-      },
-      "district": "大安區"
-    },
-    {
       "id": "ChIJOxQFz4OrQjQRg1-YB3wJLqE",
       "name": "相遇牛肉麵「Taiwan Beef Noodles」",
       "rating": 5,
-      "userRatingCount": 62,
+      "userRatingCount": 63,
       "formattedAddress": "106台灣台北市大安區四維路6巷22號",
       "location": {
         "latitude": 25.0370918,
@@ -4460,7 +4544,7 @@
       "id": "ChIJcRSHRACrQjQRr1OtxkGc8kI",
       "name": "地一牛肉麵",
       "rating": 4.8,
-      "userRatingCount": 462,
+      "userRatingCount": 466,
       "formattedAddress": "106台灣台北市大安區延吉街162號",
       "location": {
         "latitude": 25.0392007,
@@ -4481,18 +4565,6 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJJx8z59OrQjQRKBWqFf6dG8I",
-      "name": "玖五牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 1381,
-      "formattedAddress": "106台灣台北市大安區東豐街5號",
-      "location": {
-        "latitude": 25.036135299999998,
-        "longitude": 121.54400270000001
-      },
-      "district": "大安區"
-    },
-    {
       "id": "ChIJKb_UDtSrQjQR6k2Atznt8Hc",
       "name": "成都老么牛肉麵",
       "rating": 4.5,
@@ -4505,10 +4577,22 @@
       "district": "大安區"
     },
     {
+      "id": "ChIJJx8z59OrQjQRKBWqFf6dG8I",
+      "name": "玖五牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 1381,
+      "formattedAddress": "106台灣台北市大安區東豐街5號",
+      "location": {
+        "latitude": 25.036135299999998,
+        "longitude": 121.54400270000001
+      },
+      "district": "大安區"
+    },
+    {
       "id": "ChIJ6REc_tCrQjQR7g-IYs0CYgA",
       "name": "天下三絕麵食館",
       "rating": 4.3,
-      "userRatingCount": 2792,
+      "userRatingCount": 2796,
       "formattedAddress": "106台灣台北市大安區仁愛路四段27巷3號",
       "location": {
         "latitude": 25.03888,
@@ -4517,10 +4601,22 @@
       "district": "大安區"
     },
     {
+      "id": "ChIJS67Q4E6rQjQRnRLhmhlrRiY",
+      "name": "牛莊園牛肉麵",
+      "rating": 4.5,
+      "userRatingCount": 1453,
+      "formattedAddress": "106台灣台北市大安區四維路170巷27號",
+      "location": {
+        "latitude": 25.0283199,
+        "longitude": 121.54684780000001
+      },
+      "district": "大安區"
+    },
+    {
       "id": "ChIJz-ZCsserQjQRSNJno7pHgqo",
       "name": "江家牛肉麵永和豆漿(光復店)",
       "rating": 3.8,
-      "userRatingCount": 2764,
+      "userRatingCount": 2771,
       "formattedAddress": "106台灣台北市大安區光復南路240巷1號",
       "location": {
         "latitude": 25.0404035,
@@ -4529,10 +4625,22 @@
       "district": "大安區"
     },
     {
+      "id": "ChIJa8iqhL2rQjQRwazuvMUg4zE",
+      "name": "總裁牛肉麵-遠百A13門市",
+      "rating": 4.8,
+      "userRatingCount": 135,
+      "formattedAddress": "110台灣台北市信義區松仁路58號4 樓",
+      "location": {
+        "latitude": 25.036784899999997,
+        "longitude": 121.56795659999999
+      },
+      "district": "信義區"
+    },
+    {
       "id": "ChIJL6Gl-parQjQRiTm9VwoFN40",
       "name": "老唐牛肉麵 台北東區店",
       "rating": 4.3,
-      "userRatingCount": 164,
+      "userRatingCount": 168,
       "formattedAddress": "106台灣台北市大安區敦化南路一段187巷37號B1-1",
       "location": {
         "latitude": 25.042628,
@@ -4544,7 +4652,7 @@
       "id": "ChIJ7ywzDWmrQjQRKInSZ5hF57Y",
       "name": "牛翻天牛肉麵-牛大骨熬牛肉湯-湯頭濃郁 (大安店)",
       "rating": 4.2,
-      "userRatingCount": 325,
+      "userRatingCount": 326,
       "formattedAddress": "106台灣台北市大安區信義路四段355號",
       "location": {
         "latitude": 25.0332986,
@@ -4556,13 +4664,25 @@
       "id": "ChIJax3jBzCrQjQRd-aOdrCobhs",
       "name": "18冠軍牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 1971,
+      "userRatingCount": 1972,
       "formattedAddress": "106台灣台北市大安區通化街171巷24號",
       "location": {
         "latitude": 25.027743299999997,
         "longitude": 121.5546686
       },
       "district": "大安區"
+    },
+    {
+      "id": "ChIJ6_oMxCKrQjQR2NTkLQWhlgg",
+      "name": "牛肉麵．雞湯 新信義店",
+      "rating": 4,
+      "userRatingCount": 527,
+      "formattedAddress": "110台灣台北市信義區忠孝東路五段189號",
+      "location": {
+        "latitude": 25.0412195,
+        "longitude": 121.5693415
+      },
+      "district": "信義區"
     },
     {
       "id": "ChIJPS8X5MyrQjQRIVvf9enAYcs",
@@ -4577,14 +4697,14 @@
       "district": "信義區"
     },
     {
-      "id": "ChIJ6_oMxCKrQjQR2NTkLQWhlgg",
-      "name": "牛肉麵．雞湯 新信義店",
-      "rating": 4,
-      "userRatingCount": 523,
-      "formattedAddress": "110台灣台北市信義區忠孝東路五段189號",
+      "id": "ChIJx6fdSzKrQjQRB1QPMgEczw4",
+      "name": "麵大廚—市府店",
+      "rating": 4.7,
+      "userRatingCount": 1121,
+      "formattedAddress": "110台灣台北市信義區基隆路一段147巷5弄3號",
       "location": {
-        "latitude": 25.0412195,
-        "longitude": 121.5693415
+        "latitude": 25.042642500000003,
+        "longitude": 121.56604329999999
       },
       "district": "信義區"
     },
@@ -4601,22 +4721,10 @@
       "district": "信義區"
     },
     {
-      "id": "ChIJx6fdSzKrQjQRB1QPMgEczw4",
-      "name": "麵大廚—市府店",
-      "rating": 4.7,
-      "userRatingCount": 1112,
-      "formattedAddress": "110台灣台北市信義區基隆路一段147巷5弄3號",
-      "location": {
-        "latitude": 25.042642500000003,
-        "longitude": 121.56604329999999
-      },
-      "district": "信義區"
-    },
-    {
       "id": "ChIJReo4NbqrQjQRkW3IaEAs4Jw",
       "name": "清真中國牛肉麵食館",
       "rating": 4,
-      "userRatingCount": 851,
+      "userRatingCount": 853,
       "formattedAddress": "110台灣台北市信義區松高路12號新光三越B2",
       "location": {
         "latitude": 25.0377275,
@@ -4628,7 +4736,7 @@
       "id": "ChIJp09L7pWrQjQRzjJD3HEXh5k",
       "name": "大方牛肋麵 世貿美食/四四南村美食/信義區必吃牛肉麵、手工水餃",
       "rating": 4.4,
-      "userRatingCount": 718,
+      "userRatingCount": 719,
       "formattedAddress": "110台灣台北市信義區吳興街60號",
       "location": {
         "latitude": 25.0308186,
@@ -4640,7 +4748,7 @@
       "id": "ChIJv71tLKSrQjQRpejKG3Q1u0Q",
       "name": "牛味",
       "rating": 4.5,
-      "userRatingCount": 764,
+      "userRatingCount": 765,
       "formattedAddress": "110台灣台北市信義區虎林街131號",
       "location": {
         "latitude": 25.039953,
@@ -4649,22 +4757,10 @@
       "district": "信義區"
     },
     {
-      "id": "ChIJj9UJtrurQjQRmDr-DBY0bis",
-      "name": "御牛殿麵食鍋物(新光三越A4店B2)-台灣牛肉-鈜景 御牧牛 |台灣黃牛|滴牛肉精|CAS產銷履歷雙驗證台灣牛肉品專賣店|楊鎵燡牧場|牛肉湯|刺身 牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 299,
-      "formattedAddress": "110台灣台北市信義區松高路19號B2",
-      "location": {
-        "latitude": 25.0396539,
-        "longitude": 121.5667447
-      },
-      "district": "信義區"
-    },
-    {
       "id": "ChIJwfJrbV-rQjQROvLIhhzz76E",
       "name": "大師兄銷魂麵舖-信義店(新光三越A11，B2)",
       "rating": 4.4,
-      "userRatingCount": 2618,
+      "userRatingCount": 2619,
       "formattedAddress": "110台灣台北市信義區松壽路11號",
       "location": {
         "latitude": 25.036618600000004,
@@ -4673,10 +4769,34 @@
       "district": "信義區"
     },
     {
+      "id": "ChIJj9UJtrurQjQRmDr-DBY0bis",
+      "name": "御牛殿麵食鍋物(新光三越A4店B2)-台灣牛肉-鈜景 御牧牛 |台灣黃牛|滴牛肉精|CAS產銷履歷雙驗證台灣牛肉品專賣店|楊鎵燡牧場|牛肉湯|刺身 牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 303,
+      "formattedAddress": "110台灣台北市信義區松高路19號B2",
+      "location": {
+        "latitude": 25.0396539,
+        "longitude": 121.5667447
+      },
+      "district": "信義區"
+    },
+    {
+      "id": "ChIJe9RhHZ2rQjQRZo4mq3usjvY",
+      "name": "滿億牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 125,
+      "formattedAddress": "110台灣台北市信義區虎林街121巷4號1樓",
+      "location": {
+        "latitude": 25.0402307,
+        "longitude": 121.577125
+      },
+      "district": "信義區"
+    },
+    {
       "id": "ChIJgS_0zKarQjQRJBOlfWEtzf8",
       "name": "川味老兵牛肉麵（台北市信義區平價午晚餐推薦／信義區必吃好吃牛肉麵推薦／台北刀削麵推薦／信義區中式餐廳料理推薦）",
       "rating": 4.1,
-      "userRatingCount": 206,
+      "userRatingCount": 207,
       "formattedAddress": "110台灣台北市信義區松山路515巷11號第二間",
       "location": {
         "latitude": 25.0387099,
@@ -4685,14 +4805,14 @@
       "district": "信義區"
     },
     {
-      "id": "ChIJe9RhHZ2rQjQRZo4mq3usjvY",
-      "name": "滿億牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 124,
-      "formattedAddress": "110台灣台北市信義區虎林街121巷4號1樓",
+      "id": "ChIJ9TihNwqrQjQRocz7xATT61A",
+      "name": "楊家牛肉麵水餃",
+      "rating": 4.4,
+      "userRatingCount": 126,
+      "formattedAddress": "110台灣台北市信義區福德街236之1號",
       "location": {
-        "latitude": 25.0402307,
-        "longitude": 121.577125
+        "latitude": 25.0387254,
+        "longitude": 121.58477810000001
       },
       "district": "信義區"
     },
@@ -4705,18 +4825,6 @@
       "location": {
         "latitude": 25.0402068,
         "longitude": 121.58036380000001
-      },
-      "district": "信義區"
-    },
-    {
-      "id": "ChIJ9TihNwqrQjQRocz7xATT61A",
-      "name": "楊家牛肉麵水餃",
-      "rating": 4.4,
-      "userRatingCount": 125,
-      "formattedAddress": "110台灣台北市信義區福德街236之1號",
-      "location": {
-        "latitude": 25.0387254,
-        "longitude": 121.58477810000001
       },
       "district": "信義區"
     },
@@ -4736,7 +4844,7 @@
       "id": "ChIJ77GFGAqrQjQRsb1azHVz0mg",
       "name": "孫家牛拉麵",
       "rating": 4.6,
-      "userRatingCount": 282,
+      "userRatingCount": 283,
       "formattedAddress": "110台灣台北市信義區福德街185號",
       "location": {
         "latitude": 25.038085,
@@ -4748,7 +4856,7 @@
       "id": "ChIJHQe9rQurQjQRTBFWYDvvzM0",
       "name": "何牛肉麵店",
       "rating": 3.8,
-      "userRatingCount": 97,
+      "userRatingCount": 98,
       "formattedAddress": "110台灣台北市信義區福德街268巷5號",
       "location": {
         "latitude": 25.0393087,
@@ -4760,7 +4868,7 @@
       "id": "ChIJ9boJmUurQjQRQ08_A7AvyvY",
       "name": "店仔口 牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 536,
+      "userRatingCount": 538,
       "formattedAddress": "115台灣台北市南港區舊莊街二段9號",
       "location": {
         "latitude": 25.037721299999998,
@@ -4772,7 +4880,7 @@
       "id": "ChIJy7AfkSGrQjQRTjPvGwFzb7o",
       "name": "孫媽媽",
       "rating": 4.5,
-      "userRatingCount": 67,
+      "userRatingCount": 68,
       "formattedAddress": "115台灣台北市南港區研究院路二段70巷12號中研 市場",
       "location": {
         "latitude": 25.045511299999998,
@@ -4829,22 +4937,10 @@
       "district": "南港區"
     },
     {
-      "id": "ChIJA3XoAYypQjQRjE6j8YZFmUs",
-      "name": "味 牛肉麵專賣",
-      "rating": 4.5,
-      "userRatingCount": 340,
-      "formattedAddress": "108台灣台北市萬華區西園路二段308號",
-      "location": {
-        "latitude": 25.0263134,
-        "longitude": 121.49270639999997
-      },
-      "district": "萬華區"
-    },
-    {
       "id": "ChIJo2BryD6pQjQRryazXOd_T74",
       "name": "阿城快炒牛肉麵（環南市場二樓,0013）",
-      "rating": 4.1,
-      "userRatingCount": 17,
+      "rating": 4.2,
+      "userRatingCount": 19,
       "formattedAddress": "100台灣台北市萬華區環河南路二段245號",
       "location": {
         "latitude": 25.029262799999998,
@@ -4853,10 +4949,22 @@
       "district": "萬華區"
     },
     {
+      "id": "ChIJA3XoAYypQjQRjE6j8YZFmUs",
+      "name": "味 牛肉麵專賣",
+      "rating": 4.5,
+      "userRatingCount": 341,
+      "formattedAddress": "108台灣台北市萬華區西園路二段308號",
+      "location": {
+        "latitude": 25.0263134,
+        "longitude": 121.49270639999997
+      },
+      "district": "萬華區"
+    },
+    {
       "id": "ChIJeRWBlMOpQjQRWe7SwtwyyF0",
       "name": "正杰牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 877,
+      "userRatingCount": 879,
       "formattedAddress": "108台灣台北市萬華區東園街60號",
       "location": {
         "latitude": 25.026044799999998,
@@ -4877,6 +4985,30 @@
       "district": "萬華區"
     },
     {
+      "id": "ChIJNQVzGXapQjQRRpuxPcjPoAA",
+      "name": "牛の廊牛肉麵",
+      "rating": 4.7,
+      "userRatingCount": 120,
+      "formattedAddress": "108台灣台北市萬華區東園街6號",
+      "location": {
+        "latitude": 25.027801399999998,
+        "longitude": 121.49550430000001
+      },
+      "district": "萬華區"
+    },
+    {
+      "id": "ChIJnyOLwCGpQjQRs64f7YRqc_s",
+      "name": "龍山商場 美味牛肉麵",
+      "rating": 4.4,
+      "userRatingCount": 67,
+      "formattedAddress": "108台灣台北市萬華區和平西路三段120號1樓龍山商場7號攤",
+      "location": {
+        "latitude": 25.0349881,
+        "longitude": 121.4998885
+      },
+      "district": "萬華區"
+    },
+    {
       "id": "ChIJWaqHSaWpQjQRCm0s6mA8PQo",
       "name": "沛園牛肉麵",
       "rating": 4.2,
@@ -4889,22 +5021,10 @@
       "district": "萬華區"
     },
     {
-      "id": "ChIJ64ui11ipQjQRxayNDRpU_6Q",
-      "name": "羅牛肉麵",
-      "rating": 4.9,
-      "userRatingCount": 79,
-      "formattedAddress": "100063台灣台北市中正區汀州路一段157號",
-      "location": {
-        "latitude": 25.0274441,
-        "longitude": 121.51039270000001
-      },
-      "district": "中正區"
-    },
-    {
       "id": "ChIJfa1KeLypQjQRm57vCQQa698",
       "name": "宏國牛肉麵",
       "rating": 4.4,
-      "userRatingCount": 366,
+      "userRatingCount": 377,
       "formattedAddress": "100台灣台北市中正區中華路二段417-1號",
       "location": {
         "latitude": 25.025590299999998,
@@ -4928,7 +5048,7 @@
       "id": "ChIJA--fPrupQjQRtGo5XOJpmoU",
       "name": "山東三合一牛肉麵",
       "rating": 4,
-      "userRatingCount": 358,
+      "userRatingCount": 359,
       "formattedAddress": "100台灣台北市中正區惠安街41之1號",
       "location": {
         "latitude": 25.0288266,
@@ -4940,7 +5060,7 @@
       "id": "ChIJ6Yzoy5ipQjQRUUVVRbNf8_c",
       "name": "老熊牛肉麵店",
       "rating": 4.3,
-      "userRatingCount": 1140,
+      "userRatingCount": 1142,
       "formattedAddress": "100台灣台北市中正區南海路38-2號",
       "location": {
         "latitude": 25.0321391,
@@ -4951,12 +5071,24 @@
     {
       "id": "ChIJb9BGTACpQjQRTO2FpQEDJk8",
       "name": "蔡家原汁牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 102,
+      "rating": 3.7,
+      "userRatingCount": 103,
       "formattedAddress": "100台灣台北市中正區中華路二段337號1樓",
       "location": {
         "latitude": 25.0273145,
         "longitude": 121.5067652
+      },
+      "district": "中正區"
+    },
+    {
+      "id": "ChIJk6xeMaepQjQR_Mi9obMWrO4",
+      "name": "蓋一牛肉麵",
+      "rating": 4,
+      "userRatingCount": 250,
+      "formattedAddress": "100台灣台北市中正區中華路一段91巷13號",
+      "location": {
+        "latitude": 25.037897599999997,
+        "longitude": 121.5079887
       },
       "district": "中正區"
     },
@@ -4973,14 +5105,14 @@
       "district": "中正區"
     },
     {
-      "id": "ChIJk6xeMaepQjQR_Mi9obMWrO4",
-      "name": "蓋一牛肉麵",
-      "rating": 4,
-      "userRatingCount": 250,
-      "formattedAddress": "100台灣台北市中正區中華路一段91巷13號",
+      "id": "ChIJK-ra2bqpQjQRKadOF2ra6wQ",
+      "name": "胖媽大塊牛肉麵",
+      "rating": 4.1,
+      "userRatingCount": 354,
+      "formattedAddress": "100台灣台北市中正區中華路二段307巷5號",
       "location": {
-        "latitude": 25.037897599999997,
-        "longitude": 121.5079887
+        "latitude": 25.028994500000003,
+        "longitude": 121.50540509999999
       },
       "district": "中正區"
     },
@@ -5000,7 +5132,7 @@
       "id": "ChIJg3ZpGZupQjQRITYxIfVA-GI",
       "name": "林記牛肉麵",
       "rating": 4.3,
-      "userRatingCount": 1810,
+      "userRatingCount": 1811,
       "formattedAddress": "106台灣台北市大安區潮州街60巷5弄1號",
       "location": {
         "latitude": 25.0283855,
@@ -5009,10 +5141,22 @@
       "district": "大安區"
     },
     {
+      "id": "ChIJp3J9f5ypQjQR9_Iae8u7iBo",
+      "name": "老張牛肉麵店",
+      "rating": 3.8,
+      "userRatingCount": 1451,
+      "formattedAddress": "100台灣台北市中正區杭州南路二段48號",
+      "location": {
+        "latitude": 25.0308426,
+        "longitude": 121.52214679999999
+      },
+      "district": "中正區"
+    },
+    {
       "id": "ChIJ99KeQJupQjQRQA6rr2fzqvo",
       "name": "老王紅燒牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 1713,
+      "userRatingCount": 1714,
       "formattedAddress": "106台灣台北市大安區潮州街82號",
       "location": {
         "latitude": 25.029080000000004,
@@ -5021,26 +5165,26 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJ2ebt7NapQjQRt713xaM7lSo",
-      "name": "崮山牛肉麵",
-      "rating": 4.8,
-      "userRatingCount": 132,
-      "formattedAddress": "100台灣台北市中正區汀州路二段217號",
-      "location": {
-        "latitude": 25.0235225,
-        "longitude": 121.52272839999999
-      },
-      "district": "中正區"
-    },
-    {
       "id": "ChIJ_c-S6ZCpQjQR8BqlbR-GH6o",
       "name": "郭記牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 1599,
+      "userRatingCount": 1601,
       "formattedAddress": "100台灣台北市中正區汀州路二段152號",
       "location": {
         "latitude": 25.024172999999998,
         "longitude": 121.5213816
+      },
+      "district": "中正區"
+    },
+    {
+      "id": "ChIJ2ebt7NapQjQRt713xaM7lSo",
+      "name": "崮山牛肉麵",
+      "rating": 4.8,
+      "userRatingCount": 133,
+      "formattedAddress": "100台灣台北市中正區汀州路二段217號",
+      "location": {
+        "latitude": 25.0235225,
+        "longitude": 121.52272839999999
       },
       "district": "中正區"
     },
@@ -5057,14 +5201,26 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJp3J9f5ypQjQR9_Iae8u7iBo",
-      "name": "老張牛肉麵店",
-      "rating": 3.8,
-      "userRatingCount": 1450,
-      "formattedAddress": "100台灣台北市中正區杭州南路二段48號",
+      "id": "ChIJLbVxMJmpQjQR65EMSUL0Ug4",
+      "name": "賢記牛肉",
+      "rating": 3.9,
+      "userRatingCount": 435,
+      "formattedAddress": "100台灣台北市中正區南昌路一段59巷15號",
       "location": {
-        "latitude": 25.0308426,
-        "longitude": 121.52214679999999
+        "latitude": 25.031377000000003,
+        "longitude": 121.51785299999999
+      },
+      "district": "中正區"
+    },
+    {
+      "id": "ChIJx-xgX5ypQjQR_zvUwxyG-8Y",
+      "name": "合歡刀削麵館",
+      "rating": 4.3,
+      "userRatingCount": 3961,
+      "formattedAddress": "100台灣台北市中正區羅斯福路一段8號2 樓",
+      "location": {
+        "latitude": 25.0322107,
+        "longitude": 121.51834660000002
       },
       "district": "中正區"
     },
@@ -5072,7 +5228,7 @@
       "id": "ChIJH8CWqIOpQjQRtYRsiGYjETo",
       "name": "川味老張牛肉麵店",
       "rating": 3.9,
-      "userRatingCount": 2604,
+      "userRatingCount": 2606,
       "formattedAddress": "106台灣台北市大安區愛國東路105號",
       "location": {
         "latitude": 25.0315092,
@@ -5093,6 +5249,18 @@
       "district": "中正區"
     },
     {
+      "id": "ChIJ2T7KxyuqQjQRLytZgS9RYeU",
+      "name": "小公園牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 759,
+      "formattedAddress": "106台灣台北市大安區泰順街35號",
+      "location": {
+        "latitude": 25.0237405,
+        "longitude": 121.53140359999999
+      },
+      "district": "大安區"
+    },
+    {
       "id": "ChIJdfe8pISpQjQR5vHdpiF8gfA",
       "name": "大師兄牛肉麵館",
       "rating": 4.1,
@@ -5105,22 +5273,10 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJ2T7KxyuqQjQRLytZgS9RYeU",
-      "name": "小公園牛肉麵",
-      "rating": 4.3,
-      "userRatingCount": 758,
-      "formattedAddress": "106台灣台北市大安區泰順街35號",
-      "location": {
-        "latitude": 25.0237405,
-        "longitude": 121.53140359999999
-      },
-      "district": "大安區"
-    },
-    {
       "id": "ChIJcbrl5fepQjQR_Fvux8BAVY4",
       "name": "大師原汁牛肉麵",
       "rating": 3.6,
-      "userRatingCount": 63,
+      "userRatingCount": 67,
       "formattedAddress": "106台灣台北市大安區師大路108-1號",
       "location": {
         "latitude": 25.022055599999998,
@@ -5132,23 +5288,11 @@
       "id": "ChIJmfkSC4-pQjQR46Ugye5gnOQ",
       "name": "牛老大麵館",
       "rating": 3.7,
-      "userRatingCount": 730,
+      "userRatingCount": 731,
       "formattedAddress": "106台灣台北市大安區龍泉街19-2號",
       "location": {
         "latitude": 25.024801399999998,
         "longitude": 121.52940140000001
-      },
-      "district": "大安區"
-    },
-    {
-      "id": "ChIJ5esyJACrQjQRA32xwFtOXy8",
-      "name": "饗 叮噹牛肉麵",
-      "rating": 4.7,
-      "userRatingCount": 86,
-      "formattedAddress": "106台灣台北市大安區通化街171巷14號",
-      "location": {
-        "latitude": 25.027860699999998,
-        "longitude": 121.55425240000001
       },
       "district": "大安區"
     },
@@ -5165,14 +5309,38 @@
       "district": "大安區"
     },
     {
+      "id": "ChIJ5esyJACrQjQRA32xwFtOXy8",
+      "name": "饗 叮噹牛肉麵",
+      "rating": 4.7,
+      "userRatingCount": 88,
+      "formattedAddress": "106台灣台北市大安區通化街171巷14號",
+      "location": {
+        "latitude": 25.027860699999998,
+        "longitude": 121.55425240000001
+      },
+      "district": "大安區"
+    },
+    {
       "id": "ChIJUf5iYQCrQjQRElPg3APC1Mk",
       "name": "你好原汁牛肉麵",
       "rating": 4.6,
-      "userRatingCount": 108,
+      "userRatingCount": 111,
       "formattedAddress": "106台灣台北市大安區四維路170巷43號",
       "location": {
         "latitude": 25.028349199999997,
         "longitude": 121.5463783
+      },
+      "district": "大安區"
+    },
+    {
+      "id": "ChIJnQyDXIerQjQRmDe7elb2vqU",
+      "name": "上穎牛肉麵 台大創始店",
+      "rating": 4.7,
+      "userRatingCount": 290,
+      "formattedAddress": "106027台灣台北市大安區和平東路二段118巷54弄35號一樓",
+      "location": {
+        "latitude": 25.0221299,
+        "longitude": 121.5413508
       },
       "district": "大安區"
     },
@@ -5185,18 +5353,6 @@
       "location": {
         "latitude": 25.026471299999997,
         "longitude": 121.54844589999999
-      },
-      "district": "大安區"
-    },
-    {
-      "id": "ChIJnQyDXIerQjQRmDe7elb2vqU",
-      "name": "上穎牛肉麵 台大創始店",
-      "rating": 4.7,
-      "userRatingCount": 291,
-      "formattedAddress": "106027台灣台北市大安區和平東路二段118巷54弄35號一樓",
-      "location": {
-        "latitude": 25.0221299,
-        "longitude": 121.5413508
       },
       "district": "大安區"
     },
@@ -5225,6 +5381,18 @@
       "district": "大安區"
     },
     {
+      "id": "ChIJ0aF0Ay6qQjQR9-EY-ez2Sh4",
+      "name": "13香牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 642,
+      "formattedAddress": "106台灣台北市大安區和平東路三段48之6號",
+      "location": {
+        "latitude": 25.024425400000002,
+        "longitude": 121.54805429999998
+      },
+      "district": "大安區"
+    },
+    {
       "id": "ChIJSRzmEdOrQjQRLusRYZOBZZY",
       "name": "光復牛肉麵・大安捷運站",
       "rating": 4,
@@ -5237,22 +5405,10 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJ0aF0Ay6qQjQR9-EY-ez2Sh4",
-      "name": "13香牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 638,
-      "formattedAddress": "106台灣台北市大安區和平東路三段48之6號",
-      "location": {
-        "latitude": 25.024425400000002,
-        "longitude": 121.54805429999998
-      },
-      "district": "大安區"
-    },
-    {
       "id": "ChIJdSASBWarQjQRWfWdzvXG5yk",
       "name": "宵夜牛肉麵大王 NIGHT BEEF NOODLES KING",
       "rating": 4.3,
-      "userRatingCount": 53,
+      "userRatingCount": 58,
       "formattedAddress": "106台灣台北市大安區安和路二段74巷4號",
       "location": {
         "latitude": 25.0302583,
@@ -5273,22 +5429,22 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJyyPBxLSrQjQRxOYJuEShsKg",
-      "name": "穆記牛肉麵",
-      "rating": 4,
-      "userRatingCount": 3425,
-      "formattedAddress": "110台灣台北市信義區吳興街239號",
+      "id": "ChIJ9yL32MyrQjQRLPTFnrDV4Xc",
+      "name": "史大華精緻麵食安和店",
+      "rating": 4.1,
+      "userRatingCount": 731,
+      "formattedAddress": "106台灣台北市大安區安和路二段145號",
       "location": {
-        "latitude": 25.0274987,
-        "longitude": 121.56347199999999
+        "latitude": 25.02863,
+        "longitude": 121.55064
       },
-      "district": "信義區"
+      "district": "大安區"
     },
     {
       "id": "ChIJy1-Vs7SrQjQRJG97xiZZn2A",
       "name": "林家牛肉麵",
       "rating": 4,
-      "userRatingCount": 1903,
+      "userRatingCount": 1909,
       "formattedAddress": "110台灣台北市信義區吳興街281巷9號",
       "location": {
         "latitude": 25.0265404,
@@ -5300,7 +5456,7 @@
       "id": "ChIJ-Q2VBLWrQjQRl6fTa-8or_M",
       "name": "建忠牛肉麵",
       "rating": 4.1,
-      "userRatingCount": 1531,
+      "userRatingCount": 1534,
       "formattedAddress": "110台灣台北市信義區莊敬路423巷8弄2號",
       "location": {
         "latitude": 25.0284535,
@@ -5312,7 +5468,7 @@
       "id": "ChIJJYQszNerQjQRLZKv2sgfJPc",
       "name": "老邱牛肉麵",
       "rating": 4,
-      "userRatingCount": 534,
+      "userRatingCount": 537,
       "formattedAddress": "110台灣台北市信義區松仁路217號",
       "location": {
         "latitude": 25.0265536,
@@ -5333,18 +5489,6 @@
       "district": "信義區"
     },
     {
-      "id": "ChIJw64VQZWrQjQRDsZ93iVFCFg",
-      "name": "詹字號麵食館",
-      "rating": 4.4,
-      "userRatingCount": 521,
-      "formattedAddress": "110台灣台北市信義區吳興街91號",
-      "location": {
-        "latitude": 25.030561199999998,
-        "longitude": 121.5607745
-      },
-      "district": "信義區"
-    },
-    {
       "id": "ChIJUbdZXLWrQjQRt1gtPUfIpEY",
       "name": "旺仔牛肉麵",
       "rating": 4.2,
@@ -5357,10 +5501,34 @@
       "district": "信義區"
     },
     {
+      "id": "ChIJw64VQZWrQjQRDsZ93iVFCFg",
+      "name": "詹字號麵食館",
+      "rating": 4.4,
+      "userRatingCount": 521,
+      "formattedAddress": "110台灣台北市信義區吳興街91號",
+      "location": {
+        "latitude": 25.030561199999998,
+        "longitude": 121.5607745
+      },
+      "district": "信義區"
+    },
+    {
+      "id": "ChIJQ-ITrrKrQjQRayXMjjhQwIc",
+      "name": "素食茄汁牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 527,
+      "formattedAddress": "110台灣台北市信義區信義路五段150巷302號",
+      "location": {
+        "latitude": 25.0272201,
+        "longitude": 121.5693449
+      },
+      "district": "信義區"
+    },
+    {
       "id": "ChIJpQxaxLSrQjQRIM0asRN_osM",
       "name": "伍柒玖牛肉麵飯館",
       "rating": 3.8,
-      "userRatingCount": 806,
+      "userRatingCount": 808,
       "formattedAddress": "110台灣台北市信義區吳興街245號",
       "location": {
         "latitude": 25.0273579,
@@ -5369,10 +5537,22 @@
       "district": "信義區"
     },
     {
+      "id": "ChIJ9fQVacqrQjQR4jvGV2CcA5E",
+      "name": "老宋牛肉麵",
+      "rating": 3.9,
+      "userRatingCount": 306,
+      "formattedAddress": "110台灣台北市信義區吳興街8巷2號",
+      "location": {
+        "latitude": 25.031687299999998,
+        "longitude": 121.5592821
+      },
+      "district": "信義區"
+    },
+    {
       "id": "ChIJL1u_fdCpQjQR-a-93nwE4jQ",
       "name": "家辣麻辣鴨血、牛肉麵",
       "rating": 4.7,
-      "userRatingCount": 124,
+      "userRatingCount": 125,
       "formattedAddress": "108台灣台北市萬華區萬大路423巷36弄149號",
       "location": {
         "latitude": 25.0196972,
@@ -5393,18 +5573,6 @@
       "district": "萬華區"
     },
     {
-      "id": "ChIJK-ra2bqpQjQRKadOF2ra6wQ",
-      "name": "胖媽大塊牛肉麵",
-      "rating": 4.1,
-      "userRatingCount": 353,
-      "formattedAddress": "100台灣台北市中正區中華路二段307巷5號",
-      "location": {
-        "latitude": 25.028994500000003,
-        "longitude": 121.50540509999999
-      },
-      "district": "中正區"
-    },
-    {
       "id": "ChIJrX24WbCpQjQRRmOP-S-yAdk",
       "name": "小張牛肉麵",
       "rating": 4.6,
@@ -5420,7 +5588,7 @@
       "id": "ChIJ7-xf7ZqpQjQREH_NEhN-fRI",
       "name": "清真國際牛肉店halal",
       "rating": 4.6,
-      "userRatingCount": 72,
+      "userRatingCount": 73,
       "formattedAddress": "106台灣台北市大安區和平東路一段14號",
       "location": {
         "latitude": 25.026773799999997,
@@ -5431,26 +5599,14 @@
     {
       "id": "ChIJFbt7HQCpQjQRE6MGWC5zcFo",
       "name": "牛香園牛肉麵專賣店",
-      "rating": 4.5,
-      "userRatingCount": 14,
+      "rating": 4.1,
+      "userRatingCount": 19,
       "formattedAddress": "100台灣台北市中正區羅斯福路四段52巷16弄1號",
       "location": {
         "latitude": 25.0146096,
         "longitude": 121.53352070000001
       },
       "district": "中正區"
-    },
-    {
-      "id": "ChIJZao7HZCpQjQR_f7TUA3Edyk",
-      "name": "阿文牛肉麵",
-      "rating": 4.3,
-      "userRatingCount": 519,
-      "formattedAddress": "106台灣台北市大安區羅斯福路三段17巷9之1號",
-      "location": {
-        "latitude": 25.0242009,
-        "longitude": 121.52546889999999
-      },
-      "district": "大安區"
     },
     {
       "id": "ChIJZQCmSpCpQjQRDZEb_tXf6MU",
@@ -5465,10 +5621,22 @@
       "district": "中正區"
     },
     {
+      "id": "ChIJZao7HZCpQjQR_f7TUA3Edyk",
+      "name": "阿文牛肉麵",
+      "rating": 4.3,
+      "userRatingCount": 520,
+      "formattedAddress": "106台灣台北市大安區羅斯福路三段17巷9之1號",
+      "location": {
+        "latitude": 25.0242009,
+        "longitude": 121.52546889999999
+      },
+      "district": "大安區"
+    },
+    {
       "id": "ChIJb287n4upQjQR40e-bdThZAI",
       "name": "劉記川味牛肉麵",
       "rating": 4.1,
-      "userRatingCount": 732,
+      "userRatingCount": 733,
       "formattedAddress": "100台灣台北市中正區羅斯福路三段316巷8弄6號",
       "location": {
         "latitude": 25.0154945,
@@ -5480,7 +5648,7 @@
       "id": "ChIJkaYjc26pQjQRpyhCEtaB9EQ",
       "name": "熊大牛肉麵",
       "rating": 4.7,
-      "userRatingCount": 166,
+      "userRatingCount": 167,
       "formattedAddress": "106台灣台北市大安區羅斯福路三段283巷8號",
       "location": {
         "latitude": 25.0182149,
@@ -5525,18 +5693,6 @@
       "district": "中正區"
     },
     {
-      "id": "ChIJySfUe4ypQjQRgoVeUgYjZrI",
-      "name": "香鄉麵食館",
-      "rating": 4,
-      "userRatingCount": 532,
-      "formattedAddress": "100台灣台北市中正區汀州路三段133號",
-      "location": {
-        "latitude": 25.0162163,
-        "longitude": 121.53088170000001
-      },
-      "district": "中正區"
-    },
-    {
       "id": "ChIJre7Olo6pQjQRvmcZPC9dejc",
       "name": "桃源街石記麵館",
       "rating": 3.8,
@@ -5545,6 +5701,18 @@
       "location": {
         "latitude": 25.016040300000004,
         "longitude": 121.5316126
+      },
+      "district": "中正區"
+    },
+    {
+      "id": "ChIJySfUe4ypQjQRgoVeUgYjZrI",
+      "name": "香鄉麵食館",
+      "rating": 4,
+      "userRatingCount": 533,
+      "formattedAddress": "100台灣台北市中正區汀州路三段133號",
+      "location": {
+        "latitude": 25.0162163,
+        "longitude": 121.53088170000001
       },
       "district": "中正區"
     },
@@ -5561,18 +5729,6 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJ2Zr8EaSrQjQRzHTzwK74Gso",
-      "name": "許家黃金牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 784,
-      "formattedAddress": "106台灣台北市大安區樂業街129號",
-      "location": {
-        "latitude": 25.02019,
-        "longitude": 121.55305609999999
-      },
-      "district": "大安區"
-    },
-    {
       "id": "ChIJv2Is4OarQjQRBSTzPaBKp_g",
       "name": "鮮湘記乾鍋（湘記小麵）",
       "rating": 4.4,
@@ -5585,14 +5741,14 @@
       "district": "大安區"
     },
     {
-      "id": "ChIJa1Mm3S2qQjQRyXBAFBjGv-g",
-      "name": "老龍牛肉麵大王",
-      "rating": 3.9,
-      "userRatingCount": 318,
-      "formattedAddress": "106台灣台北市大安區和平東路三段1巷27號",
+      "id": "ChIJ2Zr8EaSrQjQRzHTzwK74Gso",
+      "name": "許家黃金牛肉麵",
+      "rating": 4.2,
+      "userRatingCount": 784,
+      "formattedAddress": "106台灣台北市大安區樂業街129號",
       "location": {
-        "latitude": 25.0258836,
-        "longitude": 121.5468411
+        "latitude": 25.02019,
+        "longitude": 121.55305609999999
       },
       "district": "大安區"
     },
@@ -5609,10 +5765,22 @@
       "district": "大安區"
     },
     {
+      "id": "ChIJc2cDATeqQjQRqvL07Rn-_WE",
+      "name": "阿成牛肉麵",
+      "rating": 4,
+      "userRatingCount": 791,
+      "formattedAddress": "106台灣台北市大安區富陽街98號",
+      "location": {
+        "latitude": 25.020192899999998,
+        "longitude": 121.5565699
+      },
+      "district": "大安區"
+    },
+    {
       "id": "ChIJFcl0TwCrQjQRNJZBPPhXpT8",
       "name": "排骨酥.魯肉飯.牛肉麵(原安居街82號)",
       "rating": 4.4,
-      "userRatingCount": 89,
+      "userRatingCount": 90,
       "formattedAddress": "106台灣台北市大安區嘉興街363巷11號",
       "location": {
         "latitude": 25.021659699999997,
@@ -5629,18 +5797,6 @@
       "location": {
         "latitude": 25.0246565,
         "longitude": 121.55065019999999
-      },
-      "district": "大安區"
-    },
-    {
-      "id": "ChIJWfEFHDKqQjQRS1ld6HImkH0",
-      "name": "史大華精緻麵食和平店",
-      "rating": 4.1,
-      "userRatingCount": 480,
-      "formattedAddress": "106台灣台北市大安區和平東路三段67巷4號1樓",
-      "location": {
-        "latitude": 25.024763,
-        "longitude": 121.54939999999999
       },
       "district": "大安區"
     },
@@ -5669,18 +5825,6 @@
       "district": "信義區"
     },
     {
-      "id": "ChIJQ-ITrrKrQjQRayXMjjhQwIc",
-      "name": "素食茄汁牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 527,
-      "formattedAddress": "110台灣台北市信義區信義路五段150巷302號",
-      "location": {
-        "latitude": 25.0272201,
-        "longitude": 121.5693449
-      },
-      "district": "信義區"
-    },
-    {
       "id": "ChIJR1sAVrOrQjQRpJidOIeiAzo",
       "name": "品味刀削麵",
       "rating": 4.3,
@@ -5696,7 +5840,7 @@
       "id": "ChIJi9iMKLWrQjQRxXL2eUUdp3Q",
       "name": "老許牛肉麵",
       "rating": 3,
-      "userRatingCount": 1135,
+      "userRatingCount": 1136,
       "formattedAddress": "110台灣台北市信義區吳興街220巷23號",
       "location": {
         "latitude": 25.0273368,
@@ -5705,34 +5849,10 @@
       "district": "信義區"
     },
     {
-      "id": "ChIJnwWbi7SrQjQRd2OviDEVycw",
-      "name": "四川老唐原汁原味牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 286,
-      "formattedAddress": "110台灣台北市信義區莊敬路325巷31號",
-      "location": {
-        "latitude": 25.0287448,
-        "longitude": 121.56432480000001
-      },
-      "district": "信義區"
-    },
-    {
-      "id": "ChIJtbEnLCSrQjQR6YWsrcemWys",
-      "name": "十一香牛肉麵（木柵店）",
-      "rating": 4.9,
-      "userRatingCount": 593,
-      "formattedAddress": "116台灣台北市文山區木柵路二段66號",
-      "location": {
-        "latitude": 24.9886368,
-        "longitude": 121.5593248
-      },
-      "district": "文山區"
-    },
-    {
       "id": "ChIJw4W7VB2qQjQRiefwOZk3JpA",
       "name": "福音小館藥膳牛肉麵",
       "rating": 4.6,
-      "userRatingCount": 1198,
+      "userRatingCount": 1199,
       "formattedAddress": "116台灣台北市文山區萬隆街62巷2號",
       "location": {
         "latitude": 25.0009733,
@@ -5744,7 +5864,7 @@
       "id": "ChIJvSdicgCrQjQRKbC4woRkkMQ",
       "name": "萬隆原汁牛肉麵",
       "rating": 3.5,
-      "userRatingCount": 178,
+      "userRatingCount": 181,
       "formattedAddress": "116台灣台北市文山區羅斯福路五段215號1樓",
       "location": {
         "latitude": 25.002184999999997,
@@ -5756,7 +5876,7 @@
       "id": "ChIJ4TSp-gSqQjQRhacUcDraUho",
       "name": "源興牛肉麵",
       "rating": 4.2,
-      "userRatingCount": 402,
+      "userRatingCount": 403,
       "formattedAddress": "116台灣台北市文山區景興路43號",
       "location": {
         "latitude": 24.9971174,
@@ -5767,12 +5887,24 @@
     {
       "id": "ChIJ-2vY5wSqQjQRnluBlsmtNF8",
       "name": "傳統小吃牛肉麵",
-      "rating": 4.2,
-      "userRatingCount": 261,
+      "rating": 4.3,
+      "userRatingCount": 263,
       "formattedAddress": "116台灣台北市文山區景興路27號",
       "location": {
         "latitude": 24.997636699999997,
         "longitude": 121.5448534
+      },
+      "district": "文山區"
+    },
+    {
+      "id": "ChIJtbEnLCSrQjQR6YWsrcemWys",
+      "name": "十一香牛肉麵（木柵店）",
+      "rating": 4.9,
+      "userRatingCount": 594,
+      "formattedAddress": "116台灣台北市文山區木柵路二段66號",
+      "location": {
+        "latitude": 24.9886368,
+        "longitude": 121.5593248
       },
       "district": "文山區"
     },
@@ -5813,30 +5945,6 @@
       "district": "文山區"
     },
     {
-      "id": "ChIJNY-ZoyWrQjQRKft5AHQ1Rcs",
-      "name": "滿豐牛肉麵",
-      "rating": 4.5,
-      "userRatingCount": 476,
-      "formattedAddress": "116台灣台北市文山區木柵路三段102巷2號",
-      "location": {
-        "latitude": 24.988455,
-        "longitude": 121.56743970000001
-      },
-      "district": "文山區"
-    },
-    {
-      "id": "ChIJg7qpAROqQjQRftuukB4Y34E",
-      "name": "西紅柿麵食店",
-      "rating": 3.8,
-      "userRatingCount": 1725,
-      "formattedAddress": "116台灣台北市文山區興隆路三段112巷2弄2號",
-      "location": {
-        "latitude": 24.999072599999998,
-        "longitude": 121.55726220000001
-      },
-      "district": "文山區"
-    },
-    {
       "id": "ChIJ214oqxqqQjQRPg46DeIvo-A",
       "name": "仙岩牛肉麵",
       "rating": 4,
@@ -5849,14 +5957,26 @@
       "district": "文山區"
     },
     {
-      "id": "ChIJkdnIVAqqQjQR5kn8HlcLxyw",
-      "name": "大碗公牛肉麵",
-      "rating": 4.4,
-      "userRatingCount": 627,
-      "formattedAddress": "116台灣台北市文山區木柵路一段294號",
+      "id": "ChIJNY-ZoyWrQjQRKft5AHQ1Rcs",
+      "name": "滿豐牛肉麵",
+      "rating": 4.5,
+      "userRatingCount": 477,
+      "formattedAddress": "116台灣台北市文山區木柵路三段102巷2號",
       "location": {
-        "latitude": 24.9883946,
-        "longitude": 121.5566281
+        "latitude": 24.988455,
+        "longitude": 121.56743970000001
+      },
+      "district": "文山區"
+    },
+    {
+      "id": "ChIJg7qpAROqQjQRftuukB4Y34E",
+      "name": "西紅柿麵食店",
+      "rating": 3.8,
+      "userRatingCount": 1729,
+      "formattedAddress": "116台灣台北市文山區興隆路三段112巷2弄2號",
+      "location": {
+        "latitude": 24.999072599999998,
+        "longitude": 121.55726220000001
       },
       "district": "文山區"
     },
@@ -5873,14 +5993,14 @@
       "district": "文山區"
     },
     {
-      "id": "ChIJk8NuVmKrQjQRc0pGZEW1vOA",
-      "name": "丹丹飯牛肉麵",
-      "rating": 3.8,
-      "userRatingCount": 5,
-      "formattedAddress": "116台灣台北市文山區萬安街25號",
+      "id": "ChIJkdnIVAqqQjQR5kn8HlcLxyw",
+      "name": "大碗公牛肉麵",
+      "rating": 4.4,
+      "userRatingCount": 626,
+      "formattedAddress": "116台灣台北市文山區木柵路一段294號",
       "location": {
-        "latitude": 25.00096,
-        "longitude": 121.57061630000001
+        "latitude": 24.9883946,
+        "longitude": 121.5566281
       },
       "district": "文山區"
     },
@@ -5897,10 +6017,34 @@
       "district": "文山區"
     },
     {
+      "id": "ChIJk8NuVmKrQjQRc0pGZEW1vOA",
+      "name": "丹丹飯牛肉麵",
+      "rating": 3.8,
+      "userRatingCount": 5,
+      "formattedAddress": "116台灣台北市文山區萬安街25號",
+      "location": {
+        "latitude": 25.00096,
+        "longitude": 121.57061630000001
+      },
+      "district": "文山區"
+    },
+    {
+      "id": "ChIJXebTCnaqQjQRlauZlM5CGbk",
+      "name": "林老師牛肉飯（9/4開始營業）",
+      "rating": 4.2,
+      "userRatingCount": 196,
+      "formattedAddress": "116台灣台北市文山區忠順街二段88號",
+      "location": {
+        "latitude": 24.984906,
+        "longitude": 121.56567899999999
+      },
+      "district": "文山區"
+    },
+    {
       "id": "ChIJxW-1BUSrQjQRhPD1XP9YbJA",
       "name": "政大原汁牛肉麵",
-      "rating": 3.5,
-      "userRatingCount": 65,
+      "rating": 3.4,
+      "userRatingCount": 68,
       "formattedAddress": "116011台灣台北市文山區指南路二段59號",
       "location": {
         "latitude": 24.987978899999998,
@@ -5909,14 +6053,14 @@
       "district": "文山區"
     },
     {
-      "id": "ChIJXebTCnaqQjQRlauZlM5CGbk",
-      "name": "林老師牛肉飯（暫時休暑假 會再公告營業時間）",
-      "rating": 4.2,
-      "userRatingCount": 196,
-      "formattedAddress": "116台灣台北市文山區忠順街二段88號",
+      "id": "ChIJ4SUwKxqrQjQR7iUm9iRSH3g",
+      "name": "阿義師牛肉麵（政大店）",
+      "rating": 4.6,
+      "userRatingCount": 646,
+      "formattedAddress": "11651台灣台北市文山區指南路二段219號",
       "location": {
-        "latitude": 24.984906,
-        "longitude": 121.56567899999999
+        "latitude": 24.986721,
+        "longitude": 121.57896769999999
       },
       "district": "文山區"
     },
@@ -5933,6 +6077,18 @@
       "district": "文山區"
     },
     {
+      "id": "ChIJCblJNgGqQjQR0VZF8rEqa88",
+      "name": "小放牛麵食店",
+      "rating": 3.5,
+      "userRatingCount": 648,
+      "formattedAddress": "116台灣台北市文山區景中街21號",
+      "location": {
+        "latitude": 24.9930204,
+        "longitude": 121.54220640000001
+      },
+      "district": "文山區"
+    },
+    {
       "id": "ChIJJ5sxmACqQjQRWzYYOYQE7pw",
       "name": "景美祖傳牛肉麵",
       "rating": 3.9,
@@ -5945,38 +6101,14 @@
       "district": "文山區"
     },
     {
-      "id": "ChIJCblJNgGqQjQR0VZF8rEqa88",
-      "name": "小放牛麵食店",
-      "rating": 3.5,
-      "userRatingCount": 647,
-      "formattedAddress": "116台灣台北市文山區景中街21號",
-      "location": {
-        "latitude": 24.9930204,
-        "longitude": 121.54220640000001
-      },
-      "district": "文山區"
-    },
-    {
       "id": "ChIJg0f7bP0BaDQRhdhkOZesb-0",
       "name": "牛霸天牛肉麵",
       "rating": 4.5,
-      "userRatingCount": 216,
+      "userRatingCount": 217,
       "formattedAddress": "116台灣台北市文山區木柵路一段73號",
       "location": {
         "latitude": 24.986998,
         "longitude": 121.54648989999998
-      },
-      "district": "文山區"
-    },
-    {
-      "id": "ChIJ9wHIlx2qQjQRBRRi_NY9NRc",
-      "name": "欣田小館,麵店,客飯",
-      "rating": 4.1,
-      "userRatingCount": 547,
-      "formattedAddress": "116台灣台北市文山區羅斯福路五段176巷1弄1號",
-      "location": {
-        "latitude": 25.0041159,
-        "longitude": 121.5382699
       },
       "district": "文山區"
     },
@@ -6008,11 +6140,23 @@
       "id": "ChIJG12ijLerQjQRlSIcOK1t2Qs",
       "name": "樂食蜀川味麵館",
       "rating": 4.1,
-      "userRatingCount": 251,
+      "userRatingCount": 254,
       "formattedAddress": "116台灣台北市文山區景美街1-8號",
       "location": {
         "latitude": 24.9940525,
         "longitude": 121.5417758
+      },
+      "district": "文山區"
+    },
+    {
+      "id": "ChIJY3nILAWqQjQRo5zKmlnYeK4",
+      "name": "蕃茄牛肉麵",
+      "rating": 4,
+      "userRatingCount": 16,
+      "formattedAddress": "116台灣台北市文山區興隆路二段40號",
+      "location": {
+        "latitude": 24.998815999999998,
+        "longitude": 121.546019
       },
       "district": "文山區"
     },
@@ -6053,18 +6197,6 @@
       "district": "文山區"
     },
     {
-      "id": "ChIJ7zmPOQuqQjQR26mIVTeMUHY",
-      "name": "全家牛肉麵",
-      "rating": 4,
-      "userRatingCount": 130,
-      "formattedAddress": "116台灣台北市文山區木柵路二段5號",
-      "location": {
-        "latitude": 24.988854300000003,
-        "longitude": 121.559042
-      },
-      "district": "文山區"
-    },
-    {
       "id": "ChIJk0I0M3qqQjQRdH6L0JFlZXA",
       "name": "吃香原味牛肉麵食館",
       "rating": 4.1,
@@ -6077,26 +6209,26 @@
       "district": "文山區"
     },
     {
-      "id": "ChIJT18kGXeqQjQR1C99nQ3pX1o",
-      "name": "牛大哥",
-      "rating": 4.3,
-      "userRatingCount": 436,
-      "formattedAddress": "116台灣台北市文山區永安街22巷27號",
+      "id": "ChIJ7zmPOQuqQjQR26mIVTeMUHY",
+      "name": "全家牛肉麵",
+      "rating": 4,
+      "userRatingCount": 130,
+      "formattedAddress": "116台灣台北市文山區木柵路二段5號",
       "location": {
-        "latitude": 24.9866679,
-        "longitude": 121.56881299999998
+        "latitude": 24.988854300000003,
+        "longitude": 121.559042
       },
       "district": "文山區"
     },
     {
-      "id": "ChIJ4SUwKxqrQjQR7iUm9iRSH3g",
-      "name": "阿義師牛肉麵（政大店）",
-      "rating": 4.6,
-      "userRatingCount": 645,
-      "formattedAddress": "11651台灣台北市文山區指南路二段219號",
+      "id": "ChIJT18kGXeqQjQR1C99nQ3pX1o",
+      "name": "牛大哥",
+      "rating": 4.2,
+      "userRatingCount": 439,
+      "formattedAddress": "116台灣台北市文山區永安街22巷27號",
       "location": {
-        "latitude": 24.986721,
-        "longitude": 121.57896769999999
+        "latitude": 24.9866679,
+        "longitude": 121.56881299999998
       },
       "district": "文山區"
     },
@@ -6114,9 +6246,9 @@
     },
     {
       "id": "ChIJjVJZrvCrQjQRgVbFi8RKHlU",
-      "name": "大隻佬 麵料理",
+      "name": "大隻佬 食堂",
       "rating": 4.6,
-      "userRatingCount": 1035,
+      "userRatingCount": 1036,
       "formattedAddress": "116台灣台北市文山區指南路二段46號",
       "location": {
         "latitude": 24.987685100000004,
@@ -6164,7 +6296,7 @@
       "id": "ChIJ_3iJrN8BaDQRceh2t6AhCag",
       "name": "麵妃精選麵食",
       "rating": 4.5,
-      "userRatingCount": 1977,
+      "userRatingCount": 1979,
       "formattedAddress": "116台灣台北市文山區木新路三段115號1樓",
       "location": {
         "latitude": 24.9819541,
@@ -6188,7 +6320,7 @@
       "id": "ChIJq70Z498BaDQR3U2NcLmvfSk",
       "name": "德記刀削麵",
       "rating": 3.8,
-      "userRatingCount": 617,
+      "userRatingCount": 618,
       "formattedAddress": "116台灣台北市文山區忠順街一段50號",
       "location": {
         "latitude": 24.9841518,
