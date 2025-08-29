@@ -27,7 +27,7 @@
 | `love-copywriting.json`     | 愛情文案                   | 50 筆    | 每 6 小時 |
 | `horoscope.json`            | 當日星座運勢               | 12 星座  | 每 1 小時 |
 | `taipei-beef-noodles.json`  | Google Maps 台北市牛肉麵店 | 不一定   | 每 5 天   |
-| `images/gay/`               | 同志相關圖片               | 20 張    | 靜態檔案  |
+| `images/gay/`               | 同志相關圖片               | 35 張    | 靜態檔案  |
 
 ## 📋 資料結構
 
