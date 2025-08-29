@@ -89,6 +89,38 @@ async function convertObjectToTraditional(obj: any): Promise<any> {
     return obj;
 }
 
+// 解析並標準化 API 回應（同時兼容舊/新格式）
+function normalizeApiResponse(
+    raw: any,
+    prefer: 'today' | 'nextday'
+): { ok: boolean; code: string; msg: string; payload: any | null; date: string | null } {
+    // 舊格式示例：{ code: '200', msg: '获取成功', data: { ...單日... } }
+    if (raw && (raw.code === '200' || raw.code === 200) && (raw.msg || raw.message)) {
+        const msg = raw.msg ?? raw.message;
+        // 新格式示例：{ success: true, message: 'success', code: 200, data: { day: {...}, tomorrow: {...}, ... } }
+        if (raw.success === true && raw.data && typeof raw.data === 'object' && (raw.data.day || raw.data.tomorrow)) {
+            const block = prefer === 'nextday' ? raw.data.tomorrow : raw.data.day;
+            const chosen = block ?? raw.data.day ?? raw.data.tomorrow ?? null;
+            const date = chosen?.date ?? null;
+            return { ok: true, code: String(raw.code), msg, payload: chosen, date };
+        }
+
+        // 舊格式：data 直接是單日資料
+        if (raw.data && typeof raw.data === 'object' && !('day' in raw.data) && !('tomorrow' in raw.data)) {
+            const date = raw.data?.date ?? null;
+            return { ok: true, code: String(raw.code), msg, payload: raw.data, date };
+        }
+    }
+
+    return {
+        ok: false,
+        code: String(raw?.code ?? ''),
+        msg: String(raw?.msg ?? raw?.message ?? ''),
+        payload: null,
+        date: null,
+    };
+}
+
 // 獲取單個星座運勢的函數（含重試機制）
 async function fetchConstellationData(type: string, retryCount = 0): Promise<any> {
     try {
@@ -109,22 +141,35 @@ async function fetchConstellationData(type: string, retryCount = 0): Promise<any
             },
         });
 
-        // 實際API返回格式檢查：code="200" 且 msg="获取成功"
-        if (response.data && response.data.code === '200' && response.data.msg === '获取成功') {
-            // 檢查返回的日期是否為今天
-            if (response.data.data) {
-                const returnedDate = response.data.data.date;
-                // 使用台灣時區的日期（Asia/Taipei）
-                const today = new Date().toLocaleDateString('sv-SE', {
-                    timeZone: 'Asia/Taipei',
-                }); // 格式: YYYY-MM-DD
+        // 兼容新/舊 API 回應
+        const normalizedToday = normalizeApiResponse(response.data, 'today');
 
-                console.log(`📅 API回傳日期: ${returnedDate}, 今日日期(台灣時區): ${today}`);
+        if (normalizedToday.ok && normalizedToday.payload) {
+            // 使用台灣時區的日期（Asia/Taipei）
+            const today = new Date().toLocaleDateString('sv-SE', {
+                timeZone: 'Asia/Taipei',
+            }); // 格式: YYYY-MM-DD
 
-                if (returnedDate !== today) {
-                    console.log(`🔄 日期不匹配 (${returnedDate} !== ${today})，重新請求明天的運勢 (time: nextday)...`);
+            const returnedDate = normalizedToday.date;
+            console.log(`📅 API回傳日期: ${returnedDate ?? '未知'}, 今日日期(台灣時區): ${today}`);
 
-                    // 重新請求明天的運勢，完全覆蓋原有response
+            let chosenPayload = normalizedToday.payload;
+            let chosenMsg = normalizedToday.msg;
+            let chosenCode = normalizedToday.code;
+
+            // 若日期不符且回傳中同時包含 tomorrow，優先直接切換而不重發請求
+            if (returnedDate && returnedDate !== today) {
+                // 嘗試從同一份回應取 tomorrow
+                const normalizedNext = normalizeApiResponse(response.data, 'nextday');
+                if (normalizedNext.ok && normalizedNext.payload) {
+                    const nextdayDate = normalizedNext.date ?? '未知';
+                    console.log(`🔄 日期不匹配，改用回應中的 tomorrow 區塊。新日期: ${nextdayDate}`);
+                    chosenPayload = normalizedNext.payload;
+                    chosenMsg = normalizedNext.msg;
+                    chosenCode = normalizedNext.code;
+                } else {
+                    // 仍保留舊行為：再請求一次 nextday
+                    console.log(`🔄 回應中無 tomorrow 區塊，改為請求 time: nextday...`);
                     const nextdayResponse = await axios.get(API_BASE_URL, {
                         params: {
                             type: type,
@@ -138,48 +183,38 @@ async function fetchConstellationData(type: string, retryCount = 0): Promise<any
                             'Accept-Language': 'zh-TW,zh;q=0.9,en;q=0.8',
                         },
                     });
-
-                    // 檢查nextday請求是否成功
-                    if (
-                        nextdayResponse.data &&
-                        nextdayResponse.data.code === '200' &&
-                        nextdayResponse.data.msg === '获取成功'
-                    ) {
-                        const nextdayDate = nextdayResponse.data.data?.date || '未知';
-                        console.log(
-                            `✅ ${
-                                CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]
-                            } nextday運勢獲取成功，新日期: ${nextdayDate}`
-                        );
-
-                        // 用nextday的資料完全覆蓋原有response
-                        response = nextdayResponse;
-                        console.log(`🔄 已使用nextday資料覆蓋原有資料`);
-                    } else {
+                    const normalizedNextByCall = normalizeApiResponse(nextdayResponse.data, 'nextday');
+                    if (!normalizedNextByCall.ok || !normalizedNextByCall.payload) {
                         throw new Error(`API nextday請求失敗: ${JSON.stringify(nextdayResponse.data)}`);
                     }
-                } else {
-                    console.log(`✅ ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 今天運勢獲取成功，日期匹配`);
+                    console.log(
+                        `✅ ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} nextday運勢獲取成功，新日期: ${
+                            normalizedNextByCall.date ?? '未知'
+                        }`
+                    );
+                    chosenPayload = normalizedNextByCall.payload;
+                    chosenMsg = normalizedNextByCall.msg;
+                    chosenCode = normalizedNextByCall.code;
                 }
             } else {
-                console.log(`⚠️  ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 回應中沒有日期資訊`);
+                console.log(`✅ ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 今天運勢獲取成功，日期匹配`);
             }
 
-            // 轉換簡體字為繁體字 (使用最終的response，可能是today或nextday的資料)
+            // 轉換簡體字為繁體字 (使用最終選擇的 payload)
             console.log(`🔄 正在轉換 ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 的簡體字為繁體字...`);
-            const convertedData = await convertObjectToTraditional(response.data.data);
+            const convertedData = await convertObjectToTraditional(chosenPayload);
 
             return {
                 constellation: type,
                 chineseName: CONSTELLATIONS[type as keyof typeof CONSTELLATIONS],
                 success: true,
-                code: response.data.code,
-                msg: chineseConverter ? await chineseConverter(response.data.msg) : response.data.msg,
+                code: chosenCode,
+                msg: chineseConverter ? await chineseConverter(chosenMsg) : chosenMsg,
                 data: convertedData,
             };
-        } else {
-            throw new Error(`API 返回失敗狀態: ${JSON.stringify(response.data)}`);
         }
+
+        throw new Error(`API 返回失敗狀態: ${JSON.stringify(response.data)}`);
     } catch (error) {
         const errorMessage = error instanceof Error ? error.message : String(error);
         console.log(`❌ ${CONSTELLATIONS[type as keyof typeof CONSTELLATIONS]} 獲取失敗:`, errorMessage);
