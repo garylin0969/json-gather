@@ -1,10 +1,10 @@
 {
-  "updated": "2025-09-07T15:08:13.569Z",
-  "updateTime": "2025/9/7 下午11:08:13",
+  "updated": "2025-09-07T16:08:26.600Z",
+  "updateTime": "2025/9/8 上午12:08:26",
   "totalConstellations": 12,
   "successCount": 12,
   "failureCount": 0,
-  "processingTimeMs": 21248,
+  "processingTimeMs": 20685,
   "convertedToTraditional": true,
   "errors": [],
   "horoscopes": {
@@ -229,7 +229,7 @@
       "chineseName": "射手座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "周邊買買買",
         "yi": "制定日程計劃",
