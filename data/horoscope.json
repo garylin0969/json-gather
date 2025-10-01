@@ -1,10 +1,10 @@
 {
-  "updated": "2025-10-01T08:11:47.854Z",
-  "updateTime": "2025/10/1 下午4:11:47",
+  "updated": "2025-10-01T09:10:10.506Z",
+  "updateTime": "2025/10/1 下午5:10:10",
   "totalConstellations": 12,
   "successCount": 12,
   "failureCount": 0,
-  "processingTimeMs": 16478,
+  "processingTimeMs": 13819,
   "convertedToTraditional": true,
   "errors": [],
   "horoscopes": {
@@ -13,7 +13,7 @@
       "chineseName": "白羊座",
       "success": true,
       "code": "200",
-      "msg": "獲取成功",
+      "msg": "success",
       "data": {
         "ji": "往景區湊熱鬧",
         "yi": "睡到自然醒",
@@ -40,7 +40,7 @@
       "chineseName": "金牛座",
       "success": true,
       "code": "200",
-      "msg": "獲取成功",
+      "msg": "success",
       "data": {
         "ji": "過度附和別人",
         "yi": "擴大社交圈",
@@ -67,7 +67,7 @@
       "chineseName": "雙子座",
       "success": true,
       "code": "200",
-      "msg": "獲取成功",
+      "msg": "success",
       "data": {
         "ji": "迎合別人期待",
         "yi": "買一束鮮花",
@@ -175,7 +175,7 @@
       "chineseName": "天秤座",
       "success": true,
       "code": "200",
-      "msg": "獲取成功",
+      "msg": "success",
       "data": {
         "ji": "宅家不出門",
         "yi": "看一場電影",
@@ -256,7 +256,7 @@
       "chineseName": "摩羯座",
       "success": true,
       "code": "200",
-      "msg": "獲取成功",
+      "msg": "success",
       "data": {
         "ji": "放縱買買買",
         "yi": "參加戶外活動",
@@ -283,7 +283,7 @@
       "chineseName": "水瓶座",
       "success": true,
       "code": "200",
-      "msg": "獲取成功",
+      "msg": "success",
       "data": {
         "ji": "說走就走",
         "yi": "提前預約訂票",
@@ -310,7 +310,7 @@
       "chineseName": "雙魚座",
       "success": true,
       "code": "200",
-      "msg": "獲取成功",
+      "msg": "success",
       "data": {
         "ji": "花錢買罪受",
         "yi": "享受小資情調",
