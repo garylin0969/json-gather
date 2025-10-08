@@ -1,10 +1,10 @@
 {
-  "updated": "2025-10-08T15:08:54.983Z",
-  "updateTime": "2025/10/8 下午11:08:54",
+  "updated": "2025-10-08T16:10:46.083Z",
+  "updateTime": "2025/10/9 上午12:10:46",
   "totalConstellations": 12,
   "successCount": 12,
   "failureCount": 0,
-  "processingTimeMs": 17787,
+  "processingTimeMs": 24360,
   "convertedToTraditional": true,
   "errors": [],
   "horoscopes": {
@@ -13,7 +13,7 @@
       "chineseName": "白羊座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "宅家不出門",
         "yi": "提升個人形象",
@@ -40,7 +40,7 @@
       "chineseName": "金牛座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "三心又二意",
         "yi": "制定新目標",
@@ -67,7 +67,7 @@
       "chineseName": "雙子座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "不聽他人言",
         "yi": "收回玩樂心",
@@ -94,7 +94,7 @@
       "chineseName": "巨蟹座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "好吃懶做",
         "yi": "清理舊物件",
@@ -121,7 +121,7 @@
       "chineseName": "獅子座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "傳播小八卦",
         "yi": "學習新知識",
@@ -148,7 +148,7 @@
       "chineseName": "處女座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "太完美主義",
         "yi": "發展副業",
@@ -175,7 +175,7 @@
       "chineseName": "天秤座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "情緒不穩定",
         "yi": "慢節奏生活",
@@ -202,7 +202,7 @@
       "chineseName": "天蠍座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "忽略小細節",
         "yi": "追求高品質",
@@ -229,7 +229,7 @@
       "chineseName": "射手座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "以自我為中心",
         "yi": "親近大自然",
@@ -256,7 +256,7 @@
       "chineseName": "摩羯座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "做事太刻板",
         "yi": "學習與提升",
@@ -283,7 +283,7 @@
       "chineseName": "水瓶座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "總是批評人",
         "yi": "公園散散步",
@@ -310,7 +310,7 @@
       "chineseName": "雙魚座",
       "success": true,
       "code": "200",
-      "msg": "success",
+      "msg": "獲取成功",
       "data": {
         "ji": "愛面子逞強",
         "yi": "陪家人吃飯",
