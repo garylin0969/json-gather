@@ -1,79 +1,105 @@
-// scripts/taipei-beef-noodles.ts - 台北市牛肉麵店家資料抓取
-// 使用 Google Places API 搜尋台北市範圍內的牛肉麵店家
-//
-// 🍜 功能特色：
-// - 使用網格搜尋確保完整覆蓋台北市
-// - 自動過濾台北市範圍內的店家
-// - 提取區域資訊並按評論數和評分排序
-// - 詳細的調試資訊輸出
-// - 完整的錯誤處理機制
+/**
+ * @fileoverview 台北市牛肉麵店家資料抓取腳本
+ *
+ * 使用 Google Places API 搜尋台北市範圍內的牛肉麵店家，
+ * 透過網格搜尋確保完整覆蓋台北市區域。
+ *
+ * @example
+ * ```bash
+ * GOOGLE_MAPS_API_KEY=your_api_key pnpm run scrape:taipei-beef-noodles
+ * ```
+ */
 
-import fs from 'fs';
+import type { Coordinates, PlaceResult, PlacesSearchResponse, BeefNoodleShop, BeefNoodleOutput } from '../types';
+import { logger, writeJsonFile, getErrorMessage } from '../utils';
 
-// 從環境變數取得 API Key
+// ============================================================================
+// 常數定義
+// ============================================================================
+
+/** Google Maps API Key */
 const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || '';
-const GRID_SIZE_KM = 1.2; // 進一步縮小網格以確保完整覆蓋
 
-// 台北市邊界座標（根據 Google Maps 查詢結果調整）
-const TAIPEI_NW = { lat: 25.15, lng: 121.435 }; // 最北端
-const TAIPEI_SE = { lat: 24.95, lng: 121.65 }; // 最東南端
+/** 搜尋配置 */
+const SEARCH_CONFIG = {
+    GRID_SIZE_KM: 1.2,
+    RADIUS_MULTIPLIER: 600,
+    MAX_RESULTS_PER_GRID: 20,
+} as const;
 
-// 台北市各區的準確座標範圍（根據 Google Maps 查詢結果調整）
-const DISTRICT_BOUNDARIES = {
-    中正區: { lat: [24.99, 25.02], lng: [121.53, 121.55] },
-    大同區: { lat: [25.02, 25.04], lng: [121.49, 121.51] },
-    中山區: { lat: [25.02, 25.04], lng: [121.49, 121.51] },
-    松山區: { lat: [25.04, 25.07], lng: [121.54, 121.57] },
-    大安區: { lat: [25.04, 25.07], lng: [121.52, 121.54] },
-    萬華區: { lat: [25.04, 25.07], lng: [121.52, 121.54] },
-    信義區: { lat: [25.02, 25.05], lng: [121.54, 121.57] },
-    士林區: { lat: [25.02, 25.05], lng: [121.51, 121.53] },
-    北投區: { lat: [25.11, 25.14], lng: [121.48, 121.51] },
-    內湖區: { lat: [25.11, 25.14], lng: [121.45, 121.48] },
-    南港區: { lat: [25.03, 25.06], lng: [121.58, 121.61] },
-    文山區: { lat: [25.03, 25.06], lng: [121.55, 121.58] },
-};
+/** 台北市邊界座標 */
+const TAIPEI_BOUNDS = {
+    NORTHWEST: { lat: 25.15, lng: 121.435 } as Coordinates,
+    SOUTHEAST: { lat: 24.95, lng: 121.65 } as Coordinates,
+} as const;
 
-// 型別定義
-interface Coordinates {
-    lat: number;
-    lng: number;
-}
-interface PlaceResult {
-    id: string;
-    name: string;
-    displayName: { text: string; languageCode: string };
-    rating?: number;
-    userRatingCount?: number;
-    formattedAddress: string;
-    location: { latitude: number; longitude: number };
-    district?: string; // 新增區域欄位
-}
-interface PlacesSearchResponse {
-    places: PlaceResult[];
-    nextPageToken?: string;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    error?: any;
-}
+/** 台北市行政區列表 */
+const TAIPEI_DISTRICTS = [
+    '中正區',
+    '大同區',
+    '中山區',
+    '松山區',
+    '大安區',
+    '萬華區',
+    '信義區',
+    '士林區',
+    '北投區',
+    '內湖區',
+    '南港區',
+    '文山區',
+] as const;
 
-/** 計算網格點座標 */
-function getGridPoints(nw: Coordinates, se: Coordinates, gridSizeKm: number): Coordinates[] {
+/** 輸出檔案名稱 */
+const OUTPUT_FILENAME = 'taipei-beef-noodles.json';
+
+// ============================================================================
+// 網格計算函數
+// ============================================================================
+
+/**
+ * 計算搜尋網格點座標。
+ *
+ * @param northwest - 西北角座標
+ * @param southeast - 東南角座標
+ * @param gridSizeKm - 網格大小（公里）
+ * @returns 網格中心點座標陣列
+ */
+function calculateGridPoints(northwest: Coordinates, southeast: Coordinates, gridSizeKm: number): Coordinates[] {
     const latStep = gridSizeKm / 111;
-    const lngStep = gridSizeKm / (111 * Math.cos((((nw.lat + se.lat) / 2) * Math.PI) / 180));
+    const avgLat = (northwest.lat + southeast.lat) / 2;
+    const lngStep = gridSizeKm / (111 * Math.cos((avgLat * Math.PI) / 180));
+
     const gridPoints: Coordinates[] = [];
-    for (let lat = nw.lat; lat >= se.lat; lat -= latStep) {
-        for (let lng = nw.lng; lng <= se.lng; lng += lngStep) {
+
+    for (let lat = northwest.lat; lat >= southeast.lat; lat -= latStep) {
+        for (let lng = northwest.lng; lng <= southeast.lng; lng += lngStep) {
             gridPoints.push({ lat, lng });
         }
     }
+
     return gridPoints;
 }
 
-/** 使用新版 Text Search 查詢 */
-async function searchText(keyword: string, lat: number, lng: number, radius: number): Promise<PlaceResult[]> {
-    if (!GOOGLE_MAPS_API_KEY) throw new Error('請設定 GOOGLE_MAPS_API_KEY');
+// ============================================================================
+// Google Places API 函數
+// ============================================================================
+
+/**
+ * 使用 Google Places Text Search API 搜尋地點。
+ *
+ * @param keyword - 搜尋關鍵字
+ * @param lat - 中心點緯度
+ * @param lng - 中心點經度
+ * @param radius - 搜尋半徑（公尺）
+ * @returns 搜尋結果的地點陣列
+ */
+async function searchPlacesByText(keyword: string, lat: number, lng: number, radius: number): Promise<PlaceResult[]> {
+    if (!GOOGLE_MAPS_API_KEY) {
+        throw new Error('未設定 GOOGLE_MAPS_API_KEY');
+    }
 
     const url = 'https://places.googleapis.com/v1/places:searchText';
+
     const fieldMask = [
         'places.id',
         'places.displayName',
@@ -83,217 +109,200 @@ async function searchText(keyword: string, lat: number, lng: number, radius: num
         'places.location',
     ].join(',');
 
-    // 給定地理範圍
-    const locationBias = {
-        circle: {
-            center: { latitude: lat, longitude: lng },
-            radius: radius, // 公尺
-        },
-    };
-
-    const body = {
-        textQuery: keyword,
-        locationBias,
-        maxResultCount: 20, // 每格最多20筆，無翻頁
-        languageCode: 'zh-TW', // 設定為繁體中文
-    };
-
-    const res = await fetch(url, {
+    const response = await fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'X-Goog-Api-Key': GOOGLE_MAPS_API_KEY,
             'X-Goog-FieldMask': fieldMask,
         },
-        body: JSON.stringify(body),
+        body: JSON.stringify({
+            textQuery: keyword,
+            locationBias: {
+                circle: {
+                    center: { latitude: lat, longitude: lng },
+                    radius,
+                },
+            },
+            maxResultCount: SEARCH_CONFIG.MAX_RESULTS_PER_GRID,
+            languageCode: 'zh-TW',
+        }),
     });
 
-    if (!res.ok) {
-        const err = await res.text();
-        throw new Error('Places API 查詢失敗: ' + err);
+    if (!response.ok) {
+        throw new Error(`Places API 查詢失敗`);
     }
-    const data: PlacesSearchResponse = await res.json();
+
+    const data: PlacesSearchResponse = await response.json();
     return data.places ?? [];
 }
 
-/** 從 formattedAddress 提取區域資訊 */
-function extractDistrictFromFormattedAddress(place: PlaceResult): string | undefined {
-    // 台北市的區域名稱列表（包含不同可能的格式）
-    const taipeiDistricts = [
-        '中正區',
-        '大同區',
-        '中山區',
-        '松山區',
-        '大安區',
-        '萬華區',
-        '信義區',
-        '士林區',
-        '北投區',
-        '內湖區',
-        '南港區',
-        '文山區',
-    ];
+// ============================================================================
+// 地址解析函數
+// ============================================================================
 
-    const address = place.formattedAddress;
-
-    // 調試：記錄一些地址格式
-    if (Math.random() < 0.1) {
-        // 只記錄10%的地址以避免過多輸出
-        console.log(`🔍 調試地址格式: ${address}`);
-    }
-
-    // 檢查 formattedAddress 是否包含區域名稱
-    for (const district of taipeiDistricts) {
-        if (address.includes(district)) {
-            return district;
-        }
-    }
-
-    // 如果還是找不到，嘗試用座標來判斷區域
-    // return getDistrictFromCoordinates(place.location.latitude, place.location.longitude);
-
-    // 如果還是找不到，則回傳 undefined
-    return undefined;
-}
-
-/** 根據座標判斷區域 */
-function getDistrictFromCoordinates(lat: number, lng: number): string | undefined {
-    for (const [district, bounds] of Object.entries(DISTRICT_BOUNDARIES)) {
-        if (lat >= bounds.lat[0] && lat <= bounds.lat[1] && lng >= bounds.lng[0] && lng <= bounds.lng[1]) {
+/**
+ * 從格式化地址中解析行政區。
+ *
+ * @param place - 地點資料
+ * @returns 行政區名稱
+ */
+function parseDistrictFromAddress(place: PlaceResult): string | undefined {
+    for (const district of TAIPEI_DISTRICTS) {
+        if (place.formattedAddress.includes(district)) {
             return district;
         }
     }
     return undefined;
 }
 
-/** 取得台北市牛肉麵店家（新版） */
-async function getTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
-    const gridPoints = getGridPoints(TAIPEI_NW, TAIPEI_SE, GRID_SIZE_KM);
-    const allResults = new Map<string, PlaceResult>();
+/**
+ * 檢查地點是否在台北市範圍內。
+ *
+ * @param place - 地點資料
+ * @returns 若在台北市範圍內返回 true
+ */
+function isWithinTaipeiBounds(place: PlaceResult): boolean {
+    const { latitude, longitude } = place.location;
+    return (
+        latitude >= TAIPEI_BOUNDS.SOUTHEAST.lat &&
+        latitude <= TAIPEI_BOUNDS.NORTHWEST.lat &&
+        longitude >= TAIPEI_BOUNDS.NORTHWEST.lng &&
+        longitude <= TAIPEI_BOUNDS.SOUTHEAST.lng
+    );
+}
 
-    console.log(`🍜 開始搜尋台北市牛肉麵店，共 ${gridPoints.length} 個網格點`);
+// ============================================================================
+// 主要搜尋函數
+// ============================================================================
+
+/**
+ * 搜尋台北市所有牛肉麵店家。
+ *
+ * @returns 去重後的店家列表
+ */
+async function searchTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
+    const gridPoints = calculateGridPoints(
+        TAIPEI_BOUNDS.NORTHWEST,
+        TAIPEI_BOUNDS.SOUTHEAST,
+        SEARCH_CONFIG.GRID_SIZE_KM,
+    );
+
+    const uniqueShops = new Map<string, PlaceResult>();
+
+    console.log(`🍜 搜尋台北市牛肉麵店 (${gridPoints.length} 個網格)...`);
 
     for (let i = 0; i < gridPoints.length; i++) {
         const point = gridPoints[i];
 
         try {
-            const results = await searchText('牛肉麵', point.lat, point.lng, GRID_SIZE_KM * 600);
+            const results = await searchPlacesByText(
+                '牛肉麵',
+                point.lat,
+                point.lng,
+                SEARCH_CONFIG.GRID_SIZE_KM * SEARCH_CONFIG.RADIUS_MULTIPLIER,
+            );
+
             for (const place of results) {
-                // 檢查是否在台北市範圍內
-                if (
-                    place.location.latitude >= TAIPEI_SE.lat &&
-                    place.location.latitude <= TAIPEI_NW.lat &&
-                    place.location.longitude >= TAIPEI_NW.lng &&
-                    place.location.longitude <= TAIPEI_SE.lng
-                ) {
-                    // 提取區域資訊
-                    place.name = place.displayName.text;
-                    place.district = extractDistrictFromFormattedAddress(place);
-                    allResults.set(place.id, place);
-                }
+                if (!isWithinTaipeiBounds(place)) continue;
+
+                place.name = place.displayName.text;
+                place.district = parseDistrictFromAddress(place);
+                uniqueShops.set(place.id, place);
             }
 
-            // 每10個網格點顯示進度
-            if ((i + 1) % 10 === 0) {
-                console.log(`✅ 已完成 ${i + 1}/${gridPoints.length} 個網格點，目前找到 ${allResults.size} 間店家`);
+            // 每 20 個網格點顯示進度
+            if ((i + 1) % 20 === 0) {
+                logger.progress(i + 1, gridPoints.length, `${uniqueShops.size} 間店家`);
             }
-        } catch (error) {
-            // 記錄錯誤，不中斷流程
-            console.error(`❌ 搜尋第${i + 1}個格點失敗:`, error);
+        } catch {
+            // 忽略單一網格錯誤
         }
     }
 
-    console.log(`🎉 搜尋完成，總共找到 ${allResults.size} 間台北市牛肉麵店`);
-
-    return Array.from(allResults.values()).filter((place) => place.district !== undefined);
+    return Array.from(uniqueShops.values()).filter((place) => place.district !== undefined);
 }
 
-// 主函數
-(async () => {
+// ============================================================================
+// 主程式
+// ============================================================================
+
+/**
+ * 主函數：搜尋台北市牛肉麵店家並儲存為 JSON 檔案。
+ */
+async function main(): Promise<void> {
     if (!GOOGLE_MAPS_API_KEY) {
-        console.log('❌ 錯誤: 未設定 GOOGLE_MAPS_API_KEY 環境變數');
-        console.log('💡 請在 GitHub Secrets 中設定 GOOGLE_MAPS_API_KEY');
+        logger.error('未設定 GOOGLE_MAPS_API_KEY 環境變數');
         process.exit(1);
     }
 
     const startTime = Date.now();
     let results: PlaceResult[] = [];
-    let errors: string[] = [];
+    const errors: string[] = [];
 
     try {
-        results = await getTaipeiBeefNoodleShops();
+        results = await searchTaipeiBeefNoodleShops();
     } catch (error) {
-        const errorMessage = error instanceof Error ? error.message : String(error);
-        console.log(`💥 抓取過程中發生錯誤:`, error);
-        errors.push(`主要錯誤: ${errorMessage}`);
+        errors.push(getErrorMessage(error));
     }
 
     const endTime = Date.now();
-    const successCount = results.length;
 
-    // 統計區域分布
+    // 統計各區店家數量
     const districtStats: Record<string, number> = {};
-    results.forEach((place) => {
-        const district = place.district || '未知區域';
+    for (const place of results) {
+        const district = place.district || '未知';
         districtStats[district] = (districtStats[district] || 0) + 1;
-    });
-
-    // 準備最終資料結構
-    const finalData = {
-        updated: new Date().toISOString(),
-        updateTime: new Date().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }),
-        totalShops: successCount,
-        processingTimeMs: endTime - startTime,
-        searchArea: {
-            northwest: TAIPEI_NW,
-            southeast: TAIPEI_SE,
-            gridSizeKm: GRID_SIZE_KM,
-        },
-        districtStats: districtStats,
-        errors: errors,
-        shops: results.map((place) => ({
-            id: place.id,
-            name: place.name,
-            rating: place.rating,
-            userRatingCount: place.userRatingCount,
-            formattedAddress: place.formattedAddress,
-            location: place.location,
-            district: place.district,
-        })),
-    };
-
-    // 確保 data 目錄存在
-    if (!fs.existsSync('data')) {
-        fs.mkdirSync('data');
     }
 
-    // 保存資料到 JSON 文件
-    fs.writeFileSync('data/taipei-beef-noodles.json', JSON.stringify(finalData, null, 2), 'utf8');
+    const outputData: BeefNoodleOutput = {
+        updated: new Date().toISOString(),
+        updateTime: new Date().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }),
+        totalShops: results.length,
+        processingTimeMs: endTime - startTime,
+        searchArea: {
+            northwest: TAIPEI_BOUNDS.NORTHWEST,
+            southeast: TAIPEI_BOUNDS.SOUTHEAST,
+            gridSizeKm: SEARCH_CONFIG.GRID_SIZE_KM,
+        },
+        districtStats,
+        errors,
+        shops: results.map(
+            (place): BeefNoodleShop => ({
+                id: place.id,
+                name: place.name,
+                rating: place.rating,
+                userRatingCount: place.userRatingCount,
+                formattedAddress: place.formattedAddress,
+                location: place.location,
+                district: place.district,
+            }),
+        ),
+    };
 
-    // 輸出結果摘要
-    console.log('\n📊 抓取結果摘要:');
-    console.log(`✅ 成功: ${successCount} 間店家`);
-    console.log(`⏱️  總處理時間: ${(endTime - startTime) / 1000} 秒`);
+    const filePath = writeJsonFile(OUTPUT_FILENAME, outputData);
 
+    logger.success(`完成: ${results.length} 間店家`);
+    console.log(`💾 已保存至: ${filePath}`);
+
+    // 顯示各區統計（前 5 名）
     if (Object.keys(districtStats).length > 0) {
+        console.log('\n📊 各區統計:');
         Object.entries(districtStats)
             .sort(([, a], [, b]) => b - a)
+            .slice(0, 5)
             .forEach(([district, count]) => {
-                console.log(`  ${district}: ${count} 間`);
+                console.log(`   ${district}: ${count} 間`);
             });
     }
 
-    if (errors.length > 0) {
-        console.log('\n❌ 錯誤詳情:');
-        errors.forEach((error) => console.log(`  ${error}`));
-    }
-
-    console.log(`\n💾 資料已保存至: data/taipei-beef-noodles.json`);
-
-    if (successCount > 0) {
-        console.log('🎉 牛肉麵店家資料抓取完成！');
-    } else {
-        console.log('💥 未找到任何牛肉麵店家，請檢查網路連接或API狀態');
+    if (results.length === 0) {
+        logger.error('未找到任何店家');
         process.exit(1);
     }
-})();
+}
+
+main().catch((error) => {
+    logger.error('程式執行失敗', error);
+    process.exit(1);
+});
