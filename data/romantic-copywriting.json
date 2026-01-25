@@ -1,17 +1,10 @@
 {
   "type": "騷話文案",
-  "updated": "2026-01-25T08:39:51.472Z",
-  "updateTime": "2026/1/25 下午4:39:51",
-  "totalCount": 1,
+  "updated": "2026-01-25T12:50:55.273Z",
+  "updateTime": "2026/1/25 下午8:50:55",
+  "totalCount": 0,
   "targetCount": 50,
-  "completionRate": "2.0%",
+  "completionRate": "0.0%",
   "convertedToTraditional": true,
-  "copywritings": [
-    {
-      "id": 1,
-      "content": "我老婆在麼？ 不在我等下再來問",
-      "length": 15,
-      "addedAt": "2026-01-25T08:39:51.472Z"
-    }
-  ]
+  "copywritings": []
 }
