@@ -267,3 +267,59 @@ export interface BeefNoodleOutput {
     /** 店家列表 */
     shops: BeefNoodleShop[];
 }
+
+// ============================================================================
+// 台灣行事曆相關型別
+// ============================================================================
+
+/** 原始假日資料結構 */
+export interface RawHoliday {
+    西元日期: string;
+    星期: string;
+    是否放假: string;
+    備註: string;
+}
+
+/** 轉換後的假日資料結構 */
+export interface ProcessedHoliday {
+    date: string;
+    week: string;
+    isHoliday: boolean;
+    description: string;
+}
+
+// ============================================================================
+// 星座運勢 API 內部型別 (用於 scripts/horoscope.ts)
+// ============================================================================
+
+/** API 原始回應格式 */
+export interface HoroscopeApiResponse {
+    code?: string | number;
+    success?: boolean;
+    msg?: string;
+    message?: string;
+    data?: {
+        day?: HoroscopeApiData;
+        tomorrow?: HoroscopeApiData;
+        date?: string;
+    } & HoroscopeApiData;
+}
+
+/** 標準化後的 API 回應 */
+export interface NormalizedApiResponse {
+    ok: boolean;
+    code: string;
+    msg: string;
+    payload: HoroscopeApiData | null;
+    date: string | null;
+}
+
+// ============================================================================
+// 文案 API 內部型別 (用於 scripts/copywriting.ts)
+// ============================================================================
+
+/** 單一類型的處理結果 */
+export interface TypeResult {
+    success: boolean;
+    count: number;
+}

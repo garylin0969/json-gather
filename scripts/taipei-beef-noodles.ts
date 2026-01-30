@@ -64,7 +64,7 @@ const OUTPUT_FILENAME = 'taipei-beef-noodles.json';
  * @param gridSizeKm - 網格大小（公里）
  * @returns 網格中心點座標陣列
  */
-function calculateGridPoints(northwest: Coordinates, southeast: Coordinates, gridSizeKm: number): Coordinates[] {
+const calculateGridPoints = (northwest: Coordinates, southeast: Coordinates, gridSizeKm: number): Coordinates[] => {
     const latStep = gridSizeKm / 111;
     const avgLat = (northwest.lat + southeast.lat) / 2;
     const lngStep = gridSizeKm / (111 * Math.cos((avgLat * Math.PI) / 180));
@@ -78,7 +78,7 @@ function calculateGridPoints(northwest: Coordinates, southeast: Coordinates, gri
     }
 
     return gridPoints;
-}
+};
 
 // ============================================================================
 // Google Places API 函數
@@ -93,7 +93,12 @@ function calculateGridPoints(northwest: Coordinates, southeast: Coordinates, gri
  * @param radius - 搜尋半徑（公尺）
  * @returns 搜尋結果的地點陣列
  */
-async function searchPlacesByText(keyword: string, lat: number, lng: number, radius: number): Promise<PlaceResult[]> {
+const searchPlacesByText = async (
+    keyword: string,
+    lat: number,
+    lng: number,
+    radius: number,
+): Promise<PlaceResult[]> => {
     if (!GOOGLE_MAPS_API_KEY) {
         throw new Error('未設定 GOOGLE_MAPS_API_KEY');
     }
@@ -135,7 +140,7 @@ async function searchPlacesByText(keyword: string, lat: number, lng: number, rad
 
     const data: PlacesSearchResponse = await response.json();
     return data.places ?? [];
-}
+};
 
 // ============================================================================
 // 地址解析函數
@@ -147,14 +152,14 @@ async function searchPlacesByText(keyword: string, lat: number, lng: number, rad
  * @param place - 地點資料
  * @returns 行政區名稱
  */
-function parseDistrictFromAddress(place: PlaceResult): string | undefined {
+const parseDistrictFromAddress = (place: PlaceResult): string | undefined => {
     for (const district of TAIPEI_DISTRICTS) {
         if (place.formattedAddress.includes(district)) {
             return district;
         }
     }
     return undefined;
-}
+};
 
 /**
  * 檢查地點是否在台北市範圍內。
@@ -162,7 +167,7 @@ function parseDistrictFromAddress(place: PlaceResult): string | undefined {
  * @param place - 地點資料
  * @returns 若在台北市範圍內返回 true
  */
-function isWithinTaipeiBounds(place: PlaceResult): boolean {
+const isWithinTaipeiBounds = (place: PlaceResult): boolean => {
     const { latitude, longitude } = place.location;
     return (
         latitude >= TAIPEI_BOUNDS.SOUTHEAST.lat &&
@@ -170,7 +175,7 @@ function isWithinTaipeiBounds(place: PlaceResult): boolean {
         longitude >= TAIPEI_BOUNDS.NORTHWEST.lng &&
         longitude <= TAIPEI_BOUNDS.SOUTHEAST.lng
     );
-}
+};
 
 // ============================================================================
 // 主要搜尋函數
@@ -181,7 +186,7 @@ function isWithinTaipeiBounds(place: PlaceResult): boolean {
  *
  * @returns 去重後的店家列表
  */
-async function searchTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
+const searchTaipeiBeefNoodleShops = async (): Promise<PlaceResult[]> => {
     const gridPoints = calculateGridPoints(
         TAIPEI_BOUNDS.NORTHWEST,
         TAIPEI_BOUNDS.SOUTHEAST,
@@ -190,7 +195,7 @@ async function searchTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
 
     const uniqueShops = new Map<string, PlaceResult>();
 
-    console.log(`🍜 搜尋台北市牛肉麵店 (${gridPoints.length} 個網格)...`);
+    logger.info(`搜尋台北市牛肉麵店 (${gridPoints.length} 個網格)...`);
 
     for (let i = 0; i < gridPoints.length; i++) {
         const point = gridPoints[i];
@@ -221,7 +226,7 @@ async function searchTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
     }
 
     return Array.from(uniqueShops.values()).filter((place) => place.district !== undefined);
-}
+};
 
 // ============================================================================
 // 主程式
@@ -230,7 +235,7 @@ async function searchTaipeiBeefNoodleShops(): Promise<PlaceResult[]> {
 /**
  * 主函數：搜尋台北市牛肉麵店家並儲存為 JSON 檔案。
  */
-async function main(): Promise<void> {
+const main = async (): Promise<void> => {
     if (!GOOGLE_MAPS_API_KEY) {
         logger.error('未設定 GOOGLE_MAPS_API_KEY 環境變數');
         process.exit(1);
@@ -283,16 +288,16 @@ async function main(): Promise<void> {
     const filePath = writeJsonFile(OUTPUT_FILENAME, outputData);
 
     logger.success(`完成: ${results.length} 間店家`);
-    console.log(`💾 已保存至: ${filePath}`);
+    logger.info(`已保存至: ${filePath}`);
 
     // 顯示各區統計（前 5 名）
     if (Object.keys(districtStats).length > 0) {
-        console.log('\n📊 各區統計:');
+        logger.info('各區統計:');
         Object.entries(districtStats)
             .sort(([, a], [, b]) => b - a)
             .slice(0, 5)
             .forEach(([district, count]) => {
-                console.log(`   ${district}: ${count} 間`);
+                logger.info(`${district}: ${count} 間`);
             });
     }
 
@@ -300,7 +305,7 @@ async function main(): Promise<void> {
         logger.error('未找到任何店家');
         process.exit(1);
     }
-}
+};
 
 main().catch((error) => {
     logger.error('程式執行失敗', error);

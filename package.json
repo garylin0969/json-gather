@@ -6,22 +6,23 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "scrape:horoscope": "tsx scripts/horoscope.ts",
         "scrape:copywriting": "tsx scripts/copywriting.ts",
-        "scrape:taipei-beef-noodles": "tsx scripts/taipei-beef-noodles.ts"
+        "scrape:taipei-beef-noodles": "tsx scripts/taipei-beef-noodles.ts",
+        "convert:tw-calendar": "tsx scripts/tw-calendar.ts"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "axios": "^1.10.0",
-        "puppeteer": "^24.11.2",
+        "axios": "^1.13.4",
+        "cheerio": "^1.2.0",
+        "puppeteer": "^24.36.1",
         "rss-parser": "^3.13.0"
     },
     "devDependencies": {
-        "@types/cheerio": "^1.0.0",
-        "@types/node": "^24.0.10",
+        "@types/node": "^24.10.9",
         "opencc-js": "^1.0.5",
-        "tsx": "^4.20.3",
-        "typescript": "^5.8.3"
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
     }
 }

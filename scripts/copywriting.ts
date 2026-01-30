@@ -12,7 +12,7 @@
 
 import axios from 'axios';
 
-import type { CopywritingApiConfig, CopywritingItem, CopywritingOutput } from '../types';
+import type { CopywritingApiConfig, CopywritingItem, CopywritingOutput, TypeResult } from '../types';
 import {
     delay,
     logger,
@@ -71,7 +71,7 @@ const CONFIG = {
  * @param retryCount - 目前重試次數
  * @returns 文案內容，失敗時返回 null
  */
-async function fetchCopywriting(apiConfig: CopywritingApiConfig, retryCount = 0): Promise<string | null> {
+const fetchCopywriting = async (apiConfig: CopywritingApiConfig, retryCount = 0): Promise<string | null> => {
     try {
         const response = await axios.get(apiConfig.url, {
             timeout: CONFIG.TIMEOUT,
@@ -95,7 +95,7 @@ async function fetchCopywriting(apiConfig: CopywritingApiConfig, retryCount = 0)
         }
         return null;
     }
-}
+};
 
 /**
  * 收集指定數量的不重複文案。
@@ -103,8 +103,8 @@ async function fetchCopywriting(apiConfig: CopywritingApiConfig, retryCount = 0)
  * @param apiConfig - API 配置
  * @returns 收集到的文案陣列
  */
-async function collectUniqueCopywritings(apiConfig: CopywritingApiConfig): Promise<string[]> {
-    console.log(`\n📝 收集 ${apiConfig.name}...`);
+const collectUniqueCopywritings = async (apiConfig: CopywritingApiConfig): Promise<string[]> => {
+    logger.info(`收集 ${apiConfig.name}...`);
 
     const uniqueTexts = new Set<string>();
     const maxRequests = CONFIG.TARGET_COUNT * CONFIG.MAX_REQUEST_MULTIPLIER;
@@ -128,7 +128,7 @@ async function collectUniqueCopywritings(apiConfig: CopywritingApiConfig): Promi
 
     logger.success(`${apiConfig.name}: ${uniqueTexts.size}/${CONFIG.TARGET_COUNT}`);
     return Array.from(uniqueTexts);
-}
+};
 
 /**
  * 將文案資料儲存為 JSON 檔案。
@@ -136,7 +136,7 @@ async function collectUniqueCopywritings(apiConfig: CopywritingApiConfig): Promi
  * @param apiConfig - API 配置
  * @param texts - 文案內容陣列
  */
-function saveCopywritingsToFile(apiConfig: CopywritingApiConfig, texts: string[]): void {
+const saveCopywritingsToFile = (apiConfig: CopywritingApiConfig, texts: string[]): void => {
     const now = new Date();
 
     const outputData: CopywritingOutput = {
@@ -158,23 +158,17 @@ function saveCopywritingsToFile(apiConfig: CopywritingApiConfig, texts: string[]
     };
 
     writeJsonFile(apiConfig.filename, outputData);
-}
+};
 
 // ============================================================================
 // 主程式
 // ============================================================================
 
-/** 單一類型的處理結果 */
-interface TypeResult {
-    success: boolean;
-    count: number;
-}
-
 /**
  * 主函數：抓取所有類型的文案並儲存為 JSON 檔案。
  */
-async function main(): Promise<void> {
-    console.log('🎭 開始抓取文案資料...');
+const main = async (): Promise<void> => {
+    logger.info('開始抓取文案資料...');
 
     await initializeChineseConverter();
 
@@ -202,18 +196,18 @@ async function main(): Promise<void> {
         }
     }
 
-    console.log('\n📊 統計結果:');
-    console.log(`   總計: ${totalCount}/${totalTarget} (${((totalCount / totalTarget) * 100).toFixed(0)}%)`);
-    console.log(`   耗時: ${((endTime - startTime) / 1000).toFixed(1)} 秒`);
+    logger.info('統計結果:');
+    logger.info(`總計: ${totalCount}/${totalTarget} (${((totalCount / totalTarget) * 100).toFixed(0)}%)`);
+    logger.info(`耗時: ${((endTime - startTime) / 1000).toFixed(1)} 秒`);
 
     // 顯示範例
     if (totalCount > 0) {
-        console.log('\n📝 範例:');
+        logger.info('範例:');
         for (const apiConfig of Object.values(API_CONFIGS)) {
             try {
                 const data = readJsonFile<CopywritingOutput>(apiConfig.filename);
                 if (data.copywritings.length > 0) {
-                    console.log(`   ${apiConfig.name}: ${data.copywritings[0].content}`);
+                    logger.info(`${apiConfig.name}: ${data.copywritings[0].content}`);
                 }
             } catch {
                 // 忽略
@@ -227,7 +221,7 @@ async function main(): Promise<void> {
     }
 
     logger.success('文案抓取完成！');
-}
+};
 
 main().catch((error) => {
     logger.error('程式執行失敗', error);

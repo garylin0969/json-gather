@@ -12,7 +12,14 @@
 
 import axios from 'axios';
 
-import type { ConstellationKey, HoroscopeApiData, HoroscopeItem, HoroscopeOutput } from '../types';
+import type {
+    ConstellationKey,
+    HoroscopeApiData,
+    HoroscopeItem,
+    HoroscopeOutput,
+    HoroscopeApiResponse,
+    NormalizedApiResponse,
+} from '../types';
 import {
     delay,
     logger,
@@ -60,28 +67,6 @@ const OUTPUT_FILENAME = 'horoscope.json';
 // 型別定義
 // ============================================================================
 
-/** API 原始回應格式 */
-interface HoroscopeApiResponse {
-    code?: string | number;
-    success?: boolean;
-    msg?: string;
-    message?: string;
-    data?: {
-        day?: HoroscopeApiData;
-        tomorrow?: HoroscopeApiData;
-        date?: string;
-    } & HoroscopeApiData;
-}
-
-/** 標準化後的 API 回應 */
-interface NormalizedApiResponse {
-    ok: boolean;
-    code: string;
-    msg: string;
-    payload: HoroscopeApiData | null;
-    date: string | null;
-}
-
 // ============================================================================
 // API 處理函數
 // ============================================================================
@@ -93,7 +78,7 @@ interface NormalizedApiResponse {
  * @param prefer - 優先取用的時間區段
  * @returns 標準化後的回應資料
  */
-function parseHoroscopeApiResponse(raw: HoroscopeApiResponse, prefer: 'today' | 'nextday'): NormalizedApiResponse {
+const parseHoroscopeApiResponse = (raw: HoroscopeApiResponse, prefer: 'today' | 'nextday'): NormalizedApiResponse => {
     if (raw && (raw.code === '200' || raw.code === 200) && (raw.msg || raw.message)) {
         const msg = raw.msg ?? raw.message ?? '';
 
@@ -117,16 +102,16 @@ function parseHoroscopeApiResponse(raw: HoroscopeApiResponse, prefer: 'today' | 
         payload: null,
         date: null,
     };
-}
+};
 
 /**
  * 取得台灣時區的當日日期字串。
  *
  * @returns 格式為 YYYY-MM-DD 的日期字串
  */
-function getTaiwanDateString(): string {
+const getTaiwanDateString = (): string => {
     return new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Taipei' });
-}
+};
 
 /**
  * 抓取單一星座的運勢資料。
@@ -135,10 +120,10 @@ function getTaiwanDateString(): string {
  * @param retryCount - 目前重試次數
  * @returns 星座運勢資料
  */
-async function fetchHoroscopeByConstellation(
+const fetchHoroscopeByConstellation = async (
     constellationType: ConstellationKey,
     retryCount = 0,
-): Promise<HoroscopeItem> {
+): Promise<HoroscopeItem> => {
     const chineseName = CONSTELLATIONS[constellationType];
 
     try {
@@ -218,7 +203,7 @@ async function fetchHoroscopeByConstellation(
             data: null,
         };
     }
-}
+};
 
 // ============================================================================
 // 主程式
@@ -227,8 +212,8 @@ async function fetchHoroscopeByConstellation(
 /**
  * 主函數：抓取所有星座運勢並儲存為 JSON 檔案。
  */
-async function main(): Promise<void> {
-    console.log('🌟 開始抓取星座運勢...');
+const main = async (): Promise<void> => {
+    logger.info('開始抓取星座運勢...');
 
     await initializeChineseConverter();
 
@@ -269,13 +254,13 @@ async function main(): Promise<void> {
     const filePath = writeJsonFile(OUTPUT_FILENAME, outputData);
 
     logger.success(`完成: ${successCount}/${Object.keys(CONSTELLATIONS).length} 個星座`);
-    console.log(`💾 已保存至: ${filePath}`);
+    logger.info(`已保存至: ${filePath}`);
 
     if (successCount === 0) {
         logger.error('所有星座抓取失敗');
         process.exit(1);
     }
-}
+};
 
 main().catch((error) => {
     logger.error('程式執行失敗', error);

@@ -21,7 +21,7 @@ let isInitialized = false;
  *
  * @returns 初始化成功返回 true，否則返回 false
  */
-export async function initializeChineseConverter(): Promise<boolean> {
+export const initializeChineseConverter = async (): Promise<boolean> => {
     if (isInitialized) {
         return converterInstance !== null;
     }
@@ -35,16 +35,16 @@ export async function initializeChineseConverter(): Promise<boolean> {
         converterInstance = null;
         return false;
     }
-}
+};
 
 /**
  * 檢查轉換器是否可用。
  *
  * @returns 轉換器可用返回 true，否則返回 false
  */
-export function isConverterAvailable(): boolean {
+export const isConverterAvailable = (): boolean => {
     return converterInstance !== null;
-}
+};
 
 /**
  * 將簡體中文字串轉換為繁體中文。
@@ -52,7 +52,7 @@ export function isConverterAvailable(): boolean {
  * @param text - 要轉換的簡體中文字串
  * @returns 轉換後的繁體中文字串
  */
-export async function convertToTraditional(text: string): Promise<string> {
+export const convertToTraditional = async (text: string): Promise<string> => {
     if (!converterInstance) {
         return text;
     }
@@ -62,7 +62,7 @@ export async function convertToTraditional(text: string): Promise<string> {
     } catch {
         return text;
     }
-}
+};
 
 /**
  * 遞迴將物件中的所有字串從簡體轉換為繁體。
@@ -70,7 +70,7 @@ export async function convertToTraditional(text: string): Promise<string> {
  * @param obj - 要轉換的物件、陣列或字串
  * @returns 轉換後的資料
  */
-export async function convertObjectToTraditional<T>(obj: T): Promise<T> {
+export const convertObjectToTraditional = async <T>(obj: T): Promise<T> => {
     if (!converterInstance) {
         return obj;
     }
@@ -101,4 +101,4 @@ export async function convertObjectToTraditional<T>(obj: T): Promise<T> {
     }
 
     return obj;
-}
+};

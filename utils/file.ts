@@ -25,11 +25,11 @@ const DATA_DIRECTORY = 'data';
  * ensureDataDirectory('output/json');
  * ```
  */
-export function ensureDataDirectory(directory: string = DATA_DIRECTORY): void {
+export const ensureDataDirectory = (directory: string = DATA_DIRECTORY): void => {
     if (!fs.existsSync(directory)) {
         fs.mkdirSync(directory, { recursive: true });
     }
-}
+};
 
 /**
  * 將資料寫入 JSON 檔案。
@@ -47,12 +47,12 @@ export function ensureDataDirectory(directory: string = DATA_DIRECTORY): void {
  * console.log(`資料已寫入: ${filePath}`);
  * ```
  */
-export function writeJsonFile(filename: string, data: unknown, directory: string = DATA_DIRECTORY): string {
+export const writeJsonFile = (filename: string, data: unknown, directory: string = DATA_DIRECTORY): string => {
     ensureDataDirectory(directory);
     const filePath = path.join(directory, filename);
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
     return filePath;
-}
+};
 
 /**
  * 讀取 JSON 檔案內容。
@@ -67,8 +67,8 @@ export function writeJsonFile(filename: string, data: unknown, directory: string
  * const data = readJsonFile<HoroscopeData>('horoscope.json');
  * ```
  */
-export function readJsonFile<T>(filename: string, directory: string = DATA_DIRECTORY): T {
+export const readJsonFile = <T>(filename: string, directory: string = DATA_DIRECTORY): T => {
     const filePath = path.join(directory, filename);
     const content = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(content) as T;
-}
+};

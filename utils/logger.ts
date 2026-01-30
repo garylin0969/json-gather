@@ -39,6 +39,34 @@ export const logger = {
     },
 
     /**
+     * 輸出一般資訊。
+     *
+     * @param message - 訊息內容
+     * @param data - 可選的附加資料
+     */
+    info: (message: string, data?: unknown): void => {
+        if (data !== undefined) {
+            console.log(`ℹ️ ${message}`, data);
+        } else {
+            console.log(`ℹ️ ${message}`);
+        }
+    },
+
+    /**
+     * 輸出警告訊息。
+     *
+     * @param message - 訊息內容
+     * @param data - 可選的附加資料
+     */
+    warn: (message: string, data?: unknown): void => {
+        if (data !== undefined) {
+            console.log(`⚠️ ${message}`, data);
+        } else {
+            console.log(`⚠️ ${message}`);
+        }
+    },
+
+    /**
      * 輸出進度訊息。
      *
      * @param current - 目前進度

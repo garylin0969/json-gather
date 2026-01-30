@@ -8,9 +8,9 @@
  * @param error - 錯誤物件
  * @returns 錯誤訊息字串
  */
-export function getErrorMessage(error: unknown): string {
+export const getErrorMessage = (error: unknown): string => {
     if (error instanceof Error) {
         return error.message;
     }
     return String(error);
-}
+};
