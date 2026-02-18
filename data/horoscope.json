@@ -1,10 +1,10 @@
 {
-  "updated": "2026-02-18T09:26:02.036Z",
-  "updateTime": "2026/2/18 下午5:26:02",
+  "updated": "2026-02-18T10:25:06.800Z",
+  "updateTime": "2026/2/18 下午6:25:06",
   "totalConstellations": 12,
   "successCount": 4,
   "failureCount": 8,
-  "processingTimeMs": 120902,
+  "processingTimeMs": 106731,
   "convertedToTraditional": true,
   "errors": [
     "獅子座: API 返回失敗狀態",
