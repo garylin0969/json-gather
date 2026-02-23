@@ -1,14 +1,12 @@
 {
-  "updated": "2026-02-23T00:49:22.701Z",
-  "updateTime": "2026/2/23 上午8:49:22",
+  "updated": "2026-02-23T16:26:32.577Z",
+  "updateTime": "2026/2/24 上午12:26:32",
   "totalConstellations": 12,
-  "successCount": 11,
-  "failureCount": 1,
-  "processingTimeMs": 30467,
+  "successCount": 12,
+  "failureCount": 0,
+  "processingTimeMs": 29238,
   "convertedToTraditional": true,
-  "errors": [
-    "雙魚座: API 返回失敗狀態"
-  ],
+  "errors": [],
   "horoscopes": {
     "aries": {
       "constellation": "aries",
@@ -310,9 +308,29 @@
     "pisces": {
       "constellation": "pisces",
       "chineseName": "雙魚座",
-      "success": false,
-      "error": "API 返回失敗狀態",
-      "data": null
+      "success": true,
+      "code": "200",
+      "msg": "獲取成功",
+      "data": {
+        "ji": "過度自我懷疑",
+        "yi": "看部治癒電影",
+        "all": "87%",
+        "date": "2026-02-23",
+        "love": "97%",
+        "work": "89%",
+        "money": "76%",
+        "health": "82%",
+        "notice": "保持樂觀心態",
+        "discuss": "70%",
+        "all_text": "今日綜合運勢大吉，你將擁有充沛的精力和積極的心態去面對生活中的各種挑戰。在人際關係方面，你會遇到一些志同道合的朋友，與他們的交流將為你帶來新的啟發和思路。在工作和學習上，你也會表現出色，取得不錯的成績。",
+        "love_text": "愛情運勢大吉，單身的雙魚座有機會遇到自己心儀的對象，要勇敢地表達自己的感情。有伴侶的雙魚座則會與另一半感情更加甜蜜，相互理解和支持。",
+        "work_text": "無論是工作還是學習，今日都充滿機遇與活力。在事務處理上，思維敏捷，能迅速抓住重點，高效完成任務。",
+        "lucky_star": "巨蟹座",
+        "money_text": "財富運勢小吉，可能會有一些意外之財入賬，比如收到禮物或者獲得獎金等。但也要注意合理規劃自己的開支，避免不必要的浪費。",
+        "health_text": "健康狀況良好，身體充滿活力。但要注意保持良好的生活習慣，避免過度勞累。",
+        "lucky_color": "粉色",
+        "lucky_number": 18
+      }
     }
   }
 }
