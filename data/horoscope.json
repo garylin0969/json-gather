@@ -1,12 +1,14 @@
 {
-  "updated": "2026-03-03T12:22:43.436Z",
-  "updateTime": "2026/3/3 下午8:22:43",
+  "updated": "2026-03-03T13:32:00.400Z",
+  "updateTime": "2026/3/3 下午9:32:00",
   "totalConstellations": 12,
-  "successCount": 12,
-  "failureCount": 0,
-  "processingTimeMs": 20076,
+  "successCount": 11,
+  "failureCount": 1,
+  "processingTimeMs": 39293,
   "convertedToTraditional": true,
-  "errors": [],
+  "errors": [
+    "處女座: timeout of 10000ms exceeded"
+  ],
   "horoscopes": {
     "aries": {
       "constellation": "aries",
@@ -146,29 +148,9 @@
     "virgo": {
       "constellation": "virgo",
       "chineseName": "處女座",
-      "success": true,
-      "code": "200",
-      "msg": "獲取成功",
-      "data": {
-        "ji": "衝動消費購物",
-        "yi": "整理家居環境",
-        "all": "86%",
-        "date": "2026-03-02",
-        "love": "93%",
-        "work": "90%",
-        "money": "70%",
-        "health": "80%",
-        "notice": "堅韌不拔的毅力",
-        "discuss": "73%",
-        "all_text": "今日運勢大吉，你將迎來能量的爆發期。無論是工作還是生活，都充滿了機遇和挑戰。在面對困難時，你會展現出堅韌不拔的毅力和智慧，輕鬆應對各種難題。人際關係也十分和諧，與同事、朋友之間的溝通順暢，能夠得到他們的支持和幫助。只要你保持積極樂觀的心態，抓住機遇，努力奮鬥，就一定能夠取得圓滿的成果。",
-        "love_text": "愛情運勢大吉，單身的處女座有機會遇到自己心儀的對象，雙方會有很多共同話題和興趣愛好，相處起來十分愉快。有伴侶的處女座則會與另一半的感情更加深厚，彼此之間的信任和理解也會進一步加深。今天是一個表達愛意的好時機，不妨給對方一個驚喜，讓彼此的感情更加甜蜜。",
-        "work_text": "無論是工作還是學習，今天都是你展現實力的好時機。在事務處理上，你思路清晰，能夠迅速找到問題的關鍵所在，並提出有效的解決方案。工作效率大幅提升，能夠按時完成各項任務。學習上也表現出色，對知識的理解和掌握更加深入。",
-        "lucky_star": "摩羯座",
-        "money_text": "財富運勢較為平穩，收入和支出基本持平。在投資方面，你需要保持謹慎，不要盲目跟風，以免造成不必要的損失。同時，你也可以通過自己的努力和智慧，尋找一些額外的收入來源，增加自己的財富積累。",
-        "health_text": "健康狀況良好，身體充滿活力。不過，你需要注意保持良好的作息習慣，不要熬夜，以免影響身體健康。同時，你也可以適當進行一些運動，增強自己的體質。",
-        "lucky_color": "粉色",
-        "lucky_number": "2"
-      }
+      "success": false,
+      "error": "timeout of 10000ms exceeded",
+      "data": null
     },
     "libra": {
       "constellation": "libra",
