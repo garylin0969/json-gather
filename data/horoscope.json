@@ -1,21 +1,39 @@
 {
-  "updated": "2026-04-21T16:33:50.193Z",
-  "updateTime": "2026/4/22 上午12:33:50",
+  "updated": "2026-04-21T17:29:17.520Z",
+  "updateTime": "2026/4/22 上午1:29:17",
   "totalConstellations": 12,
-  "successCount": 11,
-  "failureCount": 1,
-  "processingTimeMs": 76064,
+  "successCount": 12,
+  "failureCount": 0,
+  "processingTimeMs": 13803,
   "convertedToTraditional": true,
-  "errors": [
-    "白羊座: timeout of 10000ms exceeded"
-  ],
+  "errors": [],
   "horoscopes": {
     "aries": {
       "constellation": "aries",
       "chineseName": "白羊座",
-      "success": false,
-      "error": "timeout of 10000ms exceeded",
-      "data": null
+      "success": true,
+      "code": "200",
+      "msg": "獲取成功",
+      "data": {
+        "ji": "熬夜刷社交圈",
+        "yi": "整理衣櫃雜物",
+        "all": "70%",
+        "date": "2026-04-21",
+        "love": "53%",
+        "work": "85%",
+        "money": "33%",
+        "health": "68%",
+        "notice": "主動化解分歧",
+        "discuss": "76%",
+        "all_text": "今日整體運勢呈小吉態勢，人際互動成為關鍵破局點。你自帶的熱情與行動力能快速破冰，但需注意情緒表達的分寸。生活中偶有小確幸，比如整理家居時意外發現遺忘的小物件，為日常增添小驚喜。不過部分事務推進易受他人意見干擾，需保持獨立判斷，避免隨波逐流。整體狀態平穩，只要把握好人際尺度，便能順遂度過。",
+        "love_text": "今日愛情運勢中平，感情狀態維持穩定。單身者雖有社交機會，但難遇心動對象，需耐心等待。有伴侶者，日常互動平淡，可通過共同整理家居增進默契，避免因瑣事引發爭吵。整體無大波動，按部就班維繫感情即可。",
+        "work_text": "無論是工作還是學習，今日都有勢不可擋的推進力。思維活躍度高，能快速捕捉問題核心，高效解決積壓事務。在團隊協作中，你的積極態度能帶動整體氛圍，成為項目推進的核心力量。不過需注意避免因急於求成而忽略細節，保持節奏穩定更易出成果。",
+        "lucky_star": "摩羯座",
+        "money_text": "今日財富運勢呈小兇態勢，需警惕隱形損耗。購物時易因衝動下單非必要物品，導致資金流失。投資方面，切勿輕信他人推薦的高風險項目，避免盲目跟風。建議今日減少不必要的開支，做好消費記錄，控制慾望，守住現有財富。",
+        "health_text": "今日健康狀態良好，精力充沛。但需注意因熬夜刷社交圈導致的眼部疲勞，建議控制電子設備使用時間。適當進行室內拉伸運動，緩解久坐帶來的肌肉僵硬。飲食上可多攝入新鮮蔬果，保持身體活力。",
+        "lucky_color": "草綠",
+        "lucky_number": 33
+      }
     },
     "taurus": {
       "constellation": "taurus",
