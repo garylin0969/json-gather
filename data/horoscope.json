@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-12T23:30:17.005Z",
-  "updateTime": "2026/5/13 上午7:30:17",
+  "updated": "2026-05-13T01:08:51.983Z",
+  "updateTime": "2026/5/13 上午9:08:51",
   "totalConstellations": 12,
   "successCount": 12,
   "failureCount": 0,
-  "processingTimeMs": 14458,
+  "processingTimeMs": 14602,
   "convertedToTraditional": true,
   "errors": [],
   "horoscopes": {
