@@ -1,12 +1,14 @@
 {
-  "updated": "2026-07-09T03:15:07.292Z",
-  "updateTime": "2026/7/9 上午11:15:07",
+  "updated": "2026-07-09T05:32:41.830Z",
+  "updateTime": "2026/7/9 下午1:32:41",
   "totalConstellations": 12,
-  "successCount": 12,
-  "failureCount": 0,
-  "processingTimeMs": 17238,
+  "successCount": 11,
+  "failureCount": 1,
+  "processingTimeMs": 69552,
   "convertedToTraditional": true,
-  "errors": [],
+  "errors": [
+    "雙子座: Request failed with status code 522"
+  ],
   "horoscopes": {
     "aries": {
       "constellation": "aries",
@@ -65,29 +67,9 @@
     "gemini": {
       "constellation": "gemini",
       "chineseName": "雙子座",
-      "success": true,
-      "code": "200",
-      "msg": "獲取成功",
-      "data": {
-        "ji": "吃生冷食物",
-        "yi": "看畫展放鬆",
-        "all": "66%",
-        "date": "2026-07-08",
-        "love": "70%",
-        "work": "87%",
-        "money": "34%",
-        "health": "52%",
-        "notice": "梳理雜亂思緒",
-        "discuss": "75%",
-        "all_text": "今日整體運勢呈小吉態勢，雖無驚天機遇，但各方面節奏平穩。思維活躍度較高，能快速捕捉到事務的關鍵節點，不過需注意避免因想法過多而分散精力。人際互動中容易獲得他人的善意回應，利於拓展社交圈。整體狀態水到渠成，只要按部就班推進計劃，便能收穫預期成果。",
-        "love_text": "愛情運勢平穩順遂，單身者有機會在社交場合遇到聊得來的對象，通過深入交流能增進彼此瞭解；有伴侶者與對方的互動溫馨和諧，共同參與輕鬆的活動能提升感情濃度，需注意多傾聽對方需求，避免因忽視細節而產生小矛盾。",
-        "work_text": "無論是工作還是學習，今日都能展現出較強的邏輯思維能力，對複雜任務的拆解和執行效率顯著提升。在事務處理上，能快速整合信息並形成清晰的解決方案，團隊協作中也能積極貢獻創意。",
-        "lucky_star": "天秤座",
-        "money_text": "今日財富運勢呈小兇態勢，需警惕隱形的財務損耗。容易因衝動消費或對投資信息判斷失誤而造成不必要的支出，尤其是在非必要的娛樂消費上需加以剋制。建議今日減少大額支出，避免參與高風險投資，做好財務規劃，防止資金流失。",
-        "health_text": "今日健康狀況中平，身體無明顯不適，但需注意飲食衛生和規律作息。長時間伏案工作或學習容易導致肩頸痠痛，建議適時起身活動；飲食上避免生冷食物，以防腸胃不適，保持清淡飲食更利於身體狀態穩定。",
-        "lucky_color": "湖藍",
-        "lucky_number": 29
-      }
+      "success": false,
+      "error": "Request failed with status code 522",
+      "data": null
     },
     "cancer": {
       "constellation": "cancer",
